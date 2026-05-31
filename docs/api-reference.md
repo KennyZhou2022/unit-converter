@@ -44,13 +44,20 @@ The top-level `convert()` function also caches the package converter.
 ## Catalog Helpers
 
 ```python
-from unit_converter import get_unit_catalog, list_units
+from unit_converter import get_unit_catalog, list_categories, list_units
 ```
 
 `get_unit_catalog()` returns the full bundled catalog dictionary from
 `unit_catalog.json`.
 
+`list_categories()` returns the supported category names from the bundled
+catalog.
+
 `list_units()` returns all globally supported unit labels.
+
+`list_units(category)` returns only unit labels in the requested category.
+Category matching ignores leading and trailing whitespace and is
+case-insensitive. Unknown categories raise `ValueError`.
 
 ## Advanced: Custom Conversions
 

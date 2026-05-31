@@ -33,7 +33,12 @@ def list_units(category: str | None = None) -> tuple[str, ...]:
         return tuple(str(unit) for unit in cast(list[str], catalog["all_units"]))
 
     categories = cast(list[dict[str, Any]], catalog["categories"])
+    normalized_category = category.strip().casefold()
     for category_data in categories:
-        if category_data["name"] == category:
+        if str(category_data["name"]).casefold() == normalized_category:
             return tuple(str(unit) for unit in cast(list[str], category_data["units"]))
-    return ()
+
+    raise ValueError(
+        f"Unknown category: {category!r}. Use list_categories() to see supported "
+        "categories."
+    )

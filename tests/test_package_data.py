@@ -12,6 +12,7 @@ from unit_converter import (
     UnitNotFoundError,
     convert,
     get_unit_catalog,
+    list_categories,
     list_units,
 )
 
@@ -81,6 +82,22 @@ def test_exposes_supported_unit_catalog() -> None:
     assert "calorieIT (calIT)" in list_units()
     assert "degree Fahrenheit (°F) [temperature]" in list_units()
     assert "degree Fahrenheit (°F) [temperature interval]" in list_units()
+
+
+def test_lists_supported_units_by_category() -> None:
+    assert "LENGTH" in list_categories()
+
+    length_units = list_units("LENGTH")
+    assert "meter (m)" in length_units
+    assert "mile (mi)" in length_units
+    assert "second (s)" not in length_units
+
+    assert list_units(" length ") == length_units
+
+
+def test_raises_for_unknown_unit_category() -> None:
+    with pytest.raises(ValueError, match="Unknown category"):
+        list_units("NOT A CATEGORY")
 
 
 def test_converts_corrected_mass_per_area_and_length_rows() -> None:

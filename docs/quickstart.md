@@ -61,8 +61,14 @@ temperature_interval = convert(
 ## Browse Supported Units
 
 ```python
-from unit_converter import get_unit_catalog, list_units
+from unit_converter import get_unit_catalog, list_categories, list_units
 
 catalog = get_unit_catalog()
 units = list_units()
+categories = list_categories()
+length_units = list_units("LENGTH")
 ```
+
+When a category is provided, `list_units()` returns only units in that category.
+Category matching ignores leading and trailing whitespace and is
+case-insensitive.

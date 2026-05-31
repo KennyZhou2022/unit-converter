@@ -4,15 +4,6 @@
 conversion. The current data source is NIST Special Publication 811 (2008),
 Appendix B.9.
 
-## Current Data Set
-
-| Metric | Count |
-|---|---:|
-| Source groups | 30 |
-| Direct conversion rules | 451 |
-| Unique supported units | 467 |
-| Ordered convertible unit pairs | 5926 |
-
 ## Usage
 
 Install the package:
@@ -78,6 +69,19 @@ from unit_converter import list_units
 
 units = list_units()
 ```
+
+Use `list_categories()` and the optional `category` argument to browse one
+category at a time:
+
+```python
+from unit_converter import list_categories, list_units
+
+categories = list_categories()
+length_units = list_units("LENGTH")
+```
+
+Category matching ignores leading and trailing whitespace and is
+case-insensitive.
 
 Use `get_unit_catalog()` when an application needs the full machine-readable
 catalog:
