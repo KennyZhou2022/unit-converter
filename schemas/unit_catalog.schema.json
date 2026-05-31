@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/unit-converter/unit_catalog.schema.json",
+  "title": "unit-converter unit catalog",
+  "type": "object",
+  "required": ["version", "source", "totals", "all_units", "categories"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "source": {
+      "type": "object",
+      "required": ["name", "document", "appendix", "pages"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "document": {
+          "type": "string",
+          "minLength": 1
+        },
+        "appendix": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pages": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "required": [
+        "category_count",
+        "direct_conversion_count",
+        "unit_count",
+        "unordered_convertible_pair_count",
+        "ordered_convertible_pair_count"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "category_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "direct_conversion_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unordered_convertible_pair_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ordered_convertible_pair_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "all_units": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/catalogGroup"
+      }
+    }
+  },
+  "$defs": {
+    "catalogGroup": {
+      "type": "object",
+      "required": [
+        "name",
+        "slug",
+        "unit_count",
+        "direct_conversion_count",
+        "connected_component_count",
+        "unordered_convertible_pair_count",
+        "ordered_convertible_pair_count",
+        "units",
+        "connected_components"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "subcategory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "direct_conversion_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "connected_component_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unordered_convertible_pair_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ordered_convertible_pair_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "connected_components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "unit_count",
+              "unordered_convertible_pair_count",
+              "ordered_convertible_pair_count",
+              "units"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "unit_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "unordered_convertible_pair_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "ordered_convertible_pair_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "units": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            }
+          }
+        },
+        "subcategories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/catalogGroup"
+          }
+        }
+      }
+    }
+  }
+}

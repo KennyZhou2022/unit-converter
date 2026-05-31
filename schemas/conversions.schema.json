@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/unit-converter/conversions.schema.json",
+  "title": "unit-converter package data",
+  "type": "object",
+  "required": ["version", "source", "conversions"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "source": {
+      "type": "object",
+      "required": ["name", "document"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": ["string", "null"]
+        },
+        "document": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "conversions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "from": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to": {
+            "type": "string",
+            "minLength": 1
+          },
+          "factor": {
+            "type": "string",
+            "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][+-]?\\d+)?$"
+          },
+          "formula": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subcategory": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "oneOf": [
+          {
+            "required": ["factor"],
+            "not": {
+              "required": ["formula"]
+            }
+          },
+          {
+            "required": ["formula"],
+            "not": {
+              "required": ["factor"]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,452 @@
+convert_from,to,rule
+"acceleration of free fall, standard (gn)",meter per second squared (m / s2),9.80665E+00
+foot per second squared (ft / s2),meter per second squared (m / s2),3.048E-01
+gal (Gal),meter per second squared (m / s2),1.0E-02
+inch per second squared (in / s2),meter per second squared (m / s2),2.54E-02
+degree (°),radian (rad),1.745329E-02
+gon (also called grade) (gon),radian (rad),1.570796E-02
+gon (also called grade) (gon),degree (°),9.0E-01
+mil,radian (rad),9.817477E-04
+mil,degree (°),5.625E-02
+minute ('),radian (rad),2.908882E-04
+revolution (r),radian (rad),6.283185E+00
+"second ("")",radian (rad),4.848137E-06
+acre (based on U.S. survey foot),square meter (m2),4.046873E+03
+are (a),square meter (m2),1.0E+02
+barn (b),square meter (m2),1.0E-28
+circular mil,square meter (m2),5.067075E-10
+circular mil,square millimeter (mm2),5.067075E-04
+foot to the fourth power (ft4),meter to the fourth power (m4),8.630975E-03
+hectare (ha),square meter (m2),1.0E+04
+inch to the fourth power (in4),meter to the fourth power (m4),4.162314E-07
+square foot (ft2),square meter (m2),9.290304E-02
+square inch (in2),square meter (m2),6.4516E-04
+square inch (in2),square centimeter (cm2),6.4516E+00
+square mile (mi2),square meter (m2),2.589988E+06
+square mile (mi2),square kilometer (km2),2.589988E+00
+square mile (based on U.S. survey foot) (mi2),square meter (m2),2.589998E+06
+square mile (based on U.S. survey foot) (mi2),square kilometer (km2),2.589998E+00
+square yard (yd2),square meter (m2),8.361274E-01
+abampere,ampere (A),1.0E+01
+abcoulomb,coulomb (C),1.0E+01
+abfarad,farad (F),1.0E+09
+abhenry,henry (H),1.0E-09
+abmho,siemens (S),1.0E+09
+abohm,ohm (Ω),1.0E-09
+abvolt,volt (V),1.0E-08
+ampere hour (A · h),coulomb (C),3.6E+03
+biot (Bi),ampere (A),1.0E+01
+EMU of capacitance (abfarad),farad (F),1.0E+09
+EMU of current (abampere),ampere (A),1.0E+01
+EMU of electric potential (abvolt),volt (V),1.0E-08
+EMU of inductance (abhenry),henry (H),1.0E-09
+EMU of resistance (abohm),ohm (Ω),1.0E-09
+ESU of capacitance (statfarad),farad (F),1.112650E-12
+ESU of current (statampere),ampere (A),3.335641E-10
+ESU of electric potential (statvolt),volt (V),2.997925E+02
+ESU of inductance (stathenry),henry (H),8.987552E+11
+ESU of resistance (statohm),ohm ( Ω),8.987552E+11
+faraday (based on carbon 12),coulomb (C),9.648534E+04
+franklin (Fr),coulomb (C),3.335641E-10
+gamma (γ),tesla (T),1.0E-09
+"gauss (Gs, G)",tesla (T),1.0E-04
+gilbert (Gi),ampere (A),7.957747E-01
+maxwell (Mx),weber (Wb),1.0E-08
+mho,siemens (S),1.0E+00
+oersted (Oe),ampere per meter (A / m),7.957747E+01
+ohm centimeter (Ω · cm),ohm meter ( Ω · m),1.0E-02
+ohm circular-mil per foot,ohm meter ( Ω · m),1.662426E-09
+ohm circular-mil per foot,ohm square millimeter per meter (Ω · mm2 / m),1.662426E-03
+statampere,ampere (A),3.335641E-10
+statcoulomb,coulomb (C),3.335641E-10
+statfarad,farad (F),1.112650E-12
+stathenry,henry (H),8.987552E+11
+statmho,siemens (S),1.112650E-12
+statohm,ohm ( Ω),8.987552E+11
+statvolt,volt (V),2.997925E+02
+unit pole,weber (Wb),1.256637E-07
+British thermal unitIT (BtuIT),joule (J),1.055056E+03
+British thermal unitth (Btuth),joule (J),1.054350E+03
+British thermal unit (mean) (Btu),joule (J),1.05587E+03
+British thermal unit (39 °F) (Btu),joule (J),1.05967E+03
+British thermal unit (59 °F) (Btu),joule (J),1.05480E+03
+British thermal unit (60 °F) (Btu),joule (J),1.05468E+03
+calorieIT (calIT),joule (J),4.1868E+00
+calorieth (calth),joule (J),4.184E+00
+calorie (mean) (cal),joule (J),4.19002E+00
+calorie (15 °C) (cal15),joule (J),4.18580E+00
+calorie (20 °C) (cal20),joule (J),4.18190E+00
+"calorieIT, kilogram (nutrition)",joule (J),4.1868E+03
+"calorieth, kilogram (nutrition)",joule (J),4.184E+03
+"calorie (mean), kilogram (nutrition)",joule (J),4.19002E+03
+electronvolt (eV),joule (J),1.602176E-19
+erg (erg),joule (J),1.0E-07
+foot poundal,joule (J),4.214011E-02
+foot pound-force (ft · lbf),joule (J),1.355818E+00
+kilocalorieIT (kcalIT),joule (J),4.1868E+03
+kilocalorieth (kcalth),joule (J),4.184E+03
+kilocalorie (mean) (kcal),joule (J),4.19002E+03
+kilowatt hour (kW · h),joule (J),3.6E+06
+kilowatt hour (kW · h),megajoule (MJ),3.6E+00
+quad (1015 BtuIT),joule (J),1.055056E+18
+therm (EC),joule (J),1.05506E+08
+therm (U.S.),joule (J),1.054804E+08
+ton of TNT (energy equivalent),joule (J),4.184E+09
+watt hour (W · h),joule (J),3.6E+03
+watt second (W · s),joule (J),1.0E+00
+erg per square centimeter second [erg / (cm2 · s)],watt per square meter (W / m2),1.0E-03
+watt per square centimeter (W / cm2),watt per square meter (W / m2),1.0E+04
+watt per square inch (W / in2),watt per square meter (W / m2),1.550003E+03
+dyne (dyn),newton (N),1.0E-05
+kilogram-force (kgf),newton (N),9.80665E+00
+kilopond (kilogram-force) (kp),newton (N),9.80665E+00
+kip (1 kip = 1000 lbf),newton (N),4.448222E+03
+kip (1 kip = 1000 lbf),kilonewton (kN),4.448222E+00
+ounce (avoirdupois)-force (ozf),newton (N),2.780139E-01
+poundal,newton (N),1.382550E-01
+pound-force (lbf),newton (N),4.448222E+00
+pound-force per pound (lbf / lb) (thrust to mass ratio),newton per kilogram (N / kg),9.80665E+00
+ton-force (2000 lbf),newton (N),8.896443E+03
+ton-force (2000 lbf),kilonewton (kN),8.896443E+00
+pound-force per foot (lbf / ft),newton per meter (N / m),1.459390E+01
+pound-force per inch (lbf / in),newton per meter (N / m),1.751268E+02
+British thermal unitIT per cubic foot (BtuIT / ft3),joule per cubic meter (J / m3),3.725895E+04
+British thermal unitth per cubic foot (Btuth / ft3),joule per cubic meter (J / m3),3.723403E+04
+British thermal unitIT per pound (BtuIT / lb),joule per kilogram (J / kg),2.326E+03
+British thermal unitth per pound (Btuth / lb),joule per kilogram (J / kg),2.324444E+03
+calorieIT per gram (calIT / g),joule per kilogram (J / kg),4.1868E+03
+calorieth per gram (calth / g),joule per kilogram (J / kg),4.184E+03
+British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)],watt per square meter kelvin [W / (m2 · K)],5.678263E+00
+British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)],watt per square meter kelvin [W / (m2 · K)],5.674466E+00
+British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)],watt per square meter kelvin [W / (m2 · K)],2.044175E+04
+British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)],watt per square meter Kelvin [W / (m2 · K)],2.042808E+04
+British thermal unitIT per square foot (Btu IT / ft2),joule per square meter (J / m2),1.135653E+04
+British thermal unitth per square foot (Btu th / ft2),joule per square meter (J / m2),1.134893E+04
+calorieth per square centimeter (calth / cm2),joule per square meter (J / m2),4.184E+04
+langley (calth / cm2),joule per square meter (J / m2),4.184E+04
+British thermal unitIT per square foot hour [Btu IT / (ft2 · h)],watt per square meter (W / m2),3.154591E+00
+British thermal unitth per square foot hour [Btu th / (ft2 · h)],watt per square meter (W / m2),3.152481E+00
+British thermal unitth per square foot minute [Btu th / (ft2 · min)],watt per square meter (W / m2),1.891489E+02
+British thermal unitIT per square foot second [Btu IT / (ft2 · s)],watt per square meter (W / m2),1.135653E+04
+British thermal unitth per square foot second [Btu th / (ft2 · s)],watt per square meter (W / m2),1.134893E+04
+British thermal unitth per square inch second [Btu th / (in2 · s)],watt per square meter (W / m2),1.634246E+06
+calorieth per square centimeter minute [cal th / (cm2 · min)],watt per square meter (W / m2),6.973333E+02
+calorieth per square centimeter second [cal th / (cm2 · s)],watt per square meter (W / m2),4.184E+04
+gallon (U.S.) per horsepower hour [gal / (hp · h)],cubic meter per joule (m3 / J),1.410089E-09
+gallon (U.S.) per horsepower hour [gal / (hp · h)],liter per joule (L / J),1.410089E-06
+mile per gallon (U.S.) (mpg) (mi / gal),meter per cubic meter (m / m3),4.251437E+05
+mile per gallon (U.S.) (mpg) (mi / gal),kilometer per liter (km / L),4.251437E-01
+mile per gallon (U.S.) (mpg) (mi / gal),liter per 100 kilometer (L / 100 km),235.215 / x
+per gallon pound per horsepower hour [lb / (hp · h)],kilogram per joule (kg / J),1.689659E-07
+British thermal unitIT per degree Fahrenheit (Btu IT / °F),joule per kelvin (J / K),1.899101E+03
+British thermal unitth per degree Fahrenheit (Btu th / °F),joule per kelvin (J / K),1.897830E+03
+British thermal unitIT per degree Rankine (Btu IT / °R),joule per kelvin (J / K),1.899101E+03
+British thermal unitth per degree Rankine (Btu th / °R),joule per kelvin (J / K),1.897830E+03
+British thermal unitIT per hour (BtuIT / h),watt (W),2.930711E-01
+British thermal unitth per hour (Btuth / h),watt (W),2.928751E-01
+British thermal unitth per minute (Btuth / min),watt (W),1.757250E+01
+British thermal unitIT per second (BtuIT / s),watt (W),1.055056E+03
+British thermal unitth per second (Btuth / s),watt (W),1.054350E+03
+calorieth per minute (calth / min),watt (W),6.973333E-02
+calorieth per second (calth / s),watt (W),4.184E+00
+kilocalorieth per minute (kcalth / min),watt (W),6.973333E+01
+kilocalorieth per second (kcalth / s),watt (W),4.184E+03
+ton of refrigeration (12 000 BtuIT / h),watt (W),3.516853E+03
+British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)],joule per kilogram kelvin [J / (kg · K)],4.1868E+03
+British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)],joule per kilogram kelvin [J / (kg · K)],4.184E+03
+British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)],joule per kilogram kelvin [J / (kg · K)],4.1868E+03
+British thermal unitth per pound degree Rankine [Btu th / (lb · °R)],joule per kilogram kelvin [J / (kg · K)],4.184E+03
+calorieIT per gram degree Celsius [cal IT / (g · °C)],joule per kilogram kelvin [J / (kg · K)],4.1868E+03
+calorieth per gram degree Celsius [cal th / (g · °C)],joule per kilogram kelvin [J / (kg · K)],4.184E+03
+calorieIT per gram kelvin [calIT / (g · K)],joule per kilogram kelvin [J / (kg · K)],4.1868E+03
+calorieth per gram kelvin [calth / (g · K)],joule per kilogram kelvin [J / (kg · K)],4.184E+03
+British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)],watt per meter kelvin [W / (m · K)],1.730735E+00
+British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)],watt per meter kelvin [W / (m · K)],1.729577E+00
+British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)],watt per meter kelvin [W / (m · K)],1.442279E-01
+British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)],watt per meter kelvin [W / (m · K)],1.441314E-01
+British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)],watt per meter kelvin [W / (m · K)],5.192204E+02
+British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)],watt per meter kelvin [W / (m · K)],5.188732E+02
+calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)],watt per meter kelvin [W / (m · K)],4.184E+02
+square foot per hour (ft2 / h),square meter per second (m2 / s),2.58064E-05
+clo,square meter kelvin per watt (m2 · K / W),1.55E-01
+degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT),square meter kelvin per watt (m2 · K / W),1.761102E-01
+degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth),square meter kelvin per watt (m2 · K / W),1.762280E-01
+degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT),kelvin per watt (K / W),1.895634E+00
+degree Fahrenheit hour per British thermal unitth (°F · h / Btu th),kelvin per watt (K / W),1.896903E+00
+degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT),kelvin per watt (K / W),5.265651E-04
+degree Fahrenheit second per British thermal unitth (°F · s / Btu th),kelvin per watt (K / W),5.269175E-04
+degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)],meter kelvin per watt (m · K / W),6.933472E+00
+degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)],meter kelvin per watt (m · K / W),6.938112E+04
+ångström (Å),meter (m),1.0E-10
+ångström (Å),nanometer (nm),1.0E-01
+astronomical unit (ua),meter (m),1.495979E+11
+chain (based on U.S. survey foot) (ch),meter (m),2.011684E+01
+fathom (based on U.S. survey foot),meter (m),1.828804E+00
+fermi,meter (m),1.0E-15
+fermi,femtometer (fm),1.0E+00
+foot (ft),meter (m),3.048E-01
+foot (U.S. survey) (ft),meter (m),3.048006E-01
+inch (in),meter (m),2.54E-02
+inch (in),centimeter (cm),2.54E+00
+kayser (K),reciprocal meter (m ^-1),1E+02
+light year (l.y.),meter (m),9.46073E+15
+microinch,meter (m),2.54E-08
+microinch,micrometer ( μm),2.54E-02
+micron (μ),meter (m),1.0E-06
+micron (μ),micrometer ( μm),1.0E+00
+mil (0.001 in),meter (m),2.54E-05
+mil (0.001 in),millimeter (mm),2.54E-02
+mile (mi),meter (m),1.609344E+03
+mile (mi),kilometer (km),1.609344E+00
+mile (based on U.S. survey foot) (mi),meter (m),1.609347E+03
+mile (based on U.S. survey foot) (mi),kilometer (km),1.609347E+00
+"mile, nautical",meter (m),1.852E+03
+parsec (pc),meter (m),3.085678E+16
+pica (computer) (1/6 in),meter (m),4.233333E-03
+pica (computer) (1/6 in),millimeter (mm),4.233333E+00
+pica (printer’s),meter (m),4.217518E-03
+pica (printer’s),millimeter (mm),4.217518E+00
+point (computer) (1/72 in),meter (m),3.527778E-04
+point (computer) (1/72 in),mil limeter (mm),3.527778E-01
+point (printer’s),meter (m),3.514598E-04
+point (printer’s),millimeter (mm),3.514598E-01
+rod (based on U.S. survey foot) (rd),meter (m),5.029210E+00
+yard (yd),meter (m),9.144E-01
+candela per square inch (cd / in2),candela per square meter (cd / m2),1.550003E+03
+footcandle,lux (lx),1.076391E+01
+footlambert,candela per square meter (cd / m2),3.426259E+00
+lambert,candela per square meter (cd / m2),3.183099E+03
+lumen per square foot (lm / ft2),lux (lx),1.076391E+01
+phot (ph),lux (lx),1.0E+04
+stilb (sb),candela per square meter (cd / m2),1.0E+04
+"carat, metric",kilogram (kg),2.0E-04
+"carat, metric",gram (g),2.0E-01
+grain (gr),kilogram (kg),6.479891E-05
+grain (gr),milligram (mg),6.479891E+01
+"hundredweight (long, 112 lb)",kilogram (kg),5.080235E+01
+"hundredweight (short, 100 lb)",kilogram (kg),4.535924E+01
+kilogram-force second squared per meter (kgf · s2 / m),kilogram (kg),9.80665E+00
+ounce (avoirdupois) (oz),kilogram (kg),2.834952E-02
+ounce (avoirdupois) (oz),gram (g),2.834952E+01
+ounce (troy or apothecary) (oz),kilogram (k g),3.110348E-02
+ounce (troy or apothecary) (oz),gram (g),3.110348E+01
+pennyweight (dwt),kilogram (kg),1.555174E-03
+pennyweight (dwt),gram (g),1.555174E+00
+pound (avoirdupois) (lb),kilogram (kg),4.535924E-01
+pound (troy or apothecary) (lb),kilogram (kg),3.732417E-01
+pound foot squared (lb · ft2),kilogram meter squared (kg · m2),4.214011E-02
+pound inch squared (lb · in2),kilogram meter squared (kg · m2),2.926397E-04
+slug (slug),kilogram (kg),1.459390E+01
+"ton, assay (AT)",kilogram (kg),2.916667E-02
+"ton, assay (AT)",gram (g),2.916667E+01
+"ton, long (2240 lb)",kilogram (kg),1.016047E+03
+"ton, metric (t)",kilogram (kg),1.0E+03
+tonne (called “metric ton” in U.S.) (t),kilogram (kg),1.0E+03
+"ton, short (2000 lb)",kilogram (kg),9.071847E+02
+ounce (avoirdupois) per square foot (oz / ft2),kilogram per square meter (kg / m2),3.051517E-01
+ounce (avoirdupois) per square inch (oz / in2),kilogram per square meter (kg / m2),4.394185E+01
+ounce (avoirdupois) per square yard (oz / yd2),kilogram per square meter (kg / m2),3.390575E-02
+pound per square foot (lb / ft2),kilogram per square meter (kg / m2),4.882428E+00
+pound per square inch (not pound force) (lb / in2),kilogram per square meter (kg / m2),7.030696E+02
+denier,kilogram per meter (kg / m),1.111111E-07
+denier,gram per meter (g / m),1.111111E-04
+pound per foot (lb / ft),kilogram per meter (kg / m),1.488164E+00
+pound per inch (lb / in),kilogram per meter (kg / m),1.785797E+01
+pound per yard (lb / yd),kilogram per meter (kg / m),4.960546E-01
+tex,kilogram per meter (kg / m),1.0E-06
+pound per hour (lb / h),kilogram per second (kg / s),1.259979E-04
+pound per minute (lb / min),kilogram per second (kg / s),7.559873E-03
+pound per second (lb / s),kilogram per second (kg / s),4.535924E-01
+"ton, short, per hour",kilogram per second (kg / s),2.519958E-01
+grain per gallon (U.S.) (gr / gal),kilogram per cubic meter (kg / m3),1.711806E-02
+grain per gallon (U.S.) (gr / gal),milligram per liter (mg / L),1.711806E+01
+gram per cubic centimeter (g / cm3),kilogram per cubic meter (kg / m3),1.0E+03
+ounce (avoirdupois) per cubic inch (oz / in3),kilogram per cubic meter (kg / m3),1.729994E+03
+ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal),kilogram per cubic meter (kg / m3),6.236023E+00
+ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal),gram per liter (g / L),6.236023E+00
+ounce (avoirdupois) per gallon (U.S.) (oz / gal),kilogram per cubic meter (kg / m3),7.489152E+00
+ounce (avoirdupois) per gallon (U.S.) (oz / gal),gram per liter (g / L),7.489152E+00
+pound per cubic foot (lb / ft3),kilogram per cubic meter (kg / m3),1.601846E+01
+pound per cubic inch (lb / in3),kilogram per cubic meter (kg / m3),2.767990E+04
+pound per cubic yard (lb / yd3),kilogram per cubic meter (kg / m3),5.932764E-01
+pound per gallon [Canadian and U.K. (Imperial)] (lb / gal),kilogram per cubic meter (kg / m3),9.977637E+01
+pound per gallon [Canadian and U.K. (Imperial)] (lb / gal),kilogram per liter (kg / L),9.977637E-02
+pound per gallon (U.S.) (lb / gal),kilogram per cubic meter (kg / m3),1.198264E+02
+pound per gallon (U.S.) (lb / gal),kilogram per liter (kg / L),1.198264E-01
+slug per cubic foot (slug / ft3),kilogram per cubic meter (kg / m3),5.153788E+02
+"ton, long, per cubic yard",kilogram per cubic meter (kg / m3),1.328939E+03
+"ton, short, per cubic yard",kilogram per cubic meter (kg / m3),1.186553E+03
+dyne centimeter (dyn · cm),newton meter (N · m),1.0E-07
+kilogram-force meter (kgf · m),newton meter (N · m),9.80665E+00
+ounce (avoirdupois)-force inch (ozf · in),newton meter (N ·m),7.061552E-03
+ounce (avoirdupois)-force inch (ozf · in),millinewton meter (mN · m),7.061552E+00
+pound-force foot (lbf · ft),newton meter (N · m),1.355818E+00
+pound-force inch (lbf · in),newton meter (N · m),1.129848E-01
+pound-force foot per inch (lbf · ft / in),newton meter per meter (N · m / m),5.337866E+01
+pound-force inch per inch (lbf · in / in),newton meter per meter (N · m / m),4.448222E+00
+darcy,meter squared (m2),9.869233E-13
+perm (0 °C),kilogram per pascal second square meter [kg / (Pa · s · m2)],5.72135E-11
+perm (23 °C),kilogram per pascal second square meter [kg / (Pa · s · m2)],5.74525E-11
+perm inch (0 °C),kilogram per pascal second meter [kg / (Pa · s · m)],1.45322E-12
+perm inch (23 °C),kilogram per pascal second meter [kg / (Pa · s · m)],1.45929E-12
+erg per second (erg / s),watt (W),1.0E-07
+foot pound-force per hour (ft · lbf / h),watt (W),3.766161E-04
+foot pound-force per minute (ft · lbf / min),watt (W),2.259697E-02
+foot pound-force per second (ft · lbf / s),watt (W),1.355818E+00
+horsepower (550 ft · lbf / s),watt (W),7.456999E+02
+horsepower (boiler),watt (W),9.80950E+03
+horsepower (electric),watt (W),7.46E+02
+horsepower (metric),watt (W),7.354988E+02
+horsepower (U.K.),watt (W),7.4570E+02
+horsepower (water),watt (W),7.46043E+02
+"atmosphere, standard (atm)",pascal (Pa),1.01325E+05
+"atmosphere, standard (atm)",kilopascal (kPa),1.01325E+02
+"atmosphere, technical (at)",pascal (Pa),9.80665E+04
+"atmosphere, technical (at)",kilopascal (kPa),9.80665E+01
+bar (bar),pascal (Pa),1.0E+05
+bar (bar),kilopascal (kPa),1.0E+02
+centimeter of mercury (0 °C),pascal (Pa),1.33322E+03
+centimeter of mercury (0 °C),kilopascal (kPa),1.33322E+00
+"centimeter of mercury, conventional (cmHg)",pascal (Pa),1.333224E+03
+"centimeter of mercury, conventional (cmHg)",kilopascal (kPa),1.333224E+00
+centimeter of water (4 °C),pascal (Pa),9.80638E+01
+"centimeter of water, conventional (cmH2O)",pascal (Pa),9.80665E+01
+dyne per square centimeter (dyn / cm2),pascal (Pa),1.0E-01
+"foot of mercury, conventional (ftHg)",pascal (Pa),4.063666E+04
+"foot of mercury, conventional (ftHg)",kilopascal (kPa),4.063666E+01
+foot of water (39.2 °F),pascal (Pa),2.98898E+03
+foot of water (39.2 °F),kilopascal (kPa),2.98898E+00
+"foot of water, conventional (ftH2O)",pascal (Pa),2.989067E+03
+"foot of water, conventional (ftH2O)",kilopascal (kPa),2.989067E+00
+gram-force per square centimeter (gf / cm2),pascal (Pa),9.80665E+01
+inch of mercury (32 °F),pascal (Pa),3.38638E+03
+inch of mercury (32 °F),kilopascal (kPa),3.38638E+00
+inch of mercury (60 °F),pascal (Pa),3.37685E+03
+inch of mercury (60 °F),kilopascal (kPa),3.37685E+00
+"inch of mercury, conventional (inHg)",pascal (Pa),3.386389E+03
+"inch of mercury, conventional (inHg)",kilopascal (kPa),3.386389E+00
+inch of water (39.2 °F),pascal (Pa),2.49082E+02
+inch of water (60 °F),pascal (Pa),2.4884E+02
+"inch of water, conventional (inH2O)",pascal (Pa),2.490889E+02
+kilogram-force per square centimeter (kgf / cm2),pascal (Pa),9.80665E+04
+kilogram-force per square centimeter (kgf / cm2),kilopascal (kPa),9.80665E+01
+kilogram-force per square meter (kgf / m2),pascal (Pa),9.80665E+00
+kilogram-force per square millimeter (kgf / mm2),pascal (Pa),9.80665E+06
+kilogram-force per square millimeter (kgf / mm2),megapascal (MPa),9.80665E+00
+kip per square inch (ksi) (kip / in2),pascal (Pa),6.894757E+06
+kip per square inch (ksi) (kip / in2),kilopascal (kPa),6.894757E+03
+millibar (mbar),pascal (Pa),1.0E+02
+millibar (mbar),kilopascal (kPa),1.0E-01
+"millimeter of mercury, conventional (mmHg)",pascal (Pa),1.333224E+02
+"millimeter of water, conventional (mmH2O)",pascal (Pa),9.80665E+00
+poundal per square foot,pascal (Pa),1.488164E+00
+pound-force per square foot (lbf / ft2),pascal (Pa),4.788026E+01
+pound-force per square inch (psi) (lbf / in2),pascal (Pa),6.894757E+03
+pound-force per square inch (psi) (lbf / in2),kilopascal (kPa),6.894757E+00
+psi (pound-force per square inch) (lbf / in2),pascal (Pa),6.894757E+03
+psi (pound-force per square inch) (lbf / in2),kilopascal (kPa),6.894757E+00
+torr (Torr),pascal (Pa),1.333224E+02
+curie (Ci),becquerel (Bq),3.7E+10
+rad (absorbed dose) (rad),gray (Gy),1.0E-02
+rem (rem),sievert (Sv),1.0E-02
+roentgen (R),coulomb per kilogram (C / kg),2.58E-04
+degree Celsius (°C) [temperature],kelvin (K) [temperature],x + 273.15
+degree centigrade [temperature],degree Celsius (°C) [temperature],x
+degree Fahrenheit (°F) [temperature],degree Celsius (°C) [temperature],(x - 32) / 1.8
+degree Fahrenheit (°F) [temperature],kelvin (K) [temperature],(x + 459.67) / 1.8
+degree Rankine (°R) [temperature],kelvin (K) [temperature],x / 1.8
+kelvin (K) [temperature],degree Celsius (°C) [temperature],x - 273.15
+degree Celsius (°C) [temperature interval],kelvin (K) [temperature interval],1.0E+00
+degree centigrade [temperature interval],degree Celsius (°C) [temperature interval],1.0E+00
+degree Fahrenheit (°F) [temperature interval],degree Celsius (°C) [temperature interval],5.555556E-01
+degree Fahrenheit (°F) [temperature interval],kelvin (K) [temperature interval],5.555556E-01
+degree Rankine (°R) [temperature interval],kelvin (K) [temperature interval],5.555556E-01
+day (d),second (s),8.64E+04
+day (sidereal),second (s),8.616409E+04
+hour (h),second (s),3.6E+03
+hour (sidereal),second (s),3.590170E+03
+minute (min),second (s),6.0E+01
+minute (sidereal),second (s),5.983617E+01
+second (sidereal),second (s),9.972696E-01
+shake,second (s),1.0E-08
+shake,nanosecond (ns),1.0E+01
+year (365 days),second (s),3.1536E+07
+year (sidereal),second (s),3.155815E+07
+year (tropical),second (s),3.155693E+07
+foot per hour (ft / h),meter per second (m / s),8.466667E-05
+foot per minute (ft / min),meter per second (m / s),5.08E-03
+foot per second (ft / s),meter per second (m / s),3.048E-01
+inch per second (in / s),meter per second (m / s),2.54E-02
+kilometer per hour (km / h),meter per second (m / s),2.777778E-01
+knot (nautical mile per hour),meter per second (m / s),5.144444E-01
+mile per hour (mi / h),meter per second (m / s),4.4704E-01
+mile per hour (mi / h),kilometer per hour (km / h),1.609344E+00
+mile per minute (mi / min),meter per second (m / s),2.68224E+01
+mile per second (mi / s),meter per second (m / s),1.609344E+03
+revolution per minute (rpm) (r / min),radian per second (rad / s),1.047198E-01
+rpm (revolution per minute) (r / min),radian per second (rad / s),1.047198E-01
+centipoise (cP),pascal second (Pa · s),1.0E-03
+poise (P),pascal second (Pa · s),1.0E-01
+poundal second per square foot,pascal second (Pa · s),1.488164E+00
+pound-force second per square foot (lbf · s / ft2),pascal second (Pa · s),4.788026E+01
+pound-force second per square inch (lbf · s / in2),pascal second (Pa · s),6.894757E+03
+pound per foot hour [lb / (ft · h)],pascal second (Pa · s),4.133789E-04
+pound per foot second [lb / (ft · s)],pascal second (Pa · s),1.488164E+00
+rhe,reciprocal pascal second (Pa · s)^-1,1.0E+01
+slug per foot second [slug / (ft · s)],pascal second (Pa · s),4.788026E+01
+centistokes (cSt),meter squared per second (m2 / s),1.0E-06
+square foot per second (ft2 / s),meter squared per second (m2 / s),9.290304E-02
+stokes (St),meter squared per second (m2 / s),1.0E-04
+acre-foot (based on U.S. survey foot),cubic meter (m3),1.233489E+03
+"barrel [for petroleum, 42 gallons (U.S.)](bbl)",cubic meter (m3),1.589873E-01
+"barrel [for petroleum, 42 gallons (U.S.)](bbl)",liter (L),1.589873E+02
+bushel (U.S.) (bu),cubic meter (m3),3.523907E-02
+bushel (U.S.) (bu),liter (L),3.523907E+01
+cord (128 ft3),cubic meter (m3),3.624556E+00
+cubic foot (ft3),cubic meter (m3),2.831685E-02
+cubic inch (in3),cubic meter (m3),1.638706E-05
+cubic mile (mi3),cubic meter (m3),4.168182E+09
+cubic yard (yd3),cubic meter (m3),7.645549E-01
+cup (U.S.),cubic meter (m3),2.365882E-04
+cup (U.S.),liter (L),2.365882E-01
+cup (U.S.),milliliter (mL),2.365882E+02
+fluid ounce (U.S.) (fl oz),cubic meter (m3),2.957353E-05
+fluid ounce (U.S.) (fl oz),milliliter (mL),2.957353E+01
+gallon [Canadian and U.K. (Imperial)] (gal),cubic meter (m3),4.54609E-03
+gallon [Canadian and U.K. (Imperial)] (gal),liter (L),4.54609E+00
+gallon (U.S.) (gal),cubic meter (m3),3.785412E-03
+gallon (U.S.) (gal),liter (L),3.785412E+00
+gill [Canadian and U.K. (Imperial)] (gi),cubic meter (m3),1.420653E-04
+gill [Canadian and U.K. (Imperial)] (gi),liter (L),1.420653E-01
+gill (U.S.) (gi),cubic meter (m3),1.182941E-04
+gill (U.S.) (gi),liter (L),1.182941E-01
+liter (L),cubic meter (m3),1.0E-03
+ounce [Canadian and U.K. fluid (Imperial)] (fl oz),cubic meter (m3),2.841306E-05
+ounce [Canadian and U.K. fluid (Imperial)] (fl oz),milliliter (mL),2.841306E+01
+ounce (U.S. fluid) (fl oz),cubic meter (m3),2.957353E-05
+ounce (U.S. fluid) (fl oz),milliliter (mL),2.957353E+01
+peck (U.S.) (pk),cubic meter (m3),8.809768E-03
+peck (U.S.) (pk),liter (L),8.809768E+00
+pint (U.S. dry) (dry pt),cubic meter (m3),5.506105E-04
+pint (U.S. dry) (dry pt),liter (L),5.506105E-01
+pint (U.S. liquid) (liq pt),cubic meter (m3),4.731765E-04
+pint (U.S. liquid) (liq pt),liter (L),4.731765E-01
+quart (U.S. dry) (dry qt),cubic meter (m3),1.101221E-03
+quart (U.S. dry) (dry qt),liter (L),1.101221E+00
+quart (U.S. liquid) (liq qt),cubic meter (m3),9.463529E-04
+quart (U.S. liquid) (liq qt),liter (L),9.463529E-01
+stere (st),cubic meter (m3),1.0E+00
+tablespoon,cubic meter (m3),1.478676E-05
+tablespoon,milliliter (mL),1.478676E+01
+teaspoon,cubic meter (m3),4.928922E-06
+teaspoon,milliliter (mL),4.928922E+00
+"ton, register",cubic meter (m3),2.831685E+00
+cubic foot per minute (ft3 / min),cubic meter per second (m3 / s),4.719474E-04
+cubic foot per minute (ft3 / min),liter per second (L / s),4.719474E-01
+cubic foot per second (ft3 / s),cubic meter per second (m3 / s),2.831685E-02
+cubic inch per minute (in3 / min),cubic meter per second (m3 / s),2.731177E-07
+cubic yard per minute (yd3 / min),cubic meter per second (m3 / s),1.274258E-02
+gallon (U.S.) per day (gal / d),cubic meter per second (m3 / s),4.381264E-08
+gallon (U.S.) per day (gal / d),liter per second (L / s),4.381264E-05
+gallon (U.S.) per minute (gpm) (gal / min),cubic meter per second (m3 / s),6.309020E-05
+gallon (U.S.) per minute (gpm) (gal / min),liter per second (L / s),6.309020E-02

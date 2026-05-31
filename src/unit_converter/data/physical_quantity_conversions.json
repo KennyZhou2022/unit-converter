@@ -1,0 +1,4322 @@
+{
+  "version": 1,
+  "source": {
+    "name": "NIST Special Publication 811 (2008), Appendix B.9",
+    "document": "standards/raw/nistspecialpublication811e2008.pdf",
+    "appendix": "B.9",
+    "pages": "57-69"
+  },
+  "appendix_relationship": {
+    "b8": "Appendix B.8 lists the same units alphabetically.",
+    "b9": "Appendix B.9 lists the same units alphabetically within kinds of quantities and fields of science.",
+    "selected_source": "B.9"
+  },
+  "categories": [
+    {
+      "name": "ACCELERATION",
+      "slug": "acceleration",
+      "conversions": [
+        {
+          "from": "acceleration of free fall, standard (gn)",
+          "to": "meter per second squared (m / s2)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "acceleration of free fall, standard (gn) -> meter per second squared (m / s2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "foot per second squared (ft / s2)",
+          "to": "meter per second squared (m / s2)",
+          "rule": "3.048E-01",
+          "rule_type": "factor",
+          "display_label": "foot per second squared (ft / s2) -> meter per second squared (m / s2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "gal (Gal)",
+          "to": "meter per second squared (m / s2)",
+          "rule": "1.0E-02",
+          "rule_type": "factor",
+          "display_label": "gal (Gal) -> meter per second squared (m / s2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "inch per second squared (in / s2)",
+          "to": "meter per second squared (m / s2)",
+          "rule": "2.54E-02",
+          "rule_type": "factor",
+          "display_label": "inch per second squared (in / s2) -> meter per second squared (m / s2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        }
+      ]
+    },
+    {
+      "name": "ANGLE",
+      "slug": "angle",
+      "conversions": [
+        {
+          "from": "degree (°)",
+          "to": "radian (rad)",
+          "rule": "1.745329E-02",
+          "rule_type": "factor",
+          "display_label": "degree (°) -> radian (rad)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "gon (also called grade) (gon)",
+          "to": "radian (rad)",
+          "rule": "1.570796E-02",
+          "rule_type": "factor",
+          "display_label": "gon (also called grade) (gon) -> radian (rad)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "gon (also called grade) (gon)",
+          "to": "degree (°)",
+          "rule": "9.0E-01",
+          "rule_type": "factor",
+          "display_label": "gon (also called grade) (gon) -> degree (°)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "mil",
+          "to": "radian (rad)",
+          "rule": "9.817477E-04",
+          "rule_type": "factor",
+          "display_label": "mil -> radian (rad)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "mil",
+          "to": "degree (°)",
+          "rule": "5.625E-02",
+          "rule_type": "factor",
+          "display_label": "mil -> degree (°)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "minute (')",
+          "to": "radian (rad)",
+          "rule": "2.908882E-04",
+          "rule_type": "factor",
+          "display_label": "minute (') -> radian (rad)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "revolution (r)",
+          "to": "radian (rad)",
+          "rule": "6.283185E+00",
+          "rule_type": "factor",
+          "display_label": "revolution (r) -> radian (rad)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "second (\")",
+          "to": "radian (rad)",
+          "rule": "4.848137E-06",
+          "rule_type": "factor",
+          "display_label": "second (\") -> radian (rad)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        }
+      ]
+    },
+    {
+      "name": "AREA AND SECOND MOMENT OF AREA",
+      "slug": "area-and-second-moment-of-area",
+      "conversions": [
+        {
+          "from": "acre (based on U.S. survey foot)",
+          "to": "square meter (m2)",
+          "rule": "4.046873E+03",
+          "rule_type": "factor",
+          "display_label": "acre (based on U.S. survey foot) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "are (a)",
+          "to": "square meter (m2)",
+          "rule": "1.0E+02",
+          "rule_type": "factor",
+          "display_label": "are (a) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "barn (b)",
+          "to": "square meter (m2)",
+          "rule": "1.0E-28",
+          "rule_type": "factor",
+          "display_label": "barn (b) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "circular mil",
+          "to": "square meter (m2)",
+          "rule": "5.067075E-10",
+          "rule_type": "factor",
+          "display_label": "circular mil -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "circular mil",
+          "to": "square millimeter (mm2)",
+          "rule": "5.067075E-04",
+          "rule_type": "factor",
+          "display_label": "circular mil -> square millimeter (mm2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "foot to the fourth power (ft4)",
+          "to": "meter to the fourth power (m4)",
+          "rule": "8.630975E-03",
+          "rule_type": "factor",
+          "display_label": "foot to the fourth power (ft4) -> meter to the fourth power (m4)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "hectare (ha)",
+          "to": "square meter (m2)",
+          "rule": "1.0E+04",
+          "rule_type": "factor",
+          "display_label": "hectare (ha) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "inch to the fourth power (in4)",
+          "to": "meter to the fourth power (m4)",
+          "rule": "4.162314E-07",
+          "rule_type": "factor",
+          "display_label": "inch to the fourth power (in4) -> meter to the fourth power (m4)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square foot (ft2)",
+          "to": "square meter (m2)",
+          "rule": "9.290304E-02",
+          "rule_type": "factor",
+          "display_label": "square foot (ft2) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square inch (in2)",
+          "to": "square meter (m2)",
+          "rule": "6.4516E-04",
+          "rule_type": "factor",
+          "display_label": "square inch (in2) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square inch (in2)",
+          "to": "square centimeter (cm2)",
+          "rule": "6.4516E+00",
+          "rule_type": "factor",
+          "display_label": "square inch (in2) -> square centimeter (cm2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square mile (mi2)",
+          "to": "square meter (m2)",
+          "rule": "2.589988E+06",
+          "rule_type": "factor",
+          "display_label": "square mile (mi2) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square mile (mi2)",
+          "to": "square kilometer (km2)",
+          "rule": "2.589988E+00",
+          "rule_type": "factor",
+          "display_label": "square mile (mi2) -> square kilometer (km2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square mile (based on U.S. survey foot) (mi2)",
+          "to": "square meter (m2)",
+          "rule": "2.589998E+06",
+          "rule_type": "factor",
+          "display_label": "square mile (based on U.S. survey foot) (mi2) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square mile (based on U.S. survey foot) (mi2)",
+          "to": "square kilometer (km2)",
+          "rule": "2.589998E+00",
+          "rule_type": "factor",
+          "display_label": "square mile (based on U.S. survey foot) (mi2) -> square kilometer (km2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "square yard (yd2)",
+          "to": "square meter (m2)",
+          "rule": "8.361274E-01",
+          "rule_type": "factor",
+          "display_label": "square yard (yd2) -> square meter (m2)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        }
+      ]
+    },
+    {
+      "name": "ELECTRICITY and MAGNETISM",
+      "slug": "electricity-and-magnetism",
+      "conversions": [
+        {
+          "from": "abampere",
+          "to": "ampere (A)",
+          "rule": "1.0E+01",
+          "rule_type": "factor",
+          "display_label": "abampere -> ampere (A)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "abcoulomb",
+          "to": "coulomb (C)",
+          "rule": "1.0E+01",
+          "rule_type": "factor",
+          "display_label": "abcoulomb -> coulomb (C)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "abfarad",
+          "to": "farad (F)",
+          "rule": "1.0E+09",
+          "rule_type": "factor",
+          "display_label": "abfarad -> farad (F)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "abhenry",
+          "to": "henry (H)",
+          "rule": "1.0E-09",
+          "rule_type": "factor",
+          "display_label": "abhenry -> henry (H)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "abmho",
+          "to": "siemens (S)",
+          "rule": "1.0E+09",
+          "rule_type": "factor",
+          "display_label": "abmho -> siemens (S)",
+          "source_appendix": "B.9",
+          "source_page": 69
+        },
+        {
+          "from": "abohm",
+          "to": "ohm (Ω)",
+          "rule": "1.0E-09",
+          "rule_type": "factor",
+          "display_label": "abohm -> ohm (Ω)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "abvolt",
+          "to": "volt (V)",
+          "rule": "1.0E-08",
+          "rule_type": "factor",
+          "display_label": "abvolt -> volt (V)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ampere hour (A · h)",
+          "to": "coulomb (C)",
+          "rule": "3.6E+03",
+          "rule_type": "factor",
+          "display_label": "ampere hour (A · h) -> coulomb (C)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "biot (Bi)",
+          "to": "ampere (A)",
+          "rule": "1.0E+01",
+          "rule_type": "factor",
+          "display_label": "biot (Bi) -> ampere (A)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "EMU of capacitance (abfarad)",
+          "to": "farad (F)",
+          "rule": "1.0E+09",
+          "rule_type": "factor",
+          "display_label": "EMU of capacitance (abfarad) -> farad (F)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "EMU of current (abampere)",
+          "to": "ampere (A)",
+          "rule": "1.0E+01",
+          "rule_type": "factor",
+          "display_label": "EMU of current (abampere) -> ampere (A)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "EMU of electric potential (abvolt)",
+          "to": "volt (V)",
+          "rule": "1.0E-08",
+          "rule_type": "factor",
+          "display_label": "EMU of electric potential (abvolt) -> volt (V)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "EMU of inductance (abhenry)",
+          "to": "henry (H)",
+          "rule": "1.0E-09",
+          "rule_type": "factor",
+          "display_label": "EMU of inductance (abhenry) -> henry (H)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "EMU of resistance (abohm)",
+          "to": "ohm (Ω)",
+          "rule": "1.0E-09",
+          "rule_type": "factor",
+          "display_label": "EMU of resistance (abohm) -> ohm (Ω)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ESU of capacitance (statfarad)",
+          "to": "farad (F)",
+          "rule": "1.112650E-12",
+          "rule_type": "factor",
+          "display_label": "ESU of capacitance (statfarad) -> farad (F)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ESU of current (statampere)",
+          "to": "ampere (A)",
+          "rule": "3.335641E-10",
+          "rule_type": "factor",
+          "display_label": "ESU of current (statampere) -> ampere (A)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ESU of electric potential (statvolt)",
+          "to": "volt (V)",
+          "rule": "2.997925E+02",
+          "rule_type": "factor",
+          "display_label": "ESU of electric potential (statvolt) -> volt (V)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ESU of inductance (stathenry)",
+          "to": "henry (H)",
+          "rule": "8.987552E+11",
+          "rule_type": "factor",
+          "display_label": "ESU of inductance (stathenry) -> henry (H)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ESU of resistance (statohm)",
+          "to": "ohm ( Ω)",
+          "rule": "8.987552E+11",
+          "rule_type": "factor",
+          "display_label": "ESU of resistance (statohm) -> ohm ( Ω)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "faraday (based on carbon 12)",
+          "to": "coulomb (C)",
+          "rule": "9.648534E+04",
+          "rule_type": "factor",
+          "display_label": "faraday (based on carbon 12) -> coulomb (C)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "franklin (Fr)",
+          "to": "coulomb (C)",
+          "rule": "3.335641E-10",
+          "rule_type": "factor",
+          "display_label": "franklin (Fr) -> coulomb (C)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "gamma (γ)",
+          "to": "tesla (T)",
+          "rule": "1.0E-09",
+          "rule_type": "factor",
+          "display_label": "gamma (γ) -> tesla (T)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "gauss (Gs, G)",
+          "to": "tesla (T)",
+          "rule": "1.0E-04",
+          "rule_type": "factor",
+          "display_label": "gauss (Gs, G) -> tesla (T)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "gilbert (Gi)",
+          "to": "ampere (A)",
+          "rule": "7.957747E-01",
+          "rule_type": "factor",
+          "display_label": "gilbert (Gi) -> ampere (A)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "maxwell (Mx)",
+          "to": "weber (Wb)",
+          "rule": "1.0E-08",
+          "rule_type": "factor",
+          "display_label": "maxwell (Mx) -> weber (Wb)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "mho",
+          "to": "siemens (S)",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "mho -> siemens (S)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "oersted (Oe)",
+          "to": "ampere per meter (A / m)",
+          "rule": "7.957747E+01",
+          "rule_type": "factor",
+          "display_label": "oersted (Oe) -> ampere per meter (A / m)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ohm centimeter (Ω · cm)",
+          "to": "ohm meter ( Ω · m)",
+          "rule": "1.0E-02",
+          "rule_type": "factor",
+          "display_label": "ohm centimeter (Ω · cm) -> ohm meter ( Ω · m)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ohm circular-mil per foot",
+          "to": "ohm meter ( Ω · m)",
+          "rule": "1.662426E-09",
+          "rule_type": "factor",
+          "display_label": "ohm circular-mil per foot -> ohm meter ( Ω · m)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "ohm circular-mil per foot",
+          "to": "ohm square millimeter per meter (Ω · mm2 / m)",
+          "rule": "1.662426E-03",
+          "rule_type": "factor",
+          "display_label": "ohm circular-mil per foot -> ohm square millimeter per meter (Ω · mm2 / m)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "statampere",
+          "to": "ampere (A)",
+          "rule": "3.335641E-10",
+          "rule_type": "factor",
+          "display_label": "statampere -> ampere (A)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "statcoulomb",
+          "to": "coulomb (C)",
+          "rule": "3.335641E-10",
+          "rule_type": "factor",
+          "display_label": "statcoulomb -> coulomb (C)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "statfarad",
+          "to": "farad (F)",
+          "rule": "1.112650E-12",
+          "rule_type": "factor",
+          "display_label": "statfarad -> farad (F)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "stathenry",
+          "to": "henry (H)",
+          "rule": "8.987552E+11",
+          "rule_type": "factor",
+          "display_label": "stathenry -> henry (H)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "statmho",
+          "to": "siemens (S)",
+          "rule": "1.112650E-12",
+          "rule_type": "factor",
+          "display_label": "statmho -> siemens (S)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "statohm",
+          "to": "ohm ( Ω)",
+          "rule": "8.987552E+11",
+          "rule_type": "factor",
+          "display_label": "statohm -> ohm ( Ω)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "statvolt",
+          "to": "volt (V)",
+          "rule": "2.997925E+02",
+          "rule_type": "factor",
+          "display_label": "statvolt -> volt (V)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "unit pole",
+          "to": "weber (Wb)",
+          "rule": "1.256637E-07",
+          "rule_type": "factor",
+          "display_label": "unit pole -> weber (Wb)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        }
+      ]
+    },
+    {
+      "name": "ENERGY (includes WORK)",
+      "slug": "energy",
+      "conversions": [
+        {
+          "from": "British thermal unitIT (BtuIT)",
+          "to": "joule (J)",
+          "rule": "1.055056E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT (BtuIT) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "British thermal unitth (Btuth)",
+          "to": "joule (J)",
+          "rule": "1.054350E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth (Btuth) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "British thermal unit (mean) (Btu)",
+          "to": "joule (J)",
+          "rule": "1.05587E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unit (mean) (Btu) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "British thermal unit (39 °F) (Btu)",
+          "to": "joule (J)",
+          "rule": "1.05967E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unit (39 °F) (Btu) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "British thermal unit (59 °F) (Btu)",
+          "to": "joule (J)",
+          "rule": "1.05480E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unit (59 °F) (Btu) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "British thermal unit (60 °F) (Btu)",
+          "to": "joule (J)",
+          "rule": "1.05468E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unit (60 °F) (Btu) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorieIT (calIT)",
+          "to": "joule (J)",
+          "rule": "4.1868E+00",
+          "rule_type": "factor",
+          "display_label": "calorieIT (calIT) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorieth (calth)",
+          "to": "joule (J)",
+          "rule": "4.184E+00",
+          "rule_type": "factor",
+          "display_label": "calorieth (calth) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorie (mean) (cal)",
+          "to": "joule (J)",
+          "rule": "4.19002E+00",
+          "rule_type": "factor",
+          "display_label": "calorie (mean) (cal) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorie (15 °C) (cal15)",
+          "to": "joule (J)",
+          "rule": "4.18580E+00",
+          "rule_type": "factor",
+          "display_label": "calorie (15 °C) (cal15) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorie (20 °C) (cal20)",
+          "to": "joule (J)",
+          "rule": "4.18190E+00",
+          "rule_type": "factor",
+          "display_label": "calorie (20 °C) (cal20) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorieIT, kilogram (nutrition)",
+          "to": "joule (J)",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "calorieIT, kilogram (nutrition) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorieth, kilogram (nutrition)",
+          "to": "joule (J)",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "calorieth, kilogram (nutrition) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "calorie (mean), kilogram (nutrition)",
+          "to": "joule (J)",
+          "rule": "4.19002E+03",
+          "rule_type": "factor",
+          "display_label": "calorie (mean), kilogram (nutrition) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "electronvolt (eV)",
+          "to": "joule (J)",
+          "rule": "1.602176E-19",
+          "rule_type": "factor",
+          "display_label": "electronvolt (eV) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "erg (erg)",
+          "to": "joule (J)",
+          "rule": "1.0E-07",
+          "rule_type": "factor",
+          "display_label": "erg (erg) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "foot poundal",
+          "to": "joule (J)",
+          "rule": "4.214011E-02",
+          "rule_type": "factor",
+          "display_label": "foot poundal -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 70
+        },
+        {
+          "from": "foot pound-force (ft · lbf)",
+          "to": "joule (J)",
+          "rule": "1.355818E+00",
+          "rule_type": "factor",
+          "display_label": "foot pound-force (ft · lbf) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilocalorieIT (kcalIT)",
+          "to": "joule (J)",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "kilocalorieIT (kcalIT) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilocalorieth (kcalth)",
+          "to": "joule (J)",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "kilocalorieth (kcalth) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilocalorie (mean) (kcal)",
+          "to": "joule (J)",
+          "rule": "4.19002E+03",
+          "rule_type": "factor",
+          "display_label": "kilocalorie (mean) (kcal) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilowatt hour (kW · h)",
+          "to": "joule (J)",
+          "rule": "3.6E+06",
+          "rule_type": "factor",
+          "display_label": "kilowatt hour (kW · h) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilowatt hour (kW · h)",
+          "to": "megajoule (MJ)",
+          "rule": "3.6E+00",
+          "rule_type": "factor",
+          "display_label": "kilowatt hour (kW · h) -> megajoule (MJ)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "quad (1015 BtuIT)",
+          "to": "joule (J)",
+          "rule": "1.055056E+18",
+          "rule_type": "factor",
+          "display_label": "quad (1015 BtuIT) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "therm (EC)",
+          "to": "joule (J)",
+          "rule": "1.05506E+08",
+          "rule_type": "factor",
+          "display_label": "therm (EC) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "therm (U.S.)",
+          "to": "joule (J)",
+          "rule": "1.054804E+08",
+          "rule_type": "factor",
+          "display_label": "therm (U.S.) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "ton of TNT (energy equivalent)",
+          "to": "joule (J)",
+          "rule": "4.184E+09",
+          "rule_type": "factor",
+          "display_label": "ton of TNT (energy equivalent) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "watt hour (W · h)",
+          "to": "joule (J)",
+          "rule": "3.6E+03",
+          "rule_type": "factor",
+          "display_label": "watt hour (W · h) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "watt second (W · s)",
+          "to": "joule (J)",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "watt second (W · s) -> joule (J)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        }
+      ]
+    },
+    {
+      "name": "ENERGY DIVIDED BY AREA TIME",
+      "slug": "energy-divided-by-area-time",
+      "conversions": [
+        {
+          "from": "erg per square centimeter second [erg / (cm2 · s)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.0E-03",
+          "rule_type": "factor",
+          "display_label": "erg per square centimeter second [erg / (cm2 · s)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "watt per square centimeter (W / cm2)",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.0E+04",
+          "rule_type": "factor",
+          "display_label": "watt per square centimeter (W / cm2) -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "watt per square inch (W / in2)",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.550003E+03",
+          "rule_type": "factor",
+          "display_label": "watt per square inch (W / in2) -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        }
+      ]
+    },
+    {
+      "name": "FORCE",
+      "slug": "force",
+      "conversions": [
+        {
+          "from": "dyne (dyn)",
+          "to": "newton (N)",
+          "rule": "1.0E-05",
+          "rule_type": "factor",
+          "display_label": "dyne (dyn) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilogram-force (kgf)",
+          "to": "newton (N)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "kilogram-force (kgf) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kilopond (kilogram-force) (kp)",
+          "to": "newton (N)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "kilopond (kilogram-force) (kp) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kip (1 kip = 1000 lbf)",
+          "to": "newton (N)",
+          "rule": "4.448222E+03",
+          "rule_type": "factor",
+          "display_label": "kip (1 kip = 1000 lbf) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "kip (1 kip = 1000 lbf)",
+          "to": "kilonewton (kN)",
+          "rule": "4.448222E+00",
+          "rule_type": "factor",
+          "display_label": "kip (1 kip = 1000 lbf) -> kilonewton (kN)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "ounce (avoirdupois)-force (ozf)",
+          "to": "newton (N)",
+          "rule": "2.780139E-01",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois)-force (ozf) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "poundal",
+          "to": "newton (N)",
+          "rule": "1.382550E-01",
+          "rule_type": "factor",
+          "display_label": "poundal -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "pound-force (lbf)",
+          "to": "newton (N)",
+          "rule": "4.448222E+00",
+          "rule_type": "factor",
+          "display_label": "pound-force (lbf) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "pound-force per pound (lbf / lb) (thrust to mass ratio)",
+          "to": "newton per kilogram (N / kg)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "pound-force per pound (lbf / lb) (thrust to mass ratio) -> newton per kilogram (N / kg)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "ton-force (2000 lbf)",
+          "to": "newton (N)",
+          "rule": "8.896443E+03",
+          "rule_type": "factor",
+          "display_label": "ton-force (2000 lbf) -> newton (N)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "ton-force (2000 lbf)",
+          "to": "kilonewton (kN)",
+          "rule": "8.896443E+00",
+          "rule_type": "factor",
+          "display_label": "ton-force (2000 lbf) -> kilonewton (kN)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        }
+      ]
+    },
+    {
+      "name": "FORCE DIVIDED BY LENGTH",
+      "slug": "force-divided-by-length",
+      "conversions": [
+        {
+          "from": "pound-force per foot (lbf / ft)",
+          "to": "newton per meter (N / m)",
+          "rule": "1.459390E+01",
+          "rule_type": "factor",
+          "display_label": "pound-force per foot (lbf / ft) -> newton per meter (N / m)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        },
+        {
+          "from": "pound-force per inch (lbf / in)",
+          "to": "newton per meter (N / m)",
+          "rule": "1.751268E+02",
+          "rule_type": "factor",
+          "display_label": "pound-force per inch (lbf / in) -> newton per meter (N / m)",
+          "source_appendix": "B.9",
+          "source_page": 71
+        }
+      ]
+    },
+    {
+      "name": "HEAT",
+      "slug": "heat",
+      "conversions": [
+        {
+          "from": "British thermal unitIT per cubic foot (BtuIT / ft3)",
+          "to": "joule per cubic meter (J / m3)",
+          "rule": "3.725895E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per cubic foot (BtuIT / ft3) -> joule per cubic meter (J / m3)",
+          "source_appendix": "B.9",
+          "source_page": 71,
+          "subcategory": "Available Energy"
+        },
+        {
+          "from": "British thermal unitth per cubic foot (Btuth / ft3)",
+          "to": "joule per cubic meter (J / m3)",
+          "rule": "3.723403E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per cubic foot (Btuth / ft3) -> joule per cubic meter (J / m3)",
+          "source_appendix": "B.9",
+          "source_page": 71,
+          "subcategory": "Available Energy"
+        },
+        {
+          "from": "British thermal unitIT per pound (BtuIT / lb)",
+          "to": "joule per kilogram (J / kg)",
+          "rule": "2.326E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per pound (BtuIT / lb) -> joule per kilogram (J / kg)",
+          "source_appendix": "B.9",
+          "source_page": 71,
+          "subcategory": "Available Energy"
+        },
+        {
+          "from": "British thermal unitth per pound (Btuth / lb)",
+          "to": "joule per kilogram (J / kg)",
+          "rule": "2.324444E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per pound (Btuth / lb) -> joule per kilogram (J / kg)",
+          "source_appendix": "B.9",
+          "source_page": 71,
+          "subcategory": "Available Energy"
+        },
+        {
+          "from": "calorieIT per gram (calIT / g)",
+          "to": "joule per kilogram (J / kg)",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "calorieIT per gram (calIT / g) -> joule per kilogram (J / kg)",
+          "source_appendix": "B.9",
+          "source_page": 71,
+          "subcategory": "Available Energy"
+        },
+        {
+          "from": "calorieth per gram (calth / g)",
+          "to": "joule per kilogram (J / kg)",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "calorieth per gram (calth / g) -> joule per kilogram (J / kg)",
+          "source_appendix": "B.9",
+          "source_page": 71,
+          "subcategory": "Available Energy"
+        },
+        {
+          "from": "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+          "to": "watt per square meter kelvin [W / (m2 · K)]",
+          "rule": "5.678263E+00",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)] -> watt per square meter kelvin [W / (m2 · K)]",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Coefficient of Heat Transfer"
+        },
+        {
+          "from": "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+          "to": "watt per square meter kelvin [W / (m2 · K)]",
+          "rule": "5.674466E+00",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)] -> watt per square meter kelvin [W / (m2 · K)]",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Coefficient of Heat Transfer"
+        },
+        {
+          "from": "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+          "to": "watt per square meter kelvin [W / (m2 · K)]",
+          "rule": "2.044175E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)] -> watt per square meter kelvin [W / (m2 · K)]",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Coefficient of Heat Transfer"
+        },
+        {
+          "from": "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+          "to": "watt per square meter Kelvin [W / (m2 · K)]",
+          "rule": "2.042808E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)] -> watt per square meter Kelvin [W / (m2 · K)]",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Coefficient of Heat Transfer"
+        },
+        {
+          "from": "British thermal unitIT per square foot (Btu IT / ft2)",
+          "to": "joule per square meter (J / m2)",
+          "rule": "1.135653E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per square foot (Btu IT / ft2) -> joule per square meter (J / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat"
+        },
+        {
+          "from": "British thermal unitth per square foot (Btu th / ft2)",
+          "to": "joule per square meter (J / m2)",
+          "rule": "1.134893E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per square foot (Btu th / ft2) -> joule per square meter (J / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat"
+        },
+        {
+          "from": "calorieth per square centimeter (calth / cm2)",
+          "to": "joule per square meter (J / m2)",
+          "rule": "4.184E+04",
+          "rule_type": "factor",
+          "display_label": "calorieth per square centimeter (calth / cm2) -> joule per square meter (J / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat"
+        },
+        {
+          "from": "langley (calth / cm2)",
+          "to": "joule per square meter (J / m2)",
+          "rule": "4.184E+04",
+          "rule_type": "factor",
+          "display_label": "langley (calth / cm2) -> joule per square meter (J / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat"
+        },
+        {
+          "from": "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "3.154591E+00",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "3.152481E+00",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per square foot hour [Btu th / (ft2 · h)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.891489E+02",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per square foot minute [Btu th / (ft2 · min)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.135653E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per square foot second [Btu IT / (ft2 · s)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.134893E+04",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per square foot second [Btu th / (ft2 · s)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "1.634246E+06",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per square inch second [Btu th / (in2 · s)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "6.973333E+02",
+          "rule_type": "factor",
+          "display_label": "calorieth per square centimeter minute [cal th / (cm2 · min)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "calorieth per square centimeter second [cal th / (cm2 · s)]",
+          "to": "watt per square meter (W / m2)",
+          "rule": "4.184E+04",
+          "rule_type": "factor",
+          "display_label": "calorieth per square centimeter second [cal th / (cm2 · s)] -> watt per square meter (W / m2)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "from": "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+          "to": "cubic meter per joule (m3 / J)",
+          "rule": "1.410089E-09",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) per horsepower hour [gal / (hp · h)] -> cubic meter per joule (m3 / J)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "from": "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+          "to": "liter per joule (L / J)",
+          "rule": "1.410089E-06",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) per horsepower hour [gal / (hp · h)] -> liter per joule (L / J)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "from": "mile per gallon (U.S.) (mpg) (mi / gal)",
+          "to": "meter per cubic meter (m / m3)",
+          "rule": "4.251437E+05",
+          "rule_type": "factor",
+          "display_label": "mile per gallon (U.S.) (mpg) (mi / gal) -> meter per cubic meter (m / m3)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "from": "mile per gallon (U.S.) (mpg) (mi / gal)",
+          "to": "kilometer per liter (km / L)",
+          "rule": "4.251437E-01",
+          "rule_type": "factor",
+          "display_label": "mile per gallon (U.S.) (mpg) (mi / gal) -> kilometer per liter (km / L)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "from": "mile per gallon (U.S.) (mpg) (mi / gal)",
+          "to": "liter per 100 kilometer (L / 100 km)",
+          "rule": "235.215 / x",
+          "rule_type": "formula",
+          "display_label": "mile per gallon (U.S.) (mpg) (mi / gal) -> liter per 100 kilometer (L / 100 km)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "from": "per gallon pound per horsepower hour [lb / (hp · h)]",
+          "to": "kilogram per joule (kg / J)",
+          "rule": "1.689659E-07",
+          "rule_type": "factor",
+          "display_label": "per gallon pound per horsepower hour [lb / (hp · h)] -> kilogram per joule (kg / J)",
+          "source_appendix": "B.9",
+          "source_page": 72,
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "from": "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+          "to": "joule per kelvin (J / K)",
+          "rule": "1.899101E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per degree Fahrenheit (Btu IT / °F) -> joule per kelvin (J / K)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Capacity and Entropy"
+        },
+        {
+          "from": "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+          "to": "joule per kelvin (J / K)",
+          "rule": "1.897830E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per degree Fahrenheit (Btu th / °F) -> joule per kelvin (J / K)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Capacity and Entropy"
+        },
+        {
+          "from": "British thermal unitIT per degree Rankine (Btu IT / °R)",
+          "to": "joule per kelvin (J / K)",
+          "rule": "1.899101E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per degree Rankine (Btu IT / °R) -> joule per kelvin (J / K)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Capacity and Entropy"
+        },
+        {
+          "from": "British thermal unitth per degree Rankine (Btu th / °R)",
+          "to": "joule per kelvin (J / K)",
+          "rule": "1.897830E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per degree Rankine (Btu th / °R) -> joule per kelvin (J / K)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Capacity and Entropy"
+        },
+        {
+          "from": "British thermal unitIT per hour (BtuIT / h)",
+          "to": "watt (W)",
+          "rule": "2.930711E-01",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per hour (BtuIT / h) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per hour (Btuth / h)",
+          "to": "watt (W)",
+          "rule": "2.928751E-01",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per hour (Btuth / h) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per minute (Btuth / min)",
+          "to": "watt (W)",
+          "rule": "1.757250E+01",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per minute (Btuth / min) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitIT per second (BtuIT / s)",
+          "to": "watt (W)",
+          "rule": "1.055056E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per second (BtuIT / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitth per second (Btuth / s)",
+          "to": "watt (W)",
+          "rule": "1.054350E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per second (Btuth / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "calorieth per minute (calth / min)",
+          "to": "watt (W)",
+          "rule": "6.973333E-02",
+          "rule_type": "factor",
+          "display_label": "calorieth per minute (calth / min) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "calorieth per second (calth / s)",
+          "to": "watt (W)",
+          "rule": "4.184E+00",
+          "rule_type": "factor",
+          "display_label": "calorieth per second (calth / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "kilocalorieth per minute (kcalth / min)",
+          "to": "watt (W)",
+          "rule": "6.973333E+01",
+          "rule_type": "factor",
+          "display_label": "kilocalorieth per minute (kcalth / min) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "kilocalorieth per second (kcalth / s)",
+          "to": "watt (W)",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "kilocalorieth per second (kcalth / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "ton of refrigeration (12 000 BtuIT / h)",
+          "to": "watt (W)",
+          "rule": "3.516853E+03",
+          "rule_type": "factor",
+          "display_label": "ton of refrigeration (12 000 BtuIT / h) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "from": "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "calorieIT per gram degree Celsius [cal IT / (g · °C)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "calorieth per gram degree Celsius [cal th / (g · °C)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "calorieth per gram degree Celsius [cal th / (g · °C)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "calorieIT per gram kelvin [calIT / (g · K)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.1868E+03",
+          "rule_type": "factor",
+          "display_label": "calorieIT per gram kelvin [calIT / (g · K)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "calorieth per gram kelvin [calth / (g · K)]",
+          "to": "joule per kilogram kelvin [J / (kg · K)]",
+          "rule": "4.184E+03",
+          "rule_type": "factor",
+          "display_label": "calorieth per gram kelvin [calth / (g · K)] -> joule per kilogram kelvin [J / (kg · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "from": "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "1.730735E+00",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "1.729577E+00",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "1.442279E-01",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "1.441314E-01",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "5.192204E+02",
+          "rule_type": "factor",
+          "display_label": "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "5.188732E+02",
+          "rule_type": "factor",
+          "display_label": "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+          "to": "watt per meter kelvin [W / (m · K)]",
+          "rule": "4.184E+02",
+          "rule_type": "factor",
+          "display_label": "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)] -> watt per meter kelvin [W / (m · K)]",
+          "source_appendix": "B.9",
+          "source_page": 73,
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "from": "square foot per hour (ft2 / h)",
+          "to": "square meter per second (m2 / s)",
+          "rule": "2.58064E-05",
+          "rule_type": "factor",
+          "display_label": "square foot per hour (ft2 / h) -> square meter per second (m2 / s)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Diffusivity"
+        },
+        {
+          "from": "clo",
+          "to": "square meter kelvin per watt (m2 · K / W)",
+          "rule": "1.55E-01",
+          "rule_type": "factor",
+          "display_label": "clo -> square meter kelvin per watt (m2 · K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Insulance"
+        },
+        {
+          "from": "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+          "to": "square meter kelvin per watt (m2 · K / W)",
+          "rule": "1.761102E-01",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT) -> square meter kelvin per watt (m2 · K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Insulance"
+        },
+        {
+          "from": "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+          "to": "square meter kelvin per watt (m2 · K / W)",
+          "rule": "1.762280E-01",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth) -> square meter kelvin per watt (m2 · K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Insulance"
+        },
+        {
+          "from": "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+          "to": "kelvin per watt (K / W)",
+          "rule": "1.895634E+00",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT) -> kelvin per watt (K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Resistance"
+        },
+        {
+          "from": "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+          "to": "kelvin per watt (K / W)",
+          "rule": "1.896903E+00",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th) -> kelvin per watt (K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Resistance"
+        },
+        {
+          "from": "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+          "to": "kelvin per watt (K / W)",
+          "rule": "5.265651E-04",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT) -> kelvin per watt (K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Resistance"
+        },
+        {
+          "from": "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+          "to": "kelvin per watt (K / W)",
+          "rule": "5.269175E-04",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit second per British thermal unitth (°F · s / Btu th) -> kelvin per watt (K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Resistance"
+        },
+        {
+          "from": "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+          "to": "meter kelvin per watt (m · K / W)",
+          "rule": "6.933472E+00",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)] -> meter kelvin per watt (m · K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Resistivity"
+        },
+        {
+          "from": "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+          "to": "meter kelvin per watt (m · K / W)",
+          "rule": "6.938112E+04",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)] -> meter kelvin per watt (m · K / W)",
+          "source_appendix": "B.9",
+          "source_page": 74,
+          "subcategory": "Thermal Resistivity"
+        }
+      ]
+    },
+    {
+      "name": "LENGTH",
+      "slug": "length",
+      "conversions": [
+        {
+          "from": "ångström (Å)",
+          "to": "meter (m)",
+          "rule": "1.0E-10",
+          "rule_type": "factor",
+          "display_label": "ångström (Å) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "ångström (Å)",
+          "to": "nanometer (nm)",
+          "rule": "1.0E-01",
+          "rule_type": "factor",
+          "display_label": "ångström (Å) -> nanometer (nm)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "astronomical unit (ua)",
+          "to": "meter (m)",
+          "rule": "1.495979E+11",
+          "rule_type": "factor",
+          "display_label": "astronomical unit (ua) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "chain (based on U.S. survey foot) (ch)",
+          "to": "meter (m)",
+          "rule": "2.011684E+01",
+          "rule_type": "factor",
+          "display_label": "chain (based on U.S. survey foot) (ch) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "fathom (based on U.S. survey foot)",
+          "to": "meter (m)",
+          "rule": "1.828804E+00",
+          "rule_type": "factor",
+          "display_label": "fathom (based on U.S. survey foot) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "fermi",
+          "to": "meter (m)",
+          "rule": "1.0E-15",
+          "rule_type": "factor",
+          "display_label": "fermi -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "fermi",
+          "to": "femtometer (fm)",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "fermi -> femtometer (fm)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "foot (ft)",
+          "to": "meter (m)",
+          "rule": "3.048E-01",
+          "rule_type": "factor",
+          "display_label": "foot (ft) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "foot (U.S. survey) (ft)",
+          "to": "meter (m)",
+          "rule": "3.048006E-01",
+          "rule_type": "factor",
+          "display_label": "foot (U.S. survey) (ft) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "inch (in)",
+          "to": "meter (m)",
+          "rule": "2.54E-02",
+          "rule_type": "factor",
+          "display_label": "inch (in) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "inch (in)",
+          "to": "centimeter (cm)",
+          "rule": "2.54E+00",
+          "rule_type": "factor",
+          "display_label": "inch (in) -> centimeter (cm)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "kayser (K)",
+          "to": "reciprocal meter (m ^-1)",
+          "rule": "1E+02",
+          "rule_type": "factor",
+          "display_label": "kayser (K) -> reciprocal meter (m ^-1)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "light year (l.y.)",
+          "to": "meter (m)",
+          "rule": "9.46073E+15",
+          "rule_type": "factor",
+          "display_label": "light year (l.y.) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "microinch",
+          "to": "meter (m)",
+          "rule": "2.54E-08",
+          "rule_type": "factor",
+          "display_label": "microinch -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "microinch",
+          "to": "micrometer ( μm)",
+          "rule": "2.54E-02",
+          "rule_type": "factor",
+          "display_label": "microinch -> micrometer ( μm)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "micron (μ)",
+          "to": "meter (m)",
+          "rule": "1.0E-06",
+          "rule_type": "factor",
+          "display_label": "micron (μ) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "micron (μ)",
+          "to": "micrometer ( μm)",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "micron (μ) -> micrometer ( μm)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mil (0.001 in)",
+          "to": "meter (m)",
+          "rule": "2.54E-05",
+          "rule_type": "factor",
+          "display_label": "mil (0.001 in) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mil (0.001 in)",
+          "to": "millimeter (mm)",
+          "rule": "2.54E-02",
+          "rule_type": "factor",
+          "display_label": "mil (0.001 in) -> millimeter (mm)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mile (mi)",
+          "to": "meter (m)",
+          "rule": "1.609344E+03",
+          "rule_type": "factor",
+          "display_label": "mile (mi) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mile (mi)",
+          "to": "kilometer (km)",
+          "rule": "1.609344E+00",
+          "rule_type": "factor",
+          "display_label": "mile (mi) -> kilometer (km)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mile (based on U.S. survey foot) (mi)",
+          "to": "meter (m)",
+          "rule": "1.609347E+03",
+          "rule_type": "factor",
+          "display_label": "mile (based on U.S. survey foot) (mi) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mile (based on U.S. survey foot) (mi)",
+          "to": "kilometer (km)",
+          "rule": "1.609347E+00",
+          "rule_type": "factor",
+          "display_label": "mile (based on U.S. survey foot) (mi) -> kilometer (km)",
+          "source_appendix": "B.9",
+          "source_page": 74
+        },
+        {
+          "from": "mile, nautical",
+          "to": "meter (m)",
+          "rule": "1.852E+03",
+          "rule_type": "factor",
+          "display_label": "mile, nautical -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "parsec (pc)",
+          "to": "meter (m)",
+          "rule": "3.085678E+16",
+          "rule_type": "factor",
+          "display_label": "parsec (pc) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pica (computer) (1/6 in)",
+          "to": "meter (m)",
+          "rule": "4.233333E-03",
+          "rule_type": "factor",
+          "display_label": "pica (computer) (1/6 in) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pica (computer) (1/6 in)",
+          "to": "millimeter (mm)",
+          "rule": "4.233333E+00",
+          "rule_type": "factor",
+          "display_label": "pica (computer) (1/6 in) -> millimeter (mm)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pica (printer’s)",
+          "to": "meter (m)",
+          "rule": "4.217518E-03",
+          "rule_type": "factor",
+          "display_label": "pica (printer’s) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pica (printer’s)",
+          "to": "millimeter (mm)",
+          "rule": "4.217518E+00",
+          "rule_type": "factor",
+          "display_label": "pica (printer’s) -> millimeter (mm)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "point (computer) (1/72 in)",
+          "to": "meter (m)",
+          "rule": "3.527778E-04",
+          "rule_type": "factor",
+          "display_label": "point (computer) (1/72 in) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "point (computer) (1/72 in)",
+          "to": "mil limeter (mm)",
+          "rule": "3.527778E-01",
+          "rule_type": "factor",
+          "display_label": "point (computer) (1/72 in) -> mil limeter (mm)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "point (printer’s)",
+          "to": "meter (m)",
+          "rule": "3.514598E-04",
+          "rule_type": "factor",
+          "display_label": "point (printer’s) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "point (printer’s)",
+          "to": "millimeter (mm)",
+          "rule": "3.514598E-01",
+          "rule_type": "factor",
+          "display_label": "point (printer’s) -> millimeter (mm)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "rod (based on U.S. survey foot) (rd)",
+          "to": "meter (m)",
+          "rule": "5.029210E+00",
+          "rule_type": "factor",
+          "display_label": "rod (based on U.S. survey foot) (rd) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "yard (yd)",
+          "to": "meter (m)",
+          "rule": "9.144E-01",
+          "rule_type": "factor",
+          "display_label": "yard (yd) -> meter (m)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        }
+      ]
+    },
+    {
+      "name": "LIGHT",
+      "slug": "light",
+      "conversions": [
+        {
+          "from": "candela per square inch (cd / in2)",
+          "to": "candela per square meter (cd / m2)",
+          "rule": "1.550003E+03",
+          "rule_type": "factor",
+          "display_label": "candela per square inch (cd / in2) -> candela per square meter (cd / m2)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "footcandle",
+          "to": "lux (lx)",
+          "rule": "1.076391E+01",
+          "rule_type": "factor",
+          "display_label": "footcandle -> lux (lx)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "footlambert",
+          "to": "candela per square meter (cd / m2)",
+          "rule": "3.426259E+00",
+          "rule_type": "factor",
+          "display_label": "footlambert -> candela per square meter (cd / m2)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "lambert",
+          "to": "candela per square meter (cd / m2)",
+          "rule": "3.183099E+03",
+          "rule_type": "factor",
+          "display_label": "lambert -> candela per square meter (cd / m2)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "lumen per square foot (lm / ft2)",
+          "to": "lux (lx)",
+          "rule": "1.076391E+01",
+          "rule_type": "factor",
+          "display_label": "lumen per square foot (lm / ft2) -> lux (lx)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "phot (ph)",
+          "to": "lux (lx)",
+          "rule": "1.0E+04",
+          "rule_type": "factor",
+          "display_label": "phot (ph) -> lux (lx)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "stilb (sb)",
+          "to": "candela per square meter (cd / m2)",
+          "rule": "1.0E+04",
+          "rule_type": "factor",
+          "display_label": "stilb (sb) -> candela per square meter (cd / m2)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        }
+      ]
+    },
+    {
+      "name": "MASS and MOMENT OF INERTIA",
+      "slug": "mass-and-moment-of-inertia",
+      "conversions": [
+        {
+          "from": "carat, metric",
+          "to": "kilogram (kg)",
+          "rule": "2.0E-04",
+          "rule_type": "factor",
+          "display_label": "carat, metric -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "carat, metric",
+          "to": "gram (g)",
+          "rule": "2.0E-01",
+          "rule_type": "factor",
+          "display_label": "carat, metric -> gram (g)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "grain (gr)",
+          "to": "kilogram (kg)",
+          "rule": "6.479891E-05",
+          "rule_type": "factor",
+          "display_label": "grain (gr) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "grain (gr)",
+          "to": "milligram (mg)",
+          "rule": "6.479891E+01",
+          "rule_type": "factor",
+          "display_label": "grain (gr) -> milligram (mg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "hundredweight (long, 112 lb)",
+          "to": "kilogram (kg)",
+          "rule": "5.080235E+01",
+          "rule_type": "factor",
+          "display_label": "hundredweight (long, 112 lb) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "hundredweight (short, 100 lb)",
+          "to": "kilogram (kg)",
+          "rule": "4.535924E+01",
+          "rule_type": "factor",
+          "display_label": "hundredweight (short, 100 lb) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "kilogram-force second squared per meter (kgf · s2 / m)",
+          "to": "kilogram (kg)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "kilogram-force second squared per meter (kgf · s2 / m) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ounce (avoirdupois) (oz)",
+          "to": "kilogram (kg)",
+          "rule": "2.834952E-02",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) (oz) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ounce (avoirdupois) (oz)",
+          "to": "gram (g)",
+          "rule": "2.834952E+01",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) (oz) -> gram (g)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ounce (troy or apothecary) (oz)",
+          "to": "kilogram (k g)",
+          "rule": "3.110348E-02",
+          "rule_type": "factor",
+          "display_label": "ounce (troy or apothecary) (oz) -> kilogram (k g)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ounce (troy or apothecary) (oz)",
+          "to": "gram (g)",
+          "rule": "3.110348E+01",
+          "rule_type": "factor",
+          "display_label": "ounce (troy or apothecary) (oz) -> gram (g)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pennyweight (dwt)",
+          "to": "kilogram (kg)",
+          "rule": "1.555174E-03",
+          "rule_type": "factor",
+          "display_label": "pennyweight (dwt) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pennyweight (dwt)",
+          "to": "gram (g)",
+          "rule": "1.555174E+00",
+          "rule_type": "factor",
+          "display_label": "pennyweight (dwt) -> gram (g)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pound (avoirdupois) (lb)",
+          "to": "kilogram (kg)",
+          "rule": "4.535924E-01",
+          "rule_type": "factor",
+          "display_label": "pound (avoirdupois) (lb) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pound (troy or apothecary) (lb)",
+          "to": "kilogram (kg)",
+          "rule": "3.732417E-01",
+          "rule_type": "factor",
+          "display_label": "pound (troy or apothecary) (lb) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pound foot squared (lb · ft2)",
+          "to": "kilogram meter squared (kg · m2)",
+          "rule": "4.214011E-02",
+          "rule_type": "factor",
+          "display_label": "pound foot squared (lb · ft2) -> kilogram meter squared (kg · m2)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "pound inch squared (lb · in2)",
+          "to": "kilogram meter squared (kg · m2)",
+          "rule": "2.926397E-04",
+          "rule_type": "factor",
+          "display_label": "pound inch squared (lb · in2) -> kilogram meter squared (kg · m2)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "slug (slug)",
+          "to": "kilogram (kg)",
+          "rule": "1.459390E+01",
+          "rule_type": "factor",
+          "display_label": "slug (slug) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ton, assay (AT)",
+          "to": "kilogram (kg)",
+          "rule": "2.916667E-02",
+          "rule_type": "factor",
+          "display_label": "ton, assay (AT) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ton, assay (AT)",
+          "to": "gram (g)",
+          "rule": "2.916667E+01",
+          "rule_type": "factor",
+          "display_label": "ton, assay (AT) -> gram (g)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ton, long (2240 lb)",
+          "to": "kilogram (kg)",
+          "rule": "1.016047E+03",
+          "rule_type": "factor",
+          "display_label": "ton, long (2240 lb) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ton, metric (t)",
+          "to": "kilogram (kg)",
+          "rule": "1.0E+03",
+          "rule_type": "factor",
+          "display_label": "ton, metric (t) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "tonne (called “metric ton” in U.S.) (t)",
+          "to": "kilogram (kg)",
+          "rule": "1.0E+03",
+          "rule_type": "factor",
+          "display_label": "tonne (called “metric ton” in U.S.) (t) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        },
+        {
+          "from": "ton, short (2000 lb)",
+          "to": "kilogram (kg)",
+          "rule": "9.071847E+02",
+          "rule_type": "factor",
+          "display_label": "ton, short (2000 lb) -> kilogram (kg)",
+          "source_appendix": "B.9",
+          "source_page": 75
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY AREA",
+      "slug": "mass-divided-by-area",
+      "conversions": [
+        {
+          "from": "ounce (avoirdupois) per square foot (oz / ft2)",
+          "to": "kilogram per square meter (kg / m2)",
+          "rule": "3.051517E-01",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per square foot (oz / ft2) -> kilogram per square meter (kg / m2)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per square inch (oz / in2)",
+          "to": "kilogram per square meter (kg / m2)",
+          "rule": "4.394185E+01",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per square inch (oz / in2) -> kilogram per square meter (kg / m2)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per square yard (oz / yd2)",
+          "to": "kilogram per square meter (kg / m2)",
+          "rule": "3.390575E-02",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per square yard (oz / yd2) -> kilogram per square meter (kg / m2)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per square foot (lb / ft2)",
+          "to": "kilogram per square meter (kg / m2)",
+          "rule": "4.882428E+00",
+          "rule_type": "factor",
+          "display_label": "pound per square foot (lb / ft2) -> kilogram per square meter (kg / m2)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per square inch (not pound force) (lb / in2)",
+          "to": "kilogram per square meter (kg / m2)",
+          "rule": "7.030696E+02",
+          "rule_type": "factor",
+          "display_label": "pound per square inch (not pound force) (lb / in2) -> kilogram per square meter (kg / m2)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY LENGTH",
+      "slug": "mass-divided-by-length",
+      "conversions": [
+        {
+          "from": "denier",
+          "to": "kilogram per meter (kg / m)",
+          "rule": "1.111111E-07",
+          "rule_type": "factor",
+          "display_label": "denier -> kilogram per meter (kg / m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "denier",
+          "to": "gram per meter (g / m)",
+          "rule": "1.111111E-04",
+          "rule_type": "factor",
+          "display_label": "denier -> gram per meter (g / m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per foot (lb / ft)",
+          "to": "kilogram per meter (kg / m)",
+          "rule": "1.488164E+00",
+          "rule_type": "factor",
+          "display_label": "pound per foot (lb / ft) -> kilogram per meter (kg / m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per inch (lb / in)",
+          "to": "kilogram per meter (kg / m)",
+          "rule": "1.785797E+01",
+          "rule_type": "factor",
+          "display_label": "pound per inch (lb / in) -> kilogram per meter (kg / m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per yard (lb / yd)",
+          "to": "kilogram per meter (kg / m)",
+          "rule": "4.960546E-01",
+          "rule_type": "factor",
+          "display_label": "pound per yard (lb / yd) -> kilogram per meter (kg / m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "tex",
+          "to": "kilogram per meter (kg / m)",
+          "rule": "1.0E-06",
+          "rule_type": "factor",
+          "display_label": "tex -> kilogram per meter (kg / m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY TIME (includes FLOW)",
+      "slug": "mass-divided-by-time",
+      "conversions": [
+        {
+          "from": "pound per hour (lb / h)",
+          "to": "kilogram per second (kg / s)",
+          "rule": "1.259979E-04",
+          "rule_type": "factor",
+          "display_label": "pound per hour (lb / h) -> kilogram per second (kg / s)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per minute (lb / min)",
+          "to": "kilogram per second (kg / s)",
+          "rule": "7.559873E-03",
+          "rule_type": "factor",
+          "display_label": "pound per minute (lb / min) -> kilogram per second (kg / s)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per second (lb / s)",
+          "to": "kilogram per second (kg / s)",
+          "rule": "4.535924E-01",
+          "rule_type": "factor",
+          "display_label": "pound per second (lb / s) -> kilogram per second (kg / s)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ton, short, per hour",
+          "to": "kilogram per second (kg / s)",
+          "rule": "2.519958E-01",
+          "rule_type": "factor",
+          "display_label": "ton, short, per hour -> kilogram per second (kg / s)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)",
+      "slug": "mass-divided-by-volume",
+      "conversions": [
+        {
+          "from": "grain per gallon (U.S.) (gr / gal)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.711806E-02",
+          "rule_type": "factor",
+          "display_label": "grain per gallon (U.S.) (gr / gal) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "grain per gallon (U.S.) (gr / gal)",
+          "to": "milligram per liter (mg / L)",
+          "rule": "1.711806E+01",
+          "rule_type": "factor",
+          "display_label": "grain per gallon (U.S.) (gr / gal) -> milligram per liter (mg / L)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "gram per cubic centimeter (g / cm3)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.0E+03",
+          "rule_type": "factor",
+          "display_label": "gram per cubic centimeter (g / cm3) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per cubic inch (oz / in3)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.729994E+03",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per cubic inch (oz / in3) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "6.236023E+00",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal)",
+          "to": "gram per liter (g / L)",
+          "rule": "6.236023E+00",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal) -> gram per liter (g / L)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per gallon (U.S.) (oz / gal)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "7.489152E+00",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per gallon (U.S.) (oz / gal) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ounce (avoirdupois) per gallon (U.S.) (oz / gal)",
+          "to": "gram per liter (g / L)",
+          "rule": "7.489152E+00",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois) per gallon (U.S.) (oz / gal) -> gram per liter (g / L)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per cubic foot (lb / ft3)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.601846E+01",
+          "rule_type": "factor",
+          "display_label": "pound per cubic foot (lb / ft3) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per cubic inch (lb / in3)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "2.767990E+04",
+          "rule_type": "factor",
+          "display_label": "pound per cubic inch (lb / in3) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per cubic yard (lb / yd3)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "5.932764E-01",
+          "rule_type": "factor",
+          "display_label": "pound per cubic yard (lb / yd3) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "9.977637E+01",
+          "rule_type": "factor",
+          "display_label": "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal)",
+          "to": "kilogram per liter (kg / L)",
+          "rule": "9.977637E-02",
+          "rule_type": "factor",
+          "display_label": "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal) -> kilogram per liter (kg / L)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per gallon (U.S.) (lb / gal)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.198264E+02",
+          "rule_type": "factor",
+          "display_label": "pound per gallon (U.S.) (lb / gal) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "pound per gallon (U.S.) (lb / gal)",
+          "to": "kilogram per liter (kg / L)",
+          "rule": "1.198264E-01",
+          "rule_type": "factor",
+          "display_label": "pound per gallon (U.S.) (lb / gal) -> kilogram per liter (kg / L)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "slug per cubic foot (slug / ft3)",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "5.153788E+02",
+          "rule_type": "factor",
+          "display_label": "slug per cubic foot (slug / ft3) -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ton, long, per cubic yard",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.328939E+03",
+          "rule_type": "factor",
+          "display_label": "ton, long, per cubic yard -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "ton, short, per cubic yard",
+          "to": "kilogram per cubic meter (kg / m3)",
+          "rule": "1.186553E+03",
+          "rule_type": "factor",
+          "display_label": "ton, short, per cubic yard -> kilogram per cubic meter (kg / m3)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        }
+      ]
+    },
+    {
+      "name": "MOMENT OF FORCE or TORQUE",
+      "slug": "moment-of-force-or-torque",
+      "conversions": [
+        {
+          "from": "dyne centimeter (dyn · cm)",
+          "to": "newton meter (N · m)",
+          "rule": "1.0E-07",
+          "rule_type": "factor",
+          "display_label": "dyne centimeter (dyn · cm) -> newton meter (N · m)",
+          "source_appendix": "B.9",
+          "source_page": 76
+        },
+        {
+          "from": "kilogram-force meter (kgf · m)",
+          "to": "newton meter (N · m)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "kilogram-force meter (kgf · m) -> newton meter (N · m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "ounce (avoirdupois)-force inch (ozf · in)",
+          "to": "newton meter (N ·m)",
+          "rule": "7.061552E-03",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois)-force inch (ozf · in) -> newton meter (N ·m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "ounce (avoirdupois)-force inch (ozf · in)",
+          "to": "millinewton meter (mN · m)",
+          "rule": "7.061552E+00",
+          "rule_type": "factor",
+          "display_label": "ounce (avoirdupois)-force inch (ozf · in) -> millinewton meter (mN · m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "pound-force foot (lbf · ft)",
+          "to": "newton meter (N · m)",
+          "rule": "1.355818E+00",
+          "rule_type": "factor",
+          "display_label": "pound-force foot (lbf · ft) -> newton meter (N · m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "pound-force inch (lbf · in)",
+          "to": "newton meter (N · m)",
+          "rule": "1.129848E-01",
+          "rule_type": "factor",
+          "display_label": "pound-force inch (lbf · in) -> newton meter (N · m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        }
+      ]
+    },
+    {
+      "name": "MOMENT OF FORCE or TORQUE, DIVIDED BY LENGTH",
+      "slug": "moment-of-force-or-torque-divided-by-length",
+      "conversions": [
+        {
+          "from": "pound-force foot per inch (lbf · ft / in)",
+          "to": "newton meter per meter (N · m / m)",
+          "rule": "5.337866E+01",
+          "rule_type": "factor",
+          "display_label": "pound-force foot per inch (lbf · ft / in) -> newton meter per meter (N · m / m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "pound-force inch per inch (lbf · in / in)",
+          "to": "newton meter per meter (N · m / m)",
+          "rule": "4.448222E+00",
+          "rule_type": "factor",
+          "display_label": "pound-force inch per inch (lbf · in / in) -> newton meter per meter (N · m / m)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        }
+      ]
+    },
+    {
+      "name": "PERMEABILITY",
+      "slug": "permeability",
+      "conversions": [
+        {
+          "from": "darcy",
+          "to": "meter squared (m2)",
+          "rule": "9.869233E-13",
+          "rule_type": "factor",
+          "display_label": "darcy -> meter squared (m2)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "perm (0 °C)",
+          "to": "kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+          "rule": "5.72135E-11",
+          "rule_type": "factor",
+          "display_label": "perm (0 °C) -> kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "perm (23 °C)",
+          "to": "kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+          "rule": "5.74525E-11",
+          "rule_type": "factor",
+          "display_label": "perm (23 °C) -> kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "perm inch (0 °C)",
+          "to": "kilogram per pascal second meter [kg / (Pa · s · m)]",
+          "rule": "1.45322E-12",
+          "rule_type": "factor",
+          "display_label": "perm inch (0 °C) -> kilogram per pascal second meter [kg / (Pa · s · m)]",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "perm inch (23 °C)",
+          "to": "kilogram per pascal second meter [kg / (Pa · s · m)]",
+          "rule": "1.45929E-12",
+          "rule_type": "factor",
+          "display_label": "perm inch (23 °C) -> kilogram per pascal second meter [kg / (Pa · s · m)]",
+          "source_appendix": "B.9",
+          "source_page": 77
+        }
+      ]
+    },
+    {
+      "name": "POWER",
+      "slug": "power",
+      "conversions": [
+        {
+          "from": "erg per second (erg / s)",
+          "to": "watt (W)",
+          "rule": "1.0E-07",
+          "rule_type": "factor",
+          "display_label": "erg per second (erg / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot pound-force per hour (ft · lbf / h)",
+          "to": "watt (W)",
+          "rule": "3.766161E-04",
+          "rule_type": "factor",
+          "display_label": "foot pound-force per hour (ft · lbf / h) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot pound-force per minute (ft · lbf / min)",
+          "to": "watt (W)",
+          "rule": "2.259697E-02",
+          "rule_type": "factor",
+          "display_label": "foot pound-force per minute (ft · lbf / min) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot pound-force per second (ft · lbf / s)",
+          "to": "watt (W)",
+          "rule": "1.355818E+00",
+          "rule_type": "factor",
+          "display_label": "foot pound-force per second (ft · lbf / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "horsepower (550 ft · lbf / s)",
+          "to": "watt (W)",
+          "rule": "7.456999E+02",
+          "rule_type": "factor",
+          "display_label": "horsepower (550 ft · lbf / s) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "horsepower (boiler)",
+          "to": "watt (W)",
+          "rule": "9.80950E+03",
+          "rule_type": "factor",
+          "display_label": "horsepower (boiler) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "horsepower (electric)",
+          "to": "watt (W)",
+          "rule": "7.46E+02",
+          "rule_type": "factor",
+          "display_label": "horsepower (electric) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "horsepower (metric)",
+          "to": "watt (W)",
+          "rule": "7.354988E+02",
+          "rule_type": "factor",
+          "display_label": "horsepower (metric) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "horsepower (U.K.)",
+          "to": "watt (W)",
+          "rule": "7.4570E+02",
+          "rule_type": "factor",
+          "display_label": "horsepower (U.K.) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "horsepower (water)",
+          "to": "watt (W)",
+          "rule": "7.46043E+02",
+          "rule_type": "factor",
+          "display_label": "horsepower (water) -> watt (W)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        }
+      ]
+    },
+    {
+      "name": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)",
+      "slug": "pressure-or-stress",
+      "conversions": [
+        {
+          "from": "atmosphere, standard (atm)",
+          "to": "pascal (Pa)",
+          "rule": "1.01325E+05",
+          "rule_type": "factor",
+          "display_label": "atmosphere, standard (atm) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "atmosphere, standard (atm)",
+          "to": "kilopascal (kPa)",
+          "rule": "1.01325E+02",
+          "rule_type": "factor",
+          "display_label": "atmosphere, standard (atm) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "atmosphere, technical (at)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+04",
+          "rule_type": "factor",
+          "display_label": "atmosphere, technical (at) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "atmosphere, technical (at)",
+          "to": "kilopascal (kPa)",
+          "rule": "9.80665E+01",
+          "rule_type": "factor",
+          "display_label": "atmosphere, technical (at) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "bar (bar)",
+          "to": "pascal (Pa)",
+          "rule": "1.0E+05",
+          "rule_type": "factor",
+          "display_label": "bar (bar) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "bar (bar)",
+          "to": "kilopascal (kPa)",
+          "rule": "1.0E+02",
+          "rule_type": "factor",
+          "display_label": "bar (bar) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "centimeter of mercury (0 °C)",
+          "to": "pascal (Pa)",
+          "rule": "1.33322E+03",
+          "rule_type": "factor",
+          "display_label": "centimeter of mercury (0 °C) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "centimeter of mercury (0 °C)",
+          "to": "kilopascal (kPa)",
+          "rule": "1.33322E+00",
+          "rule_type": "factor",
+          "display_label": "centimeter of mercury (0 °C) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "centimeter of mercury, conventional (cmHg)",
+          "to": "pascal (Pa)",
+          "rule": "1.333224E+03",
+          "rule_type": "factor",
+          "display_label": "centimeter of mercury, conventional (cmHg) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "centimeter of mercury, conventional (cmHg)",
+          "to": "kilopascal (kPa)",
+          "rule": "1.333224E+00",
+          "rule_type": "factor",
+          "display_label": "centimeter of mercury, conventional (cmHg) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "centimeter of water (4 °C)",
+          "to": "pascal (Pa)",
+          "rule": "9.80638E+01",
+          "rule_type": "factor",
+          "display_label": "centimeter of water (4 °C) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "centimeter of water, conventional (cmH2O)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+01",
+          "rule_type": "factor",
+          "display_label": "centimeter of water, conventional (cmH2O) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "dyne per square centimeter (dyn / cm2)",
+          "to": "pascal (Pa)",
+          "rule": "1.0E-01",
+          "rule_type": "factor",
+          "display_label": "dyne per square centimeter (dyn / cm2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot of mercury, conventional (ftHg)",
+          "to": "pascal (Pa)",
+          "rule": "4.063666E+04",
+          "rule_type": "factor",
+          "display_label": "foot of mercury, conventional (ftHg) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot of mercury, conventional (ftHg)",
+          "to": "kilopascal (kPa)",
+          "rule": "4.063666E+01",
+          "rule_type": "factor",
+          "display_label": "foot of mercury, conventional (ftHg) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot of water (39.2 °F)",
+          "to": "pascal (Pa)",
+          "rule": "2.98898E+03",
+          "rule_type": "factor",
+          "display_label": "foot of water (39.2 °F) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot of water (39.2 °F)",
+          "to": "kilopascal (kPa)",
+          "rule": "2.98898E+00",
+          "rule_type": "factor",
+          "display_label": "foot of water (39.2 °F) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot of water, conventional (ftH2O)",
+          "to": "pascal (Pa)",
+          "rule": "2.989067E+03",
+          "rule_type": "factor",
+          "display_label": "foot of water, conventional (ftH2O) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "foot of water, conventional (ftH2O)",
+          "to": "kilopascal (kPa)",
+          "rule": "2.989067E+00",
+          "rule_type": "factor",
+          "display_label": "foot of water, conventional (ftH2O) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "gram-force per square centimeter (gf / cm2)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+01",
+          "rule_type": "factor",
+          "display_label": "gram-force per square centimeter (gf / cm2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 77
+        },
+        {
+          "from": "inch of mercury (32 °F)",
+          "to": "pascal (Pa)",
+          "rule": "3.38638E+03",
+          "rule_type": "factor",
+          "display_label": "inch of mercury (32 °F) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of mercury (32 °F)",
+          "to": "kilopascal (kPa)",
+          "rule": "3.38638E+00",
+          "rule_type": "factor",
+          "display_label": "inch of mercury (32 °F) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of mercury (60 °F)",
+          "to": "pascal (Pa)",
+          "rule": "3.37685E+03",
+          "rule_type": "factor",
+          "display_label": "inch of mercury (60 °F) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of mercury (60 °F)",
+          "to": "kilopascal (kPa)",
+          "rule": "3.37685E+00",
+          "rule_type": "factor",
+          "display_label": "inch of mercury (60 °F) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of mercury, conventional (inHg)",
+          "to": "pascal (Pa)",
+          "rule": "3.386389E+03",
+          "rule_type": "factor",
+          "display_label": "inch of mercury, conventional (inHg) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of mercury, conventional (inHg)",
+          "to": "kilopascal (kPa)",
+          "rule": "3.386389E+00",
+          "rule_type": "factor",
+          "display_label": "inch of mercury, conventional (inHg) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of water (39.2 °F)",
+          "to": "pascal (Pa)",
+          "rule": "2.49082E+02",
+          "rule_type": "factor",
+          "display_label": "inch of water (39.2 °F) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of water (60 °F)",
+          "to": "pascal (Pa)",
+          "rule": "2.4884E+02",
+          "rule_type": "factor",
+          "display_label": "inch of water (60 °F) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "inch of water, conventional (inH2O)",
+          "to": "pascal (Pa)",
+          "rule": "2.490889E+02",
+          "rule_type": "factor",
+          "display_label": "inch of water, conventional (inH2O) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kilogram-force per square centimeter (kgf / cm2)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+04",
+          "rule_type": "factor",
+          "display_label": "kilogram-force per square centimeter (kgf / cm2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kilogram-force per square centimeter (kgf / cm2)",
+          "to": "kilopascal (kPa)",
+          "rule": "9.80665E+01",
+          "rule_type": "factor",
+          "display_label": "kilogram-force per square centimeter (kgf / cm2) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kilogram-force per square meter (kgf / m2)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "kilogram-force per square meter (kgf / m2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kilogram-force per square millimeter (kgf / mm2)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+06",
+          "rule_type": "factor",
+          "display_label": "kilogram-force per square millimeter (kgf / mm2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kilogram-force per square millimeter (kgf / mm2)",
+          "to": "megapascal (MPa)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "kilogram-force per square millimeter (kgf / mm2) -> megapascal (MPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kip per square inch (ksi) (kip / in2)",
+          "to": "pascal (Pa)",
+          "rule": "6.894757E+06",
+          "rule_type": "factor",
+          "display_label": "kip per square inch (ksi) (kip / in2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kip per square inch (ksi) (kip / in2)",
+          "to": "kilopascal (kPa)",
+          "rule": "6.894757E+03",
+          "rule_type": "factor",
+          "display_label": "kip per square inch (ksi) (kip / in2) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "millibar (mbar)",
+          "to": "pascal (Pa)",
+          "rule": "1.0E+02",
+          "rule_type": "factor",
+          "display_label": "millibar (mbar) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "millibar (mbar)",
+          "to": "kilopascal (kPa)",
+          "rule": "1.0E-01",
+          "rule_type": "factor",
+          "display_label": "millibar (mbar) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "millimeter of mercury, conventional (mmHg)",
+          "to": "pascal (Pa)",
+          "rule": "1.333224E+02",
+          "rule_type": "factor",
+          "display_label": "millimeter of mercury, conventional (mmHg) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "millimeter of water, conventional (mmH2O)",
+          "to": "pascal (Pa)",
+          "rule": "9.80665E+00",
+          "rule_type": "factor",
+          "display_label": "millimeter of water, conventional (mmH2O) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "poundal per square foot",
+          "to": "pascal (Pa)",
+          "rule": "1.488164E+00",
+          "rule_type": "factor",
+          "display_label": "poundal per square foot -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "pound-force per square foot (lbf / ft2)",
+          "to": "pascal (Pa)",
+          "rule": "4.788026E+01",
+          "rule_type": "factor",
+          "display_label": "pound-force per square foot (lbf / ft2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "pound-force per square inch (psi) (lbf / in2)",
+          "to": "pascal (Pa)",
+          "rule": "6.894757E+03",
+          "rule_type": "factor",
+          "display_label": "pound-force per square inch (psi) (lbf / in2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "pound-force per square inch (psi) (lbf / in2)",
+          "to": "kilopascal (kPa)",
+          "rule": "6.894757E+00",
+          "rule_type": "factor",
+          "display_label": "pound-force per square inch (psi) (lbf / in2) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "psi (pound-force per square inch) (lbf / in2)",
+          "to": "pascal (Pa)",
+          "rule": "6.894757E+03",
+          "rule_type": "factor",
+          "display_label": "psi (pound-force per square inch) (lbf / in2) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "psi (pound-force per square inch) (lbf / in2)",
+          "to": "kilopascal (kPa)",
+          "rule": "6.894757E+00",
+          "rule_type": "factor",
+          "display_label": "psi (pound-force per square inch) (lbf / in2) -> kilopascal (kPa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "torr (Torr)",
+          "to": "pascal (Pa)",
+          "rule": "1.333224E+02",
+          "rule_type": "factor",
+          "display_label": "torr (Torr) -> pascal (Pa)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        }
+      ]
+    },
+    {
+      "name": "RADIOLOGY",
+      "slug": "radiology",
+      "conversions": [
+        {
+          "from": "curie (Ci)",
+          "to": "becquerel (Bq)",
+          "rule": "3.7E+10",
+          "rule_type": "factor",
+          "display_label": "curie (Ci) -> becquerel (Bq)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "rad (absorbed dose) (rad)",
+          "to": "gray (Gy)",
+          "rule": "1.0E-02",
+          "rule_type": "factor",
+          "display_label": "rad (absorbed dose) (rad) -> gray (Gy)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "rem (rem)",
+          "to": "sievert (Sv)",
+          "rule": "1.0E-02",
+          "rule_type": "factor",
+          "display_label": "rem (rem) -> sievert (Sv)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "roentgen (R)",
+          "to": "coulomb per kilogram (C / kg)",
+          "rule": "2.58E-04",
+          "rule_type": "factor",
+          "display_label": "roentgen (R) -> coulomb per kilogram (C / kg)",
+          "source_appendix": "B.9",
+          "source_page": 78
+        }
+      ]
+    },
+    {
+      "name": "TEMPERATURE",
+      "slug": "temperature",
+      "conversions": [
+        {
+          "from": "degree Celsius (°C) [temperature]",
+          "to": "kelvin (K) [temperature]",
+          "rule": "x + 273.15",
+          "rule_type": "formula",
+          "display_label": "degree Celsius (°C) [temperature] -> kelvin (K) [temperature]",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "degree centigrade [temperature]",
+          "to": "degree Celsius (°C) [temperature]",
+          "rule": "x",
+          "rule_type": "formula",
+          "display_label": "degree centigrade [temperature] -> degree Celsius (°C) [temperature]",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "degree Fahrenheit (°F) [temperature]",
+          "to": "degree Celsius (°C) [temperature]",
+          "rule": "(x - 32) / 1.8",
+          "rule_type": "formula",
+          "display_label": "degree Fahrenheit (°F) [temperature] -> degree Celsius (°C) [temperature]",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "degree Fahrenheit (°F) [temperature]",
+          "to": "kelvin (K) [temperature]",
+          "rule": "(x + 459.67) / 1.8",
+          "rule_type": "formula",
+          "display_label": "degree Fahrenheit (°F) [temperature] -> kelvin (K) [temperature]",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "degree Rankine (°R) [temperature]",
+          "to": "kelvin (K) [temperature]",
+          "rule": "x / 1.8",
+          "rule_type": "formula",
+          "display_label": "degree Rankine (°R) [temperature] -> kelvin (K) [temperature]",
+          "source_appendix": "B.9",
+          "source_page": 78
+        },
+        {
+          "from": "kelvin (K) [temperature]",
+          "to": "degree Celsius (°C) [temperature]",
+          "rule": "x - 273.15",
+          "rule_type": "formula",
+          "display_label": "kelvin (K) [temperature] -> degree Celsius (°C) [temperature]",
+          "source_appendix": "B.9",
+          "source_page": 78
+        }
+      ]
+    },
+    {
+      "name": "TEMPERATURE INTERVAL",
+      "slug": "temperature-interval",
+      "conversions": [
+        {
+          "from": "degree Celsius (°C) [temperature interval]",
+          "to": "kelvin (K) [temperature interval]",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "degree Celsius (°C) [temperature interval] -> kelvin (K) [temperature interval]",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "degree centigrade [temperature interval]",
+          "to": "degree Celsius (°C) [temperature interval]",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "degree centigrade [temperature interval] -> degree Celsius (°C) [temperature interval]",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "degree Fahrenheit (°F) [temperature interval]",
+          "to": "degree Celsius (°C) [temperature interval]",
+          "rule": "5.555556E-01",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit (°F) [temperature interval] -> degree Celsius (°C) [temperature interval]",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "degree Fahrenheit (°F) [temperature interval]",
+          "to": "kelvin (K) [temperature interval]",
+          "rule": "5.555556E-01",
+          "rule_type": "factor",
+          "display_label": "degree Fahrenheit (°F) [temperature interval] -> kelvin (K) [temperature interval]",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "degree Rankine (°R) [temperature interval]",
+          "to": "kelvin (K) [temperature interval]",
+          "rule": "5.555556E-01",
+          "rule_type": "factor",
+          "display_label": "degree Rankine (°R) [temperature interval] -> kelvin (K) [temperature interval]",
+          "source_appendix": "B.9",
+          "source_page": 79
+        }
+      ]
+    },
+    {
+      "name": "TIME",
+      "slug": "time",
+      "conversions": [
+        {
+          "from": "day (d)",
+          "to": "second (s)",
+          "rule": "8.64E+04",
+          "rule_type": "factor",
+          "display_label": "day (d) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "day (sidereal)",
+          "to": "second (s)",
+          "rule": "8.616409E+04",
+          "rule_type": "factor",
+          "display_label": "day (sidereal) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "hour (h)",
+          "to": "second (s)",
+          "rule": "3.6E+03",
+          "rule_type": "factor",
+          "display_label": "hour (h) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "hour (sidereal)",
+          "to": "second (s)",
+          "rule": "3.590170E+03",
+          "rule_type": "factor",
+          "display_label": "hour (sidereal) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "minute (min)",
+          "to": "second (s)",
+          "rule": "6.0E+01",
+          "rule_type": "factor",
+          "display_label": "minute (min) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "minute (sidereal)",
+          "to": "second (s)",
+          "rule": "5.983617E+01",
+          "rule_type": "factor",
+          "display_label": "minute (sidereal) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "second (sidereal)",
+          "to": "second (s)",
+          "rule": "9.972696E-01",
+          "rule_type": "factor",
+          "display_label": "second (sidereal) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "shake",
+          "to": "second (s)",
+          "rule": "1.0E-08",
+          "rule_type": "factor",
+          "display_label": "shake -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "shake",
+          "to": "nanosecond (ns)",
+          "rule": "1.0E+01",
+          "rule_type": "factor",
+          "display_label": "shake -> nanosecond (ns)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "year (365 days)",
+          "to": "second (s)",
+          "rule": "3.1536E+07",
+          "rule_type": "factor",
+          "display_label": "year (365 days) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "year (sidereal)",
+          "to": "second (s)",
+          "rule": "3.155815E+07",
+          "rule_type": "factor",
+          "display_label": "year (sidereal) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "year (tropical)",
+          "to": "second (s)",
+          "rule": "3.155693E+07",
+          "rule_type": "factor",
+          "display_label": "year (tropical) -> second (s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        }
+      ]
+    },
+    {
+      "name": "VELOCITY (includes SPEED)",
+      "slug": "velocity",
+      "conversions": [
+        {
+          "from": "foot per hour (ft / h)",
+          "to": "meter per second (m / s)",
+          "rule": "8.466667E-05",
+          "rule_type": "factor",
+          "display_label": "foot per hour (ft / h) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "foot per minute (ft / min)",
+          "to": "meter per second (m / s)",
+          "rule": "5.08E-03",
+          "rule_type": "factor",
+          "display_label": "foot per minute (ft / min) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "foot per second (ft / s)",
+          "to": "meter per second (m / s)",
+          "rule": "3.048E-01",
+          "rule_type": "factor",
+          "display_label": "foot per second (ft / s) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "inch per second (in / s)",
+          "to": "meter per second (m / s)",
+          "rule": "2.54E-02",
+          "rule_type": "factor",
+          "display_label": "inch per second (in / s) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "kilometer per hour (km / h)",
+          "to": "meter per second (m / s)",
+          "rule": "2.777778E-01",
+          "rule_type": "factor",
+          "display_label": "kilometer per hour (km / h) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "knot (nautical mile per hour)",
+          "to": "meter per second (m / s)",
+          "rule": "5.144444E-01",
+          "rule_type": "factor",
+          "display_label": "knot (nautical mile per hour) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "mile per hour (mi / h)",
+          "to": "meter per second (m / s)",
+          "rule": "4.4704E-01",
+          "rule_type": "factor",
+          "display_label": "mile per hour (mi / h) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "mile per hour (mi / h)",
+          "to": "kilometer per hour (km / h)",
+          "rule": "1.609344E+00",
+          "rule_type": "factor",
+          "display_label": "mile per hour (mi / h) -> kilometer per hour (km / h)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "mile per minute (mi / min)",
+          "to": "meter per second (m / s)",
+          "rule": "2.68224E+01",
+          "rule_type": "factor",
+          "display_label": "mile per minute (mi / min) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "mile per second (mi / s)",
+          "to": "meter per second (m / s)",
+          "rule": "1.609344E+03",
+          "rule_type": "factor",
+          "display_label": "mile per second (mi / s) -> meter per second (m / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "revolution per minute (rpm) (r / min)",
+          "to": "radian per second (rad / s)",
+          "rule": "1.047198E-01",
+          "rule_type": "factor",
+          "display_label": "revolution per minute (rpm) (r / min) -> radian per second (rad / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "rpm (revolution per minute) (r / min)",
+          "to": "radian per second (rad / s)",
+          "rule": "1.047198E-01",
+          "rule_type": "factor",
+          "display_label": "rpm (revolution per minute) (r / min) -> radian per second (rad / s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        }
+      ]
+    },
+    {
+      "name": "VISCOSITY, DYNAMIC",
+      "slug": "viscosity-dynamic",
+      "conversions": [
+        {
+          "from": "centipoise (cP)",
+          "to": "pascal second (Pa · s)",
+          "rule": "1.0E-03",
+          "rule_type": "factor",
+          "display_label": "centipoise (cP) -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "poise (P)",
+          "to": "pascal second (Pa · s)",
+          "rule": "1.0E-01",
+          "rule_type": "factor",
+          "display_label": "poise (P) -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "poundal second per square foot",
+          "to": "pascal second (Pa · s)",
+          "rule": "1.488164E+00",
+          "rule_type": "factor",
+          "display_label": "poundal second per square foot -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "pound-force second per square foot (lbf · s / ft2)",
+          "to": "pascal second (Pa · s)",
+          "rule": "4.788026E+01",
+          "rule_type": "factor",
+          "display_label": "pound-force second per square foot (lbf · s / ft2) -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "pound-force second per square inch (lbf · s / in2)",
+          "to": "pascal second (Pa · s)",
+          "rule": "6.894757E+03",
+          "rule_type": "factor",
+          "display_label": "pound-force second per square inch (lbf · s / in2) -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "pound per foot hour [lb / (ft · h)]",
+          "to": "pascal second (Pa · s)",
+          "rule": "4.133789E-04",
+          "rule_type": "factor",
+          "display_label": "pound per foot hour [lb / (ft · h)] -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "pound per foot second [lb / (ft · s)]",
+          "to": "pascal second (Pa · s)",
+          "rule": "1.488164E+00",
+          "rule_type": "factor",
+          "display_label": "pound per foot second [lb / (ft · s)] -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "rhe",
+          "to": "reciprocal pascal second (Pa · s)^-1",
+          "rule": "1.0E+01",
+          "rule_type": "factor",
+          "display_label": "rhe -> reciprocal pascal second (Pa · s)^-1",
+          "source_appendix": "B.9",
+          "source_page": 79
+        },
+        {
+          "from": "slug per foot second [slug / (ft · s)]",
+          "to": "pascal second (Pa · s)",
+          "rule": "4.788026E+01",
+          "rule_type": "factor",
+          "display_label": "slug per foot second [slug / (ft · s)] -> pascal second (Pa · s)",
+          "source_appendix": "B.9",
+          "source_page": 79
+        }
+      ]
+    },
+    {
+      "name": "VISCOSITY, KINEMATIC",
+      "slug": "viscosity-kinematic",
+      "conversions": [
+        {
+          "from": "centistokes (cSt)",
+          "to": "meter squared per second (m2 / s)",
+          "rule": "1.0E-06",
+          "rule_type": "factor",
+          "display_label": "centistokes (cSt) -> meter squared per second (m2 / s)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "square foot per second (ft2 / s)",
+          "to": "meter squared per second (m2 / s)",
+          "rule": "9.290304E-02",
+          "rule_type": "factor",
+          "display_label": "square foot per second (ft2 / s) -> meter squared per second (m2 / s)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "stokes (St)",
+          "to": "meter squared per second (m2 / s)",
+          "rule": "1.0E-04",
+          "rule_type": "factor",
+          "display_label": "stokes (St) -> meter squared per second (m2 / s)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        }
+      ]
+    },
+    {
+      "name": "VOLUME (includes CAPACITY)",
+      "slug": "volume",
+      "conversions": [
+        {
+          "from": "acre-foot (based on U.S. survey foot)",
+          "to": "cubic meter (m3)",
+          "rule": "1.233489E+03",
+          "rule_type": "factor",
+          "display_label": "acre-foot (based on U.S. survey foot) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+          "to": "cubic meter (m3)",
+          "rule": "1.589873E-01",
+          "rule_type": "factor",
+          "display_label": "barrel [for petroleum, 42 gallons (U.S.)](bbl) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+          "to": "liter (L)",
+          "rule": "1.589873E+02",
+          "rule_type": "factor",
+          "display_label": "barrel [for petroleum, 42 gallons (U.S.)](bbl) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "bushel (U.S.) (bu)",
+          "to": "cubic meter (m3)",
+          "rule": "3.523907E-02",
+          "rule_type": "factor",
+          "display_label": "bushel (U.S.) (bu) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "bushel (U.S.) (bu)",
+          "to": "liter (L)",
+          "rule": "3.523907E+01",
+          "rule_type": "factor",
+          "display_label": "bushel (U.S.) (bu) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cord (128 ft3)",
+          "to": "cubic meter (m3)",
+          "rule": "3.624556E+00",
+          "rule_type": "factor",
+          "display_label": "cord (128 ft3) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cubic foot (ft3)",
+          "to": "cubic meter (m3)",
+          "rule": "2.831685E-02",
+          "rule_type": "factor",
+          "display_label": "cubic foot (ft3) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cubic inch (in3)",
+          "to": "cubic meter (m3)",
+          "rule": "1.638706E-05",
+          "rule_type": "factor",
+          "display_label": "cubic inch (in3) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cubic mile (mi3)",
+          "to": "cubic meter (m3)",
+          "rule": "4.168182E+09",
+          "rule_type": "factor",
+          "display_label": "cubic mile (mi3) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cubic yard (yd3)",
+          "to": "cubic meter (m3)",
+          "rule": "7.645549E-01",
+          "rule_type": "factor",
+          "display_label": "cubic yard (yd3) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cup (U.S.)",
+          "to": "cubic meter (m3)",
+          "rule": "2.365882E-04",
+          "rule_type": "factor",
+          "display_label": "cup (U.S.) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cup (U.S.)",
+          "to": "liter (L)",
+          "rule": "2.365882E-01",
+          "rule_type": "factor",
+          "display_label": "cup (U.S.) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "cup (U.S.)",
+          "to": "milliliter (mL)",
+          "rule": "2.365882E+02",
+          "rule_type": "factor",
+          "display_label": "cup (U.S.) -> milliliter (mL)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "fluid ounce (U.S.) (fl oz)",
+          "to": "cubic meter (m3)",
+          "rule": "2.957353E-05",
+          "rule_type": "factor",
+          "display_label": "fluid ounce (U.S.) (fl oz) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "fluid ounce (U.S.) (fl oz)",
+          "to": "milliliter (mL)",
+          "rule": "2.957353E+01",
+          "rule_type": "factor",
+          "display_label": "fluid ounce (U.S.) (fl oz) -> milliliter (mL)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gallon [Canadian and U.K. (Imperial)] (gal)",
+          "to": "cubic meter (m3)",
+          "rule": "4.54609E-03",
+          "rule_type": "factor",
+          "display_label": "gallon [Canadian and U.K. (Imperial)] (gal) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gallon [Canadian and U.K. (Imperial)] (gal)",
+          "to": "liter (L)",
+          "rule": "4.54609E+00",
+          "rule_type": "factor",
+          "display_label": "gallon [Canadian and U.K. (Imperial)] (gal) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gallon (U.S.) (gal)",
+          "to": "cubic meter (m3)",
+          "rule": "3.785412E-03",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) (gal) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gallon (U.S.) (gal)",
+          "to": "liter (L)",
+          "rule": "3.785412E+00",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) (gal) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gill [Canadian and U.K. (Imperial)] (gi)",
+          "to": "cubic meter (m3)",
+          "rule": "1.420653E-04",
+          "rule_type": "factor",
+          "display_label": "gill [Canadian and U.K. (Imperial)] (gi) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gill [Canadian and U.K. (Imperial)] (gi)",
+          "to": "liter (L)",
+          "rule": "1.420653E-01",
+          "rule_type": "factor",
+          "display_label": "gill [Canadian and U.K. (Imperial)] (gi) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gill (U.S.) (gi)",
+          "to": "cubic meter (m3)",
+          "rule": "1.182941E-04",
+          "rule_type": "factor",
+          "display_label": "gill (U.S.) (gi) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "gill (U.S.) (gi)",
+          "to": "liter (L)",
+          "rule": "1.182941E-01",
+          "rule_type": "factor",
+          "display_label": "gill (U.S.) (gi) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "liter (L)",
+          "to": "cubic meter (m3)",
+          "rule": "1.0E-03",
+          "rule_type": "factor",
+          "display_label": "liter (L) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "ounce [Canadian and U.K. fluid (Imperial)] (fl oz)",
+          "to": "cubic meter (m3)",
+          "rule": "2.841306E-05",
+          "rule_type": "factor",
+          "display_label": "ounce [Canadian and U.K. fluid (Imperial)] (fl oz) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "ounce [Canadian and U.K. fluid (Imperial)] (fl oz)",
+          "to": "milliliter (mL)",
+          "rule": "2.841306E+01",
+          "rule_type": "factor",
+          "display_label": "ounce [Canadian and U.K. fluid (Imperial)] (fl oz) -> milliliter (mL)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "ounce (U.S. fluid) (fl oz)",
+          "to": "cubic meter (m3)",
+          "rule": "2.957353E-05",
+          "rule_type": "factor",
+          "display_label": "ounce (U.S. fluid) (fl oz) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "ounce (U.S. fluid) (fl oz)",
+          "to": "milliliter (mL)",
+          "rule": "2.957353E+01",
+          "rule_type": "factor",
+          "display_label": "ounce (U.S. fluid) (fl oz) -> milliliter (mL)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "peck (U.S.) (pk)",
+          "to": "cubic meter (m3)",
+          "rule": "8.809768E-03",
+          "rule_type": "factor",
+          "display_label": "peck (U.S.) (pk) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "peck (U.S.) (pk)",
+          "to": "liter (L)",
+          "rule": "8.809768E+00",
+          "rule_type": "factor",
+          "display_label": "peck (U.S.) (pk) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "pint (U.S. dry) (dry pt)",
+          "to": "cubic meter (m3)",
+          "rule": "5.506105E-04",
+          "rule_type": "factor",
+          "display_label": "pint (U.S. dry) (dry pt) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "pint (U.S. dry) (dry pt)",
+          "to": "liter (L)",
+          "rule": "5.506105E-01",
+          "rule_type": "factor",
+          "display_label": "pint (U.S. dry) (dry pt) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "pint (U.S. liquid) (liq pt)",
+          "to": "cubic meter (m3)",
+          "rule": "4.731765E-04",
+          "rule_type": "factor",
+          "display_label": "pint (U.S. liquid) (liq pt) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "pint (U.S. liquid) (liq pt)",
+          "to": "liter (L)",
+          "rule": "4.731765E-01",
+          "rule_type": "factor",
+          "display_label": "pint (U.S. liquid) (liq pt) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "quart (U.S. dry) (dry qt)",
+          "to": "cubic meter (m3)",
+          "rule": "1.101221E-03",
+          "rule_type": "factor",
+          "display_label": "quart (U.S. dry) (dry qt) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "quart (U.S. dry) (dry qt)",
+          "to": "liter (L)",
+          "rule": "1.101221E+00",
+          "rule_type": "factor",
+          "display_label": "quart (U.S. dry) (dry qt) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "quart (U.S. liquid) (liq qt)",
+          "to": "cubic meter (m3)",
+          "rule": "9.463529E-04",
+          "rule_type": "factor",
+          "display_label": "quart (U.S. liquid) (liq qt) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "quart (U.S. liquid) (liq qt)",
+          "to": "liter (L)",
+          "rule": "9.463529E-01",
+          "rule_type": "factor",
+          "display_label": "quart (U.S. liquid) (liq qt) -> liter (L)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "stere (st)",
+          "to": "cubic meter (m3)",
+          "rule": "1.0E+00",
+          "rule_type": "factor",
+          "display_label": "stere (st) -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "tablespoon",
+          "to": "cubic meter (m3)",
+          "rule": "1.478676E-05",
+          "rule_type": "factor",
+          "display_label": "tablespoon -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "tablespoon",
+          "to": "milliliter (mL)",
+          "rule": "1.478676E+01",
+          "rule_type": "factor",
+          "display_label": "tablespoon -> milliliter (mL)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "teaspoon",
+          "to": "cubic meter (m3)",
+          "rule": "4.928922E-06",
+          "rule_type": "factor",
+          "display_label": "teaspoon -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "teaspoon",
+          "to": "milliliter (mL)",
+          "rule": "4.928922E+00",
+          "rule_type": "factor",
+          "display_label": "teaspoon -> milliliter (mL)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        },
+        {
+          "from": "ton, register",
+          "to": "cubic meter (m3)",
+          "rule": "2.831685E+00",
+          "rule_type": "factor",
+          "display_label": "ton, register -> cubic meter (m3)",
+          "source_appendix": "B.9",
+          "source_page": 80
+        }
+      ]
+    },
+    {
+      "name": "VOLUME DIVIDED BY TIME (includes FLOW)",
+      "slug": "volume-divided-by-time",
+      "conversions": [
+        {
+          "from": "cubic foot per minute (ft3 / min)",
+          "to": "cubic meter per second (m3 / s)",
+          "rule": "4.719474E-04",
+          "rule_type": "factor",
+          "display_label": "cubic foot per minute (ft3 / min) -> cubic meter per second (m3 / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "cubic foot per minute (ft3 / min)",
+          "to": "liter per second (L / s)",
+          "rule": "4.719474E-01",
+          "rule_type": "factor",
+          "display_label": "cubic foot per minute (ft3 / min) -> liter per second (L / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "cubic foot per second (ft3 / s)",
+          "to": "cubic meter per second (m3 / s)",
+          "rule": "2.831685E-02",
+          "rule_type": "factor",
+          "display_label": "cubic foot per second (ft3 / s) -> cubic meter per second (m3 / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "cubic inch per minute (in3 / min)",
+          "to": "cubic meter per second (m3 / s)",
+          "rule": "2.731177E-07",
+          "rule_type": "factor",
+          "display_label": "cubic inch per minute (in3 / min) -> cubic meter per second (m3 / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "cubic yard per minute (yd3 / min)",
+          "to": "cubic meter per second (m3 / s)",
+          "rule": "1.274258E-02",
+          "rule_type": "factor",
+          "display_label": "cubic yard per minute (yd3 / min) -> cubic meter per second (m3 / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "gallon (U.S.) per day (gal / d)",
+          "to": "cubic meter per second (m3 / s)",
+          "rule": "4.381264E-08",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) per day (gal / d) -> cubic meter per second (m3 / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "gallon (U.S.) per day (gal / d)",
+          "to": "liter per second (L / s)",
+          "rule": "4.381264E-05",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) per day (gal / d) -> liter per second (L / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "gallon (U.S.) per minute (gpm) (gal / min)",
+          "to": "cubic meter per second (m3 / s)",
+          "rule": "6.309020E-05",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) per minute (gpm) (gal / min) -> cubic meter per second (m3 / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        },
+        {
+          "from": "gallon (U.S.) per minute (gpm) (gal / min)",
+          "to": "liter per second (L / s)",
+          "rule": "6.309020E-02",
+          "rule_type": "factor",
+          "display_label": "gallon (U.S.) per minute (gpm) (gal / min) -> liter per second (L / s)",
+          "source_appendix": "B.9",
+          "source_page": 81
+        }
+      ]
+    }
+  ]
+}

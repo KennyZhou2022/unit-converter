@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/unit-converter/physical_quantity_conversions.schema.json",
+  "title": "unit-converter physical quantity conversion data",
+  "type": "object",
+  "required": ["version", "source", "appendix_relationship", "categories"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "source": {
+      "type": "object",
+      "required": ["name", "document", "appendix", "pages"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "document": {
+          "type": "string",
+          "minLength": 1
+        },
+        "appendix": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pages": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "appendix_relationship": {
+      "type": "object",
+      "required": ["b8", "b9", "selected_source"],
+      "additionalProperties": false,
+      "properties": {
+        "b8": {
+          "type": "string",
+          "minLength": 1
+        },
+        "b9": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selected_source": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "slug", "conversions"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "conversions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "from",
+                "to",
+                "rule",
+                "rule_type",
+                "display_label",
+                "source_appendix",
+                "source_page"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "from": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "to": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rule": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rule_type": {
+                  "type": "string",
+                  "enum": ["factor", "formula"]
+                },
+                "display_label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_appendix": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "source_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "subcategory": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2776 @@
+{
+  "version": 1,
+  "source": {
+    "name": "NIST Special Publication 811 (2008), Appendix B.9",
+    "document": "standards/raw/nistspecialpublication811e2008.pdf",
+    "appendix": "B.9",
+    "pages": "57-69"
+  },
+  "totals": {
+    "category_count": 30,
+    "direct_conversion_count": 451,
+    "unit_count": 467,
+    "unordered_convertible_pair_count": 2963,
+    "ordered_convertible_pair_count": 5926
+  },
+  "all_units": [
+    "British thermal unit (39 °F) (Btu)",
+    "British thermal unit (59 °F) (Btu)",
+    "British thermal unit (60 °F) (Btu)",
+    "British thermal unit (mean) (Btu)",
+    "British thermal unitIT (BtuIT)",
+    "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+    "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+    "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+    "British thermal unitIT per cubic foot (BtuIT / ft3)",
+    "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+    "British thermal unitIT per degree Rankine (Btu IT / °R)",
+    "British thermal unitIT per hour (BtuIT / h)",
+    "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+    "British thermal unitIT per pound (BtuIT / lb)",
+    "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+    "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+    "British thermal unitIT per second (BtuIT / s)",
+    "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+    "British thermal unitIT per square foot (Btu IT / ft2)",
+    "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+    "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+    "British thermal unitth (Btuth)",
+    "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+    "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+    "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+    "British thermal unitth per cubic foot (Btuth / ft3)",
+    "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+    "British thermal unitth per degree Rankine (Btu th / °R)",
+    "British thermal unitth per hour (Btuth / h)",
+    "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+    "British thermal unitth per minute (Btuth / min)",
+    "British thermal unitth per pound (Btuth / lb)",
+    "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+    "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+    "British thermal unitth per second (Btuth / s)",
+    "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+    "British thermal unitth per square foot (Btu th / ft2)",
+    "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+    "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+    "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+    "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+    "EMU of capacitance (abfarad)",
+    "EMU of current (abampere)",
+    "EMU of electric potential (abvolt)",
+    "EMU of inductance (abhenry)",
+    "EMU of resistance (abohm)",
+    "ESU of capacitance (statfarad)",
+    "ESU of current (statampere)",
+    "ESU of electric potential (statvolt)",
+    "ESU of inductance (stathenry)",
+    "ESU of resistance (statohm)",
+    "abampere",
+    "abcoulomb",
+    "abfarad",
+    "abhenry",
+    "abmho",
+    "abohm",
+    "abvolt",
+    "acceleration of free fall, standard (gn)",
+    "acre (based on U.S. survey foot)",
+    "acre-foot (based on U.S. survey foot)",
+    "ampere (A)",
+    "ampere hour (A · h)",
+    "ampere per meter (A / m)",
+    "are (a)",
+    "astronomical unit (ua)",
+    "atmosphere, standard (atm)",
+    "atmosphere, technical (at)",
+    "bar (bar)",
+    "barn (b)",
+    "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+    "becquerel (Bq)",
+    "biot (Bi)",
+    "bushel (U.S.) (bu)",
+    "calorie (15 °C) (cal15)",
+    "calorie (20 °C) (cal20)",
+    "calorie (mean) (cal)",
+    "calorie (mean), kilogram (nutrition)",
+    "calorieIT (calIT)",
+    "calorieIT per gram (calIT / g)",
+    "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+    "calorieIT per gram kelvin [calIT / (g · K)]",
+    "calorieIT, kilogram (nutrition)",
+    "calorieth (calth)",
+    "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+    "calorieth per gram (calth / g)",
+    "calorieth per gram degree Celsius [cal th / (g · °C)]",
+    "calorieth per gram kelvin [calth / (g · K)]",
+    "calorieth per minute (calth / min)",
+    "calorieth per second (calth / s)",
+    "calorieth per square centimeter (calth / cm2)",
+    "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+    "calorieth per square centimeter second [cal th / (cm2 · s)]",
+    "calorieth, kilogram (nutrition)",
+    "candela per square inch (cd / in2)",
+    "candela per square meter (cd / m2)",
+    "carat, metric",
+    "centimeter (cm)",
+    "centimeter of mercury (0 °C)",
+    "centimeter of mercury, conventional (cmHg)",
+    "centimeter of water (4 °C)",
+    "centimeter of water, conventional (cmH2O)",
+    "centipoise (cP)",
+    "centistokes (cSt)",
+    "chain (based on U.S. survey foot) (ch)",
+    "circular mil",
+    "clo",
+    "cord (128 ft3)",
+    "coulomb (C)",
+    "coulomb per kilogram (C / kg)",
+    "cubic foot (ft3)",
+    "cubic foot per minute (ft3 / min)",
+    "cubic foot per second (ft3 / s)",
+    "cubic inch (in3)",
+    "cubic inch per minute (in3 / min)",
+    "cubic meter (m3)",
+    "cubic meter per joule (m3 / J)",
+    "cubic meter per second (m3 / s)",
+    "cubic mile (mi3)",
+    "cubic yard (yd3)",
+    "cubic yard per minute (yd3 / min)",
+    "cup (U.S.)",
+    "curie (Ci)",
+    "darcy",
+    "day (d)",
+    "day (sidereal)",
+    "degree (°)",
+    "degree Celsius (°C) [temperature interval]",
+    "degree Celsius (°C) [temperature]",
+    "degree Fahrenheit (°F) [temperature interval]",
+    "degree Fahrenheit (°F) [temperature]",
+    "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+    "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+    "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+    "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+    "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+    "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+    "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+    "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+    "degree Rankine (°R) [temperature interval]",
+    "degree Rankine (°R) [temperature]",
+    "degree centigrade [temperature interval]",
+    "degree centigrade [temperature]",
+    "denier",
+    "dyne (dyn)",
+    "dyne centimeter (dyn · cm)",
+    "dyne per square centimeter (dyn / cm2)",
+    "electronvolt (eV)",
+    "erg (erg)",
+    "erg per second (erg / s)",
+    "erg per square centimeter second [erg / (cm2 · s)]",
+    "farad (F)",
+    "faraday (based on carbon 12)",
+    "fathom (based on U.S. survey foot)",
+    "femtometer (fm)",
+    "fermi",
+    "fluid ounce (U.S.) (fl oz)",
+    "foot (U.S. survey) (ft)",
+    "foot (ft)",
+    "foot of mercury, conventional (ftHg)",
+    "foot of water (39.2 °F)",
+    "foot of water, conventional (ftH2O)",
+    "foot per hour (ft / h)",
+    "foot per minute (ft / min)",
+    "foot per second (ft / s)",
+    "foot per second squared (ft / s2)",
+    "foot pound-force (ft · lbf)",
+    "foot pound-force per hour (ft · lbf / h)",
+    "foot pound-force per minute (ft · lbf / min)",
+    "foot pound-force per second (ft · lbf / s)",
+    "foot poundal",
+    "foot to the fourth power (ft4)",
+    "footcandle",
+    "footlambert",
+    "franklin (Fr)",
+    "gal (Gal)",
+    "gallon (U.S.) (gal)",
+    "gallon (U.S.) per day (gal / d)",
+    "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+    "gallon (U.S.) per minute (gpm) (gal / min)",
+    "gallon [Canadian and U.K. (Imperial)] (gal)",
+    "gamma (γ)",
+    "gauss (Gs, G)",
+    "gilbert (Gi)",
+    "gill (U.S.) (gi)",
+    "gill [Canadian and U.K. (Imperial)] (gi)",
+    "gon (also called grade) (gon)",
+    "grain (gr)",
+    "grain per gallon (U.S.) (gr / gal)",
+    "gram (g)",
+    "gram per cubic centimeter (g / cm3)",
+    "gram per liter (g / L)",
+    "gram per meter (g / m)",
+    "gram-force per square centimeter (gf / cm2)",
+    "gray (Gy)",
+    "hectare (ha)",
+    "henry (H)",
+    "horsepower (550 ft · lbf / s)",
+    "horsepower (U.K.)",
+    "horsepower (boiler)",
+    "horsepower (electric)",
+    "horsepower (metric)",
+    "horsepower (water)",
+    "hour (h)",
+    "hour (sidereal)",
+    "hundredweight (long, 112 lb)",
+    "hundredweight (short, 100 lb)",
+    "inch (in)",
+    "inch of mercury (32 °F)",
+    "inch of mercury (60 °F)",
+    "inch of mercury, conventional (inHg)",
+    "inch of water (39.2 °F)",
+    "inch of water (60 °F)",
+    "inch of water, conventional (inH2O)",
+    "inch per second (in / s)",
+    "inch per second squared (in / s2)",
+    "inch to the fourth power (in4)",
+    "joule (J)",
+    "joule per cubic meter (J / m3)",
+    "joule per kelvin (J / K)",
+    "joule per kilogram (J / kg)",
+    "joule per kilogram kelvin [J / (kg · K)]",
+    "joule per square meter (J / m2)",
+    "kayser (K)",
+    "kelvin (K) [temperature interval]",
+    "kelvin (K) [temperature]",
+    "kelvin per watt (K / W)",
+    "kilocalorie (mean) (kcal)",
+    "kilocalorieIT (kcalIT)",
+    "kilocalorieth (kcalth)",
+    "kilocalorieth per minute (kcalth / min)",
+    "kilocalorieth per second (kcalth / s)",
+    "kilogram (k g)",
+    "kilogram (kg)",
+    "kilogram meter squared (kg · m2)",
+    "kilogram per cubic meter (kg / m3)",
+    "kilogram per joule (kg / J)",
+    "kilogram per liter (kg / L)",
+    "kilogram per meter (kg / m)",
+    "kilogram per pascal second meter [kg / (Pa · s · m)]",
+    "kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+    "kilogram per second (kg / s)",
+    "kilogram per square meter (kg / m2)",
+    "kilogram-force (kgf)",
+    "kilogram-force meter (kgf · m)",
+    "kilogram-force per square centimeter (kgf / cm2)",
+    "kilogram-force per square meter (kgf / m2)",
+    "kilogram-force per square millimeter (kgf / mm2)",
+    "kilogram-force second squared per meter (kgf · s2 / m)",
+    "kilometer (km)",
+    "kilometer per hour (km / h)",
+    "kilometer per liter (km / L)",
+    "kilonewton (kN)",
+    "kilopascal (kPa)",
+    "kilopond (kilogram-force) (kp)",
+    "kilowatt hour (kW · h)",
+    "kip (1 kip = 1000 lbf)",
+    "kip per square inch (ksi) (kip / in2)",
+    "knot (nautical mile per hour)",
+    "lambert",
+    "langley (calth / cm2)",
+    "light year (l.y.)",
+    "liter (L)",
+    "liter per 100 kilometer (L / 100 km)",
+    "liter per joule (L / J)",
+    "liter per second (L / s)",
+    "lumen per square foot (lm / ft2)",
+    "lux (lx)",
+    "maxwell (Mx)",
+    "megajoule (MJ)",
+    "megapascal (MPa)",
+    "meter (m)",
+    "meter kelvin per watt (m · K / W)",
+    "meter per cubic meter (m / m3)",
+    "meter per second (m / s)",
+    "meter per second squared (m / s2)",
+    "meter squared (m2)",
+    "meter squared per second (m2 / s)",
+    "meter to the fourth power (m4)",
+    "mho",
+    "microinch",
+    "micrometer ( μm)",
+    "micron (μ)",
+    "mil",
+    "mil (0.001 in)",
+    "mil limeter (mm)",
+    "mile (based on U.S. survey foot) (mi)",
+    "mile (mi)",
+    "mile per gallon (U.S.) (mpg) (mi / gal)",
+    "mile per hour (mi / h)",
+    "mile per minute (mi / min)",
+    "mile per second (mi / s)",
+    "mile, nautical",
+    "millibar (mbar)",
+    "milligram (mg)",
+    "milligram per liter (mg / L)",
+    "milliliter (mL)",
+    "millimeter (mm)",
+    "millimeter of mercury, conventional (mmHg)",
+    "millimeter of water, conventional (mmH2O)",
+    "millinewton meter (mN · m)",
+    "minute (')",
+    "minute (min)",
+    "minute (sidereal)",
+    "nanometer (nm)",
+    "nanosecond (ns)",
+    "newton (N)",
+    "newton meter (N · m)",
+    "newton meter (N ·m)",
+    "newton meter per meter (N · m / m)",
+    "newton per kilogram (N / kg)",
+    "newton per meter (N / m)",
+    "oersted (Oe)",
+    "ohm ( Ω)",
+    "ohm (Ω)",
+    "ohm centimeter (Ω · cm)",
+    "ohm circular-mil per foot",
+    "ohm meter ( Ω · m)",
+    "ohm square millimeter per meter (Ω · mm2 / m)",
+    "ounce (U.S. fluid) (fl oz)",
+    "ounce (avoirdupois) (oz)",
+    "ounce (avoirdupois) per cubic inch (oz / in3)",
+    "ounce (avoirdupois) per gallon (U.S.) (oz / gal)",
+    "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal)",
+    "ounce (avoirdupois) per square foot (oz / ft2)",
+    "ounce (avoirdupois) per square inch (oz / in2)",
+    "ounce (avoirdupois) per square yard (oz / yd2)",
+    "ounce (avoirdupois)-force (ozf)",
+    "ounce (avoirdupois)-force inch (ozf · in)",
+    "ounce (troy or apothecary) (oz)",
+    "ounce [Canadian and U.K. fluid (Imperial)] (fl oz)",
+    "parsec (pc)",
+    "pascal (Pa)",
+    "pascal second (Pa · s)",
+    "peck (U.S.) (pk)",
+    "pennyweight (dwt)",
+    "per gallon pound per horsepower hour [lb / (hp · h)]",
+    "perm (0 °C)",
+    "perm (23 °C)",
+    "perm inch (0 °C)",
+    "perm inch (23 °C)",
+    "phot (ph)",
+    "pica (computer) (1/6 in)",
+    "pica (printer’s)",
+    "pint (U.S. dry) (dry pt)",
+    "pint (U.S. liquid) (liq pt)",
+    "point (computer) (1/72 in)",
+    "point (printer’s)",
+    "poise (P)",
+    "pound (avoirdupois) (lb)",
+    "pound (troy or apothecary) (lb)",
+    "pound foot squared (lb · ft2)",
+    "pound inch squared (lb · in2)",
+    "pound per cubic foot (lb / ft3)",
+    "pound per cubic inch (lb / in3)",
+    "pound per cubic yard (lb / yd3)",
+    "pound per foot (lb / ft)",
+    "pound per foot hour [lb / (ft · h)]",
+    "pound per foot second [lb / (ft · s)]",
+    "pound per gallon (U.S.) (lb / gal)",
+    "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal)",
+    "pound per hour (lb / h)",
+    "pound per inch (lb / in)",
+    "pound per minute (lb / min)",
+    "pound per second (lb / s)",
+    "pound per square foot (lb / ft2)",
+    "pound per square inch (not pound force) (lb / in2)",
+    "pound per yard (lb / yd)",
+    "pound-force (lbf)",
+    "pound-force foot (lbf · ft)",
+    "pound-force foot per inch (lbf · ft / in)",
+    "pound-force inch (lbf · in)",
+    "pound-force inch per inch (lbf · in / in)",
+    "pound-force per foot (lbf / ft)",
+    "pound-force per inch (lbf / in)",
+    "pound-force per pound (lbf / lb) (thrust to mass ratio)",
+    "pound-force per square foot (lbf / ft2)",
+    "pound-force per square inch (psi) (lbf / in2)",
+    "pound-force second per square foot (lbf · s / ft2)",
+    "pound-force second per square inch (lbf · s / in2)",
+    "poundal",
+    "poundal per square foot",
+    "poundal second per square foot",
+    "psi (pound-force per square inch) (lbf / in2)",
+    "quad (1015 BtuIT)",
+    "quart (U.S. dry) (dry qt)",
+    "quart (U.S. liquid) (liq qt)",
+    "rad (absorbed dose) (rad)",
+    "radian (rad)",
+    "radian per second (rad / s)",
+    "reciprocal meter (m ^-1)",
+    "reciprocal pascal second (Pa · s)^-1",
+    "rem (rem)",
+    "revolution (r)",
+    "revolution per minute (rpm) (r / min)",
+    "rhe",
+    "rod (based on U.S. survey foot) (rd)",
+    "roentgen (R)",
+    "rpm (revolution per minute) (r / min)",
+    "second (\")",
+    "second (s)",
+    "second (sidereal)",
+    "shake",
+    "siemens (S)",
+    "sievert (Sv)",
+    "slug (slug)",
+    "slug per cubic foot (slug / ft3)",
+    "slug per foot second [slug / (ft · s)]",
+    "square centimeter (cm2)",
+    "square foot (ft2)",
+    "square foot per hour (ft2 / h)",
+    "square foot per second (ft2 / s)",
+    "square inch (in2)",
+    "square kilometer (km2)",
+    "square meter (m2)",
+    "square meter kelvin per watt (m2 · K / W)",
+    "square meter per second (m2 / s)",
+    "square mile (based on U.S. survey foot) (mi2)",
+    "square mile (mi2)",
+    "square millimeter (mm2)",
+    "square yard (yd2)",
+    "statampere",
+    "statcoulomb",
+    "statfarad",
+    "stathenry",
+    "statmho",
+    "statohm",
+    "statvolt",
+    "stere (st)",
+    "stilb (sb)",
+    "stokes (St)",
+    "tablespoon",
+    "teaspoon",
+    "tesla (T)",
+    "tex",
+    "therm (EC)",
+    "therm (U.S.)",
+    "ton of TNT (energy equivalent)",
+    "ton of refrigeration (12 000 BtuIT / h)",
+    "ton, assay (AT)",
+    "ton, long (2240 lb)",
+    "ton, long, per cubic yard",
+    "ton, metric (t)",
+    "ton, register",
+    "ton, short (2000 lb)",
+    "ton, short, per cubic yard",
+    "ton, short, per hour",
+    "ton-force (2000 lbf)",
+    "tonne (called “metric ton” in U.S.) (t)",
+    "torr (Torr)",
+    "unit pole",
+    "volt (V)",
+    "watt (W)",
+    "watt hour (W · h)",
+    "watt per meter kelvin [W / (m · K)]",
+    "watt per square centimeter (W / cm2)",
+    "watt per square inch (W / in2)",
+    "watt per square meter (W / m2)",
+    "watt per square meter Kelvin [W / (m2 · K)]",
+    "watt per square meter kelvin [W / (m2 · K)]",
+    "watt second (W · s)",
+    "weber (Wb)",
+    "yard (yd)",
+    "year (365 days)",
+    "year (sidereal)",
+    "year (tropical)",
+    "ångström (Å)"
+  ],
+  "categories": [
+    {
+      "name": "ACCELERATION",
+      "slug": "acceleration",
+      "unit_count": 5,
+      "direct_conversion_count": 4,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 10,
+      "ordered_convertible_pair_count": 20,
+      "units": [
+        "acceleration of free fall, standard (gn)",
+        "foot per second squared (ft / s2)",
+        "gal (Gal)",
+        "inch per second squared (in / s2)",
+        "meter per second squared (m / s2)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "acceleration of free fall, standard (gn)",
+            "foot per second squared (ft / s2)",
+            "gal (Gal)",
+            "inch per second squared (in / s2)",
+            "meter per second squared (m / s2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ANGLE",
+      "slug": "angle",
+      "unit_count": 7,
+      "direct_conversion_count": 8,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 21,
+      "ordered_convertible_pair_count": 42,
+      "units": [
+        "degree (°)",
+        "gon (also called grade) (gon)",
+        "mil",
+        "minute (')",
+        "radian (rad)",
+        "revolution (r)",
+        "second (\")"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 7,
+          "unordered_convertible_pair_count": 21,
+          "ordered_convertible_pair_count": 42,
+          "units": [
+            "degree (°)",
+            "gon (also called grade) (gon)",
+            "mil",
+            "minute (')",
+            "radian (rad)",
+            "revolution (r)",
+            "second (\")"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AREA AND SECOND MOMENT OF AREA",
+      "slug": "area-and-second-moment-of-area",
+      "unit_count": 17,
+      "direct_conversion_count": 16,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 94,
+      "ordered_convertible_pair_count": 188,
+      "units": [
+        "acre (based on U.S. survey foot)",
+        "are (a)",
+        "barn (b)",
+        "circular mil",
+        "foot to the fourth power (ft4)",
+        "hectare (ha)",
+        "inch to the fourth power (in4)",
+        "meter to the fourth power (m4)",
+        "square centimeter (cm2)",
+        "square foot (ft2)",
+        "square inch (in2)",
+        "square kilometer (km2)",
+        "square meter (m2)",
+        "square mile (based on U.S. survey foot) (mi2)",
+        "square mile (mi2)",
+        "square millimeter (mm2)",
+        "square yard (yd2)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 14,
+          "unordered_convertible_pair_count": 91,
+          "ordered_convertible_pair_count": 182,
+          "units": [
+            "acre (based on U.S. survey foot)",
+            "are (a)",
+            "barn (b)",
+            "circular mil",
+            "hectare (ha)",
+            "square centimeter (cm2)",
+            "square foot (ft2)",
+            "square inch (in2)",
+            "square kilometer (km2)",
+            "square meter (m2)",
+            "square mile (based on U.S. survey foot) (mi2)",
+            "square mile (mi2)",
+            "square millimeter (mm2)",
+            "square yard (yd2)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "foot to the fourth power (ft4)",
+            "inch to the fourth power (in4)",
+            "meter to the fourth power (m4)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ELECTRICITY and MAGNETISM",
+      "slug": "electricity-and-magnetism",
+      "unit_count": 50,
+      "direct_conversion_count": 38,
+      "connected_component_count": 12,
+      "unordered_convertible_pair_count": 91,
+      "ordered_convertible_pair_count": 182,
+      "units": [
+        "EMU of capacitance (abfarad)",
+        "EMU of current (abampere)",
+        "EMU of electric potential (abvolt)",
+        "EMU of inductance (abhenry)",
+        "EMU of resistance (abohm)",
+        "ESU of capacitance (statfarad)",
+        "ESU of current (statampere)",
+        "ESU of electric potential (statvolt)",
+        "ESU of inductance (stathenry)",
+        "ESU of resistance (statohm)",
+        "abampere",
+        "abcoulomb",
+        "abfarad",
+        "abhenry",
+        "abmho",
+        "abohm",
+        "abvolt",
+        "ampere (A)",
+        "ampere hour (A · h)",
+        "ampere per meter (A / m)",
+        "biot (Bi)",
+        "coulomb (C)",
+        "farad (F)",
+        "faraday (based on carbon 12)",
+        "franklin (Fr)",
+        "gamma (γ)",
+        "gauss (Gs, G)",
+        "gilbert (Gi)",
+        "henry (H)",
+        "maxwell (Mx)",
+        "mho",
+        "oersted (Oe)",
+        "ohm ( Ω)",
+        "ohm (Ω)",
+        "ohm centimeter (Ω · cm)",
+        "ohm circular-mil per foot",
+        "ohm meter ( Ω · m)",
+        "ohm square millimeter per meter (Ω · mm2 / m)",
+        "siemens (S)",
+        "statampere",
+        "statcoulomb",
+        "statfarad",
+        "stathenry",
+        "statmho",
+        "statohm",
+        "statvolt",
+        "tesla (T)",
+        "unit pole",
+        "volt (V)",
+        "weber (Wb)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 7,
+          "unordered_convertible_pair_count": 21,
+          "ordered_convertible_pair_count": 42,
+          "units": [
+            "EMU of current (abampere)",
+            "ESU of current (statampere)",
+            "abampere",
+            "ampere (A)",
+            "biot (Bi)",
+            "gilbert (Gi)",
+            "statampere"
+          ]
+        },
+        {
+          "unit_count": 6,
+          "unordered_convertible_pair_count": 15,
+          "ordered_convertible_pair_count": 30,
+          "units": [
+            "abcoulomb",
+            "ampere hour (A · h)",
+            "coulomb (C)",
+            "faraday (based on carbon 12)",
+            "franklin (Fr)",
+            "statcoulomb"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "EMU of capacitance (abfarad)",
+            "ESU of capacitance (statfarad)",
+            "abfarad",
+            "farad (F)",
+            "statfarad"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "EMU of electric potential (abvolt)",
+            "ESU of electric potential (statvolt)",
+            "abvolt",
+            "statvolt",
+            "volt (V)"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "EMU of inductance (abhenry)",
+            "ESU of inductance (stathenry)",
+            "abhenry",
+            "henry (H)",
+            "stathenry"
+          ]
+        },
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "abmho",
+            "mho",
+            "siemens (S)",
+            "statmho"
+          ]
+        },
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "ohm centimeter (Ω · cm)",
+            "ohm circular-mil per foot",
+            "ohm meter ( Ω · m)",
+            "ohm square millimeter per meter (Ω · mm2 / m)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "EMU of resistance (abohm)",
+            "abohm",
+            "ohm (Ω)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "ESU of resistance (statohm)",
+            "ohm ( Ω)",
+            "statohm"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "gamma (γ)",
+            "gauss (Gs, G)",
+            "tesla (T)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "maxwell (Mx)",
+            "unit pole",
+            "weber (Wb)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "ampere per meter (A / m)",
+            "oersted (Oe)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ENERGY (includes WORK)",
+      "slug": "energy",
+      "unit_count": 30,
+      "direct_conversion_count": 29,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 435,
+      "ordered_convertible_pair_count": 870,
+      "units": [
+        "British thermal unit (39 °F) (Btu)",
+        "British thermal unit (59 °F) (Btu)",
+        "British thermal unit (60 °F) (Btu)",
+        "British thermal unit (mean) (Btu)",
+        "British thermal unitIT (BtuIT)",
+        "British thermal unitth (Btuth)",
+        "calorie (15 °C) (cal15)",
+        "calorie (20 °C) (cal20)",
+        "calorie (mean) (cal)",
+        "calorie (mean), kilogram (nutrition)",
+        "calorieIT (calIT)",
+        "calorieIT, kilogram (nutrition)",
+        "calorieth (calth)",
+        "calorieth, kilogram (nutrition)",
+        "electronvolt (eV)",
+        "erg (erg)",
+        "foot pound-force (ft · lbf)",
+        "foot poundal",
+        "joule (J)",
+        "kilocalorie (mean) (kcal)",
+        "kilocalorieIT (kcalIT)",
+        "kilocalorieth (kcalth)",
+        "kilowatt hour (kW · h)",
+        "megajoule (MJ)",
+        "quad (1015 BtuIT)",
+        "therm (EC)",
+        "therm (U.S.)",
+        "ton of TNT (energy equivalent)",
+        "watt hour (W · h)",
+        "watt second (W · s)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 30,
+          "unordered_convertible_pair_count": 435,
+          "ordered_convertible_pair_count": 870,
+          "units": [
+            "British thermal unit (39 °F) (Btu)",
+            "British thermal unit (59 °F) (Btu)",
+            "British thermal unit (60 °F) (Btu)",
+            "British thermal unit (mean) (Btu)",
+            "British thermal unitIT (BtuIT)",
+            "British thermal unitth (Btuth)",
+            "calorie (15 °C) (cal15)",
+            "calorie (20 °C) (cal20)",
+            "calorie (mean) (cal)",
+            "calorie (mean), kilogram (nutrition)",
+            "calorieIT (calIT)",
+            "calorieIT, kilogram (nutrition)",
+            "calorieth (calth)",
+            "calorieth, kilogram (nutrition)",
+            "electronvolt (eV)",
+            "erg (erg)",
+            "foot pound-force (ft · lbf)",
+            "foot poundal",
+            "joule (J)",
+            "kilocalorie (mean) (kcal)",
+            "kilocalorieIT (kcalIT)",
+            "kilocalorieth (kcalth)",
+            "kilowatt hour (kW · h)",
+            "megajoule (MJ)",
+            "quad (1015 BtuIT)",
+            "therm (EC)",
+            "therm (U.S.)",
+            "ton of TNT (energy equivalent)",
+            "watt hour (W · h)",
+            "watt second (W · s)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ENERGY DIVIDED BY AREA TIME",
+      "slug": "energy-divided-by-area-time",
+      "unit_count": 4,
+      "direct_conversion_count": 3,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 6,
+      "ordered_convertible_pair_count": 12,
+      "units": [
+        "erg per square centimeter second [erg / (cm2 · s)]",
+        "watt per square centimeter (W / cm2)",
+        "watt per square inch (W / in2)",
+        "watt per square meter (W / m2)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "erg per square centimeter second [erg / (cm2 · s)]",
+            "watt per square centimeter (W / cm2)",
+            "watt per square inch (W / in2)",
+            "watt per square meter (W / m2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FORCE",
+      "slug": "force",
+      "unit_count": 12,
+      "direct_conversion_count": 11,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 46,
+      "ordered_convertible_pair_count": 92,
+      "units": [
+        "dyne (dyn)",
+        "kilogram-force (kgf)",
+        "kilonewton (kN)",
+        "kilopond (kilogram-force) (kp)",
+        "kip (1 kip = 1000 lbf)",
+        "newton (N)",
+        "newton per kilogram (N / kg)",
+        "ounce (avoirdupois)-force (ozf)",
+        "pound-force (lbf)",
+        "pound-force per pound (lbf / lb) (thrust to mass ratio)",
+        "poundal",
+        "ton-force (2000 lbf)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 10,
+          "unordered_convertible_pair_count": 45,
+          "ordered_convertible_pair_count": 90,
+          "units": [
+            "dyne (dyn)",
+            "kilogram-force (kgf)",
+            "kilonewton (kN)",
+            "kilopond (kilogram-force) (kp)",
+            "kip (1 kip = 1000 lbf)",
+            "newton (N)",
+            "ounce (avoirdupois)-force (ozf)",
+            "pound-force (lbf)",
+            "poundal",
+            "ton-force (2000 lbf)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "newton per kilogram (N / kg)",
+            "pound-force per pound (lbf / lb) (thrust to mass ratio)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FORCE DIVIDED BY LENGTH",
+      "slug": "force-divided-by-length",
+      "unit_count": 3,
+      "direct_conversion_count": 2,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 3,
+      "ordered_convertible_pair_count": 6,
+      "units": [
+        "newton per meter (N / m)",
+        "pound-force per foot (lbf / ft)",
+        "pound-force per inch (lbf / in)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "newton per meter (N / m)",
+            "pound-force per foot (lbf / ft)",
+            "pound-force per inch (lbf / in)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HEAT",
+      "slug": "heat",
+      "unit_count": 84,
+      "direct_conversion_count": 67,
+      "connected_component_count": 17,
+      "unordered_convertible_pair_count": 225,
+      "ordered_convertible_pair_count": 450,
+      "units": [
+        "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+        "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+        "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+        "British thermal unitIT per cubic foot (BtuIT / ft3)",
+        "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+        "British thermal unitIT per degree Rankine (Btu IT / °R)",
+        "British thermal unitIT per hour (BtuIT / h)",
+        "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+        "British thermal unitIT per pound (BtuIT / lb)",
+        "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+        "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+        "British thermal unitIT per second (BtuIT / s)",
+        "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+        "British thermal unitIT per square foot (Btu IT / ft2)",
+        "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+        "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+        "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+        "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+        "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+        "British thermal unitth per cubic foot (Btuth / ft3)",
+        "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+        "British thermal unitth per degree Rankine (Btu th / °R)",
+        "British thermal unitth per hour (Btuth / h)",
+        "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+        "British thermal unitth per minute (Btuth / min)",
+        "British thermal unitth per pound (Btuth / lb)",
+        "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+        "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+        "British thermal unitth per second (Btuth / s)",
+        "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+        "British thermal unitth per square foot (Btu th / ft2)",
+        "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+        "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+        "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+        "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+        "calorieIT per gram (calIT / g)",
+        "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+        "calorieIT per gram kelvin [calIT / (g · K)]",
+        "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+        "calorieth per gram (calth / g)",
+        "calorieth per gram degree Celsius [cal th / (g · °C)]",
+        "calorieth per gram kelvin [calth / (g · K)]",
+        "calorieth per minute (calth / min)",
+        "calorieth per second (calth / s)",
+        "calorieth per square centimeter (calth / cm2)",
+        "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+        "calorieth per square centimeter second [cal th / (cm2 · s)]",
+        "clo",
+        "cubic meter per joule (m3 / J)",
+        "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+        "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+        "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+        "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+        "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+        "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+        "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+        "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+        "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+        "joule per cubic meter (J / m3)",
+        "joule per kelvin (J / K)",
+        "joule per kilogram (J / kg)",
+        "joule per kilogram kelvin [J / (kg · K)]",
+        "joule per square meter (J / m2)",
+        "kelvin per watt (K / W)",
+        "kilocalorieth per minute (kcalth / min)",
+        "kilocalorieth per second (kcalth / s)",
+        "kilogram per joule (kg / J)",
+        "kilometer per liter (km / L)",
+        "langley (calth / cm2)",
+        "liter per 100 kilometer (L / 100 km)",
+        "liter per joule (L / J)",
+        "meter kelvin per watt (m · K / W)",
+        "meter per cubic meter (m / m3)",
+        "mile per gallon (U.S.) (mpg) (mi / gal)",
+        "per gallon pound per horsepower hour [lb / (hp · h)]",
+        "square foot per hour (ft2 / h)",
+        "square meter kelvin per watt (m2 · K / W)",
+        "square meter per second (m2 / s)",
+        "ton of refrigeration (12 000 BtuIT / h)",
+        "watt (W)",
+        "watt per meter kelvin [W / (m · K)]",
+        "watt per square meter (W / m2)",
+        "watt per square meter Kelvin [W / (m2 · K)]",
+        "watt per square meter kelvin [W / (m2 · K)]"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 11,
+          "unordered_convertible_pair_count": 55,
+          "ordered_convertible_pair_count": 110,
+          "units": [
+            "British thermal unitIT per hour (BtuIT / h)",
+            "British thermal unitIT per second (BtuIT / s)",
+            "British thermal unitth per hour (Btuth / h)",
+            "British thermal unitth per minute (Btuth / min)",
+            "British thermal unitth per second (Btuth / s)",
+            "calorieth per minute (calth / min)",
+            "calorieth per second (calth / s)",
+            "kilocalorieth per minute (kcalth / min)",
+            "kilocalorieth per second (kcalth / s)",
+            "ton of refrigeration (12 000 BtuIT / h)",
+            "watt (W)"
+          ]
+        },
+        {
+          "unit_count": 9,
+          "unordered_convertible_pair_count": 36,
+          "ordered_convertible_pair_count": 72,
+          "units": [
+            "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+            "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+            "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+            "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+            "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+            "calorieIT per gram kelvin [calIT / (g · K)]",
+            "calorieth per gram degree Celsius [cal th / (g · °C)]",
+            "calorieth per gram kelvin [calth / (g · K)]",
+            "joule per kilogram kelvin [J / (kg · K)]"
+          ]
+        },
+        {
+          "unit_count": 9,
+          "unordered_convertible_pair_count": 36,
+          "ordered_convertible_pair_count": 72,
+          "units": [
+            "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+            "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+            "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+            "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+            "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+            "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+            "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+            "calorieth per square centimeter second [cal th / (cm2 · s)]",
+            "watt per square meter (W / m2)"
+          ]
+        },
+        {
+          "unit_count": 8,
+          "unordered_convertible_pair_count": 28,
+          "ordered_convertible_pair_count": 56,
+          "units": [
+            "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+            "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+            "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+            "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+            "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+            "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+            "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+            "watt per meter kelvin [W / (m · K)]"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+            "British thermal unitIT per degree Rankine (Btu IT / °R)",
+            "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+            "British thermal unitth per degree Rankine (Btu th / °R)",
+            "joule per kelvin (J / K)"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "British thermal unitIT per pound (BtuIT / lb)",
+            "British thermal unitth per pound (Btuth / lb)",
+            "calorieIT per gram (calIT / g)",
+            "calorieth per gram (calth / g)",
+            "joule per kilogram (J / kg)"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "British thermal unitIT per square foot (Btu IT / ft2)",
+            "British thermal unitth per square foot (Btu th / ft2)",
+            "calorieth per square centimeter (calth / cm2)",
+            "joule per square meter (J / m2)",
+            "langley (calth / cm2)"
+          ]
+        },
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+            "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+            "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+            "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+            "kelvin per watt (K / W)"
+          ]
+        },
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+            "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+            "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+            "watt per square meter kelvin [W / (m2 · K)]"
+          ]
+        },
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "clo",
+            "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+            "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+            "square meter kelvin per watt (m2 · K / W)"
+          ]
+        },
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "kilometer per liter (km / L)",
+            "liter per 100 kilometer (L / 100 km)",
+            "meter per cubic meter (m / m3)",
+            "mile per gallon (U.S.) (mpg) (mi / gal)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "British thermal unitIT per cubic foot (BtuIT / ft3)",
+            "British thermal unitth per cubic foot (Btuth / ft3)",
+            "joule per cubic meter (J / m3)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "cubic meter per joule (m3 / J)",
+            "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+            "liter per joule (L / J)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+            "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+            "meter kelvin per watt (m · K / W)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+            "watt per square meter Kelvin [W / (m2 · K)]"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "kilogram per joule (kg / J)",
+            "per gallon pound per horsepower hour [lb / (hp · h)]"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "square foot per hour (ft2 / h)",
+            "square meter per second (m2 / s)"
+          ]
+        }
+      ],
+      "subcategories": [
+        {
+          "name": "Available Energy",
+          "slug": "available-energy",
+          "unit_count": 8,
+          "direct_conversion_count": 6,
+          "connected_component_count": 2,
+          "unordered_convertible_pair_count": 13,
+          "ordered_convertible_pair_count": 26,
+          "units": [
+            "British thermal unitIT per cubic foot (BtuIT / ft3)",
+            "British thermal unitIT per pound (BtuIT / lb)",
+            "British thermal unitth per cubic foot (Btuth / ft3)",
+            "British thermal unitth per pound (Btuth / lb)",
+            "calorieIT per gram (calIT / g)",
+            "calorieth per gram (calth / g)",
+            "joule per cubic meter (J / m3)",
+            "joule per kilogram (J / kg)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 5,
+              "unordered_convertible_pair_count": 10,
+              "ordered_convertible_pair_count": 20,
+              "units": [
+                "British thermal unitIT per pound (BtuIT / lb)",
+                "British thermal unitth per pound (Btuth / lb)",
+                "calorieIT per gram (calIT / g)",
+                "calorieth per gram (calth / g)",
+                "joule per kilogram (J / kg)"
+              ]
+            },
+            {
+              "unit_count": 3,
+              "unordered_convertible_pair_count": 3,
+              "ordered_convertible_pair_count": 6,
+              "units": [
+                "British thermal unitIT per cubic foot (BtuIT / ft3)",
+                "British thermal unitth per cubic foot (Btuth / ft3)",
+                "joule per cubic meter (J / m3)"
+              ]
+            }
+          ],
+          "subcategory": "Available Energy"
+        },
+        {
+          "name": "Coefficient of Heat Transfer",
+          "slug": "coefficient-of-heat-transfer",
+          "unit_count": 6,
+          "direct_conversion_count": 4,
+          "connected_component_count": 2,
+          "unordered_convertible_pair_count": 7,
+          "ordered_convertible_pair_count": 14,
+          "units": [
+            "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+            "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+            "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+            "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+            "watt per square meter Kelvin [W / (m2 · K)]",
+            "watt per square meter kelvin [W / (m2 · K)]"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 4,
+              "unordered_convertible_pair_count": 6,
+              "ordered_convertible_pair_count": 12,
+              "units": [
+                "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+                "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+                "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+                "watt per square meter kelvin [W / (m2 · K)]"
+              ]
+            },
+            {
+              "unit_count": 2,
+              "unordered_convertible_pair_count": 1,
+              "ordered_convertible_pair_count": 2,
+              "units": [
+                "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+                "watt per square meter Kelvin [W / (m2 · K)]"
+              ]
+            }
+          ],
+          "subcategory": "Coefficient of Heat Transfer"
+        },
+        {
+          "name": "Density of Heat",
+          "slug": "density-of-heat",
+          "unit_count": 5,
+          "direct_conversion_count": 4,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "British thermal unitIT per square foot (Btu IT / ft2)",
+            "British thermal unitth per square foot (Btu th / ft2)",
+            "calorieth per square centimeter (calth / cm2)",
+            "joule per square meter (J / m2)",
+            "langley (calth / cm2)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 5,
+              "unordered_convertible_pair_count": 10,
+              "ordered_convertible_pair_count": 20,
+              "units": [
+                "British thermal unitIT per square foot (Btu IT / ft2)",
+                "British thermal unitth per square foot (Btu th / ft2)",
+                "calorieth per square centimeter (calth / cm2)",
+                "joule per square meter (J / m2)",
+                "langley (calth / cm2)"
+              ]
+            }
+          ],
+          "subcategory": "Density of Heat"
+        },
+        {
+          "name": "Density of Heat Flow Rate",
+          "slug": "density-of-heat-flow-rate",
+          "unit_count": 9,
+          "direct_conversion_count": 8,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 36,
+          "ordered_convertible_pair_count": 72,
+          "units": [
+            "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+            "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+            "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+            "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+            "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+            "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+            "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+            "calorieth per square centimeter second [cal th / (cm2 · s)]",
+            "watt per square meter (W / m2)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 9,
+              "unordered_convertible_pair_count": 36,
+              "ordered_convertible_pair_count": 72,
+              "units": [
+                "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+                "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+                "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+                "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+                "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+                "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+                "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+                "calorieth per square centimeter second [cal th / (cm2 · s)]",
+                "watt per square meter (W / m2)"
+              ]
+            }
+          ],
+          "subcategory": "Density of Heat Flow Rate"
+        },
+        {
+          "name": "Fuel Consumption",
+          "slug": "fuel-consumption",
+          "unit_count": 9,
+          "direct_conversion_count": 6,
+          "connected_component_count": 3,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "cubic meter per joule (m3 / J)",
+            "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+            "kilogram per joule (kg / J)",
+            "kilometer per liter (km / L)",
+            "liter per 100 kilometer (L / 100 km)",
+            "liter per joule (L / J)",
+            "meter per cubic meter (m / m3)",
+            "mile per gallon (U.S.) (mpg) (mi / gal)",
+            "per gallon pound per horsepower hour [lb / (hp · h)]"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 4,
+              "unordered_convertible_pair_count": 6,
+              "ordered_convertible_pair_count": 12,
+              "units": [
+                "kilometer per liter (km / L)",
+                "liter per 100 kilometer (L / 100 km)",
+                "meter per cubic meter (m / m3)",
+                "mile per gallon (U.S.) (mpg) (mi / gal)"
+              ]
+            },
+            {
+              "unit_count": 3,
+              "unordered_convertible_pair_count": 3,
+              "ordered_convertible_pair_count": 6,
+              "units": [
+                "cubic meter per joule (m3 / J)",
+                "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+                "liter per joule (L / J)"
+              ]
+            },
+            {
+              "unit_count": 2,
+              "unordered_convertible_pair_count": 1,
+              "ordered_convertible_pair_count": 2,
+              "units": [
+                "kilogram per joule (kg / J)",
+                "per gallon pound per horsepower hour [lb / (hp · h)]"
+              ]
+            }
+          ],
+          "subcategory": "Fuel Consumption"
+        },
+        {
+          "name": "Heat Capacity and Entropy",
+          "slug": "heat-capacity-and-entropy",
+          "unit_count": 5,
+          "direct_conversion_count": 4,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+            "British thermal unitIT per degree Rankine (Btu IT / °R)",
+            "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+            "British thermal unitth per degree Rankine (Btu th / °R)",
+            "joule per kelvin (J / K)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 5,
+              "unordered_convertible_pair_count": 10,
+              "ordered_convertible_pair_count": 20,
+              "units": [
+                "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+                "British thermal unitIT per degree Rankine (Btu IT / °R)",
+                "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+                "British thermal unitth per degree Rankine (Btu th / °R)",
+                "joule per kelvin (J / K)"
+              ]
+            }
+          ],
+          "subcategory": "Heat Capacity and Entropy"
+        },
+        {
+          "name": "Heat Flow Rate",
+          "slug": "heat-flow-rate",
+          "unit_count": 11,
+          "direct_conversion_count": 10,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 55,
+          "ordered_convertible_pair_count": 110,
+          "units": [
+            "British thermal unitIT per hour (BtuIT / h)",
+            "British thermal unitIT per second (BtuIT / s)",
+            "British thermal unitth per hour (Btuth / h)",
+            "British thermal unitth per minute (Btuth / min)",
+            "British thermal unitth per second (Btuth / s)",
+            "calorieth per minute (calth / min)",
+            "calorieth per second (calth / s)",
+            "kilocalorieth per minute (kcalth / min)",
+            "kilocalorieth per second (kcalth / s)",
+            "ton of refrigeration (12 000 BtuIT / h)",
+            "watt (W)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 11,
+              "unordered_convertible_pair_count": 55,
+              "ordered_convertible_pair_count": 110,
+              "units": [
+                "British thermal unitIT per hour (BtuIT / h)",
+                "British thermal unitIT per second (BtuIT / s)",
+                "British thermal unitth per hour (Btuth / h)",
+                "British thermal unitth per minute (Btuth / min)",
+                "British thermal unitth per second (Btuth / s)",
+                "calorieth per minute (calth / min)",
+                "calorieth per second (calth / s)",
+                "kilocalorieth per minute (kcalth / min)",
+                "kilocalorieth per second (kcalth / s)",
+                "ton of refrigeration (12 000 BtuIT / h)",
+                "watt (W)"
+              ]
+            }
+          ],
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "name": "Specific Heat Capacity and Specific Entropy",
+          "slug": "specific-heat-capacity-and-specific-entropy",
+          "unit_count": 9,
+          "direct_conversion_count": 8,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 36,
+          "ordered_convertible_pair_count": 72,
+          "units": [
+            "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+            "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+            "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+            "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+            "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+            "calorieIT per gram kelvin [calIT / (g · K)]",
+            "calorieth per gram degree Celsius [cal th / (g · °C)]",
+            "calorieth per gram kelvin [calth / (g · K)]",
+            "joule per kilogram kelvin [J / (kg · K)]"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 9,
+              "unordered_convertible_pair_count": 36,
+              "ordered_convertible_pair_count": 72,
+              "units": [
+                "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+                "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+                "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+                "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+                "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+                "calorieIT per gram kelvin [calIT / (g · K)]",
+                "calorieth per gram degree Celsius [cal th / (g · °C)]",
+                "calorieth per gram kelvin [calth / (g · K)]",
+                "joule per kilogram kelvin [J / (kg · K)]"
+              ]
+            }
+          ],
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        },
+        {
+          "name": "Thermal Conductivity",
+          "slug": "thermal-conductivity",
+          "unit_count": 8,
+          "direct_conversion_count": 7,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 28,
+          "ordered_convertible_pair_count": 56,
+          "units": [
+            "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+            "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+            "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+            "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+            "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+            "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+            "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+            "watt per meter kelvin [W / (m · K)]"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 8,
+              "unordered_convertible_pair_count": 28,
+              "ordered_convertible_pair_count": 56,
+              "units": [
+                "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+                "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+                "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+                "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+                "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+                "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+                "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+                "watt per meter kelvin [W / (m · K)]"
+              ]
+            }
+          ],
+          "subcategory": "Thermal Conductivity"
+        },
+        {
+          "name": "Thermal Diffusivity",
+          "slug": "thermal-diffusivity",
+          "unit_count": 2,
+          "direct_conversion_count": 1,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "square foot per hour (ft2 / h)",
+            "square meter per second (m2 / s)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 2,
+              "unordered_convertible_pair_count": 1,
+              "ordered_convertible_pair_count": 2,
+              "units": [
+                "square foot per hour (ft2 / h)",
+                "square meter per second (m2 / s)"
+              ]
+            }
+          ],
+          "subcategory": "Thermal Diffusivity"
+        },
+        {
+          "name": "Thermal Insulance",
+          "slug": "thermal-insulance",
+          "unit_count": 4,
+          "direct_conversion_count": 3,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "clo",
+            "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+            "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+            "square meter kelvin per watt (m2 · K / W)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 4,
+              "unordered_convertible_pair_count": 6,
+              "ordered_convertible_pair_count": 12,
+              "units": [
+                "clo",
+                "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+                "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+                "square meter kelvin per watt (m2 · K / W)"
+              ]
+            }
+          ],
+          "subcategory": "Thermal Insulance"
+        },
+        {
+          "name": "Thermal Resistance",
+          "slug": "thermal-resistance",
+          "unit_count": 5,
+          "direct_conversion_count": 4,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+            "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+            "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+            "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+            "kelvin per watt (K / W)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 5,
+              "unordered_convertible_pair_count": 10,
+              "ordered_convertible_pair_count": 20,
+              "units": [
+                "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+                "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+                "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+                "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+                "kelvin per watt (K / W)"
+              ]
+            }
+          ],
+          "subcategory": "Thermal Resistance"
+        },
+        {
+          "name": "Thermal Resistivity",
+          "slug": "thermal-resistivity",
+          "unit_count": 3,
+          "direct_conversion_count": 2,
+          "connected_component_count": 1,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+            "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+            "meter kelvin per watt (m · K / W)"
+          ],
+          "connected_components": [
+            {
+              "unit_count": 3,
+              "unordered_convertible_pair_count": 3,
+              "ordered_convertible_pair_count": 6,
+              "units": [
+                "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+                "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+                "meter kelvin per watt (m · K / W)"
+              ]
+            }
+          ],
+          "subcategory": "Thermal Resistivity"
+        }
+      ]
+    },
+    {
+      "name": "LENGTH",
+      "slug": "length",
+      "unit_count": 32,
+      "direct_conversion_count": 35,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 436,
+      "ordered_convertible_pair_count": 872,
+      "units": [
+        "astronomical unit (ua)",
+        "centimeter (cm)",
+        "chain (based on U.S. survey foot) (ch)",
+        "fathom (based on U.S. survey foot)",
+        "femtometer (fm)",
+        "fermi",
+        "foot (U.S. survey) (ft)",
+        "foot (ft)",
+        "inch (in)",
+        "kayser (K)",
+        "kilometer (km)",
+        "light year (l.y.)",
+        "meter (m)",
+        "microinch",
+        "micrometer ( μm)",
+        "micron (μ)",
+        "mil (0.001 in)",
+        "mil limeter (mm)",
+        "mile (based on U.S. survey foot) (mi)",
+        "mile (mi)",
+        "mile, nautical",
+        "millimeter (mm)",
+        "nanometer (nm)",
+        "parsec (pc)",
+        "pica (computer) (1/6 in)",
+        "pica (printer’s)",
+        "point (computer) (1/72 in)",
+        "point (printer’s)",
+        "reciprocal meter (m ^-1)",
+        "rod (based on U.S. survey foot) (rd)",
+        "yard (yd)",
+        "ångström (Å)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 30,
+          "unordered_convertible_pair_count": 435,
+          "ordered_convertible_pair_count": 870,
+          "units": [
+            "astronomical unit (ua)",
+            "centimeter (cm)",
+            "chain (based on U.S. survey foot) (ch)",
+            "fathom (based on U.S. survey foot)",
+            "femtometer (fm)",
+            "fermi",
+            "foot (U.S. survey) (ft)",
+            "foot (ft)",
+            "inch (in)",
+            "kilometer (km)",
+            "light year (l.y.)",
+            "meter (m)",
+            "microinch",
+            "micrometer ( μm)",
+            "micron (μ)",
+            "mil (0.001 in)",
+            "mil limeter (mm)",
+            "mile (based on U.S. survey foot) (mi)",
+            "mile (mi)",
+            "mile, nautical",
+            "millimeter (mm)",
+            "nanometer (nm)",
+            "parsec (pc)",
+            "pica (computer) (1/6 in)",
+            "pica (printer’s)",
+            "point (computer) (1/72 in)",
+            "point (printer’s)",
+            "rod (based on U.S. survey foot) (rd)",
+            "yard (yd)",
+            "ångström (Å)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "kayser (K)",
+            "reciprocal meter (m ^-1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LIGHT",
+      "slug": "light",
+      "unit_count": 9,
+      "direct_conversion_count": 7,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 16,
+      "ordered_convertible_pair_count": 32,
+      "units": [
+        "candela per square inch (cd / in2)",
+        "candela per square meter (cd / m2)",
+        "footcandle",
+        "footlambert",
+        "lambert",
+        "lumen per square foot (lm / ft2)",
+        "lux (lx)",
+        "phot (ph)",
+        "stilb (sb)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "candela per square inch (cd / in2)",
+            "candela per square meter (cd / m2)",
+            "footlambert",
+            "lambert",
+            "stilb (sb)"
+          ]
+        },
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "footcandle",
+            "lumen per square foot (lm / ft2)",
+            "lux (lx)",
+            "phot (ph)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MASS and MOMENT OF INERTIA",
+      "slug": "mass-and-moment-of-inertia",
+      "unit_count": 23,
+      "direct_conversion_count": 24,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 193,
+      "ordered_convertible_pair_count": 386,
+      "units": [
+        "carat, metric",
+        "grain (gr)",
+        "gram (g)",
+        "hundredweight (long, 112 lb)",
+        "hundredweight (short, 100 lb)",
+        "kilogram (k g)",
+        "kilogram (kg)",
+        "kilogram meter squared (kg · m2)",
+        "kilogram-force second squared per meter (kgf · s2 / m)",
+        "milligram (mg)",
+        "ounce (avoirdupois) (oz)",
+        "ounce (troy or apothecary) (oz)",
+        "pennyweight (dwt)",
+        "pound (avoirdupois) (lb)",
+        "pound (troy or apothecary) (lb)",
+        "pound foot squared (lb · ft2)",
+        "pound inch squared (lb · in2)",
+        "slug (slug)",
+        "ton, assay (AT)",
+        "ton, long (2240 lb)",
+        "ton, metric (t)",
+        "ton, short (2000 lb)",
+        "tonne (called “metric ton” in U.S.) (t)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 20,
+          "unordered_convertible_pair_count": 190,
+          "ordered_convertible_pair_count": 380,
+          "units": [
+            "carat, metric",
+            "grain (gr)",
+            "gram (g)",
+            "hundredweight (long, 112 lb)",
+            "hundredweight (short, 100 lb)",
+            "kilogram (k g)",
+            "kilogram (kg)",
+            "kilogram-force second squared per meter (kgf · s2 / m)",
+            "milligram (mg)",
+            "ounce (avoirdupois) (oz)",
+            "ounce (troy or apothecary) (oz)",
+            "pennyweight (dwt)",
+            "pound (avoirdupois) (lb)",
+            "pound (troy or apothecary) (lb)",
+            "slug (slug)",
+            "ton, assay (AT)",
+            "ton, long (2240 lb)",
+            "ton, metric (t)",
+            "ton, short (2000 lb)",
+            "tonne (called “metric ton” in U.S.) (t)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "kilogram meter squared (kg · m2)",
+            "pound foot squared (lb · ft2)",
+            "pound inch squared (lb · in2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY AREA",
+      "slug": "mass-divided-by-area",
+      "unit_count": 6,
+      "direct_conversion_count": 5,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 15,
+      "ordered_convertible_pair_count": 30,
+      "units": [
+        "kilogram per square meter (kg / m2)",
+        "ounce (avoirdupois) per square foot (oz / ft2)",
+        "ounce (avoirdupois) per square inch (oz / in2)",
+        "ounce (avoirdupois) per square yard (oz / yd2)",
+        "pound per square foot (lb / ft2)",
+        "pound per square inch (not pound force) (lb / in2)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 6,
+          "unordered_convertible_pair_count": 15,
+          "ordered_convertible_pair_count": 30,
+          "units": [
+            "kilogram per square meter (kg / m2)",
+            "ounce (avoirdupois) per square foot (oz / ft2)",
+            "ounce (avoirdupois) per square inch (oz / in2)",
+            "ounce (avoirdupois) per square yard (oz / yd2)",
+            "pound per square foot (lb / ft2)",
+            "pound per square inch (not pound force) (lb / in2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY LENGTH",
+      "slug": "mass-divided-by-length",
+      "unit_count": 7,
+      "direct_conversion_count": 6,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 21,
+      "ordered_convertible_pair_count": 42,
+      "units": [
+        "denier",
+        "gram per meter (g / m)",
+        "kilogram per meter (kg / m)",
+        "pound per foot (lb / ft)",
+        "pound per inch (lb / in)",
+        "pound per yard (lb / yd)",
+        "tex"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 7,
+          "unordered_convertible_pair_count": 21,
+          "ordered_convertible_pair_count": 42,
+          "units": [
+            "denier",
+            "gram per meter (g / m)",
+            "kilogram per meter (kg / m)",
+            "pound per foot (lb / ft)",
+            "pound per inch (lb / in)",
+            "pound per yard (lb / yd)",
+            "tex"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY TIME (includes FLOW)",
+      "slug": "mass-divided-by-time",
+      "unit_count": 5,
+      "direct_conversion_count": 4,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 10,
+      "ordered_convertible_pair_count": 20,
+      "units": [
+        "kilogram per second (kg / s)",
+        "pound per hour (lb / h)",
+        "pound per minute (lb / min)",
+        "pound per second (lb / s)",
+        "ton, short, per hour"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "kilogram per second (kg / s)",
+            "pound per hour (lb / h)",
+            "pound per minute (lb / min)",
+            "pound per second (lb / s)",
+            "ton, short, per hour"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)",
+      "slug": "mass-divided-by-volume",
+      "unit_count": 17,
+      "direct_conversion_count": 18,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 136,
+      "ordered_convertible_pair_count": 272,
+      "units": [
+        "grain per gallon (U.S.) (gr / gal)",
+        "gram per cubic centimeter (g / cm3)",
+        "gram per liter (g / L)",
+        "kilogram per cubic meter (kg / m3)",
+        "kilogram per liter (kg / L)",
+        "milligram per liter (mg / L)",
+        "ounce (avoirdupois) per cubic inch (oz / in3)",
+        "ounce (avoirdupois) per gallon (U.S.) (oz / gal)",
+        "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal)",
+        "pound per cubic foot (lb / ft3)",
+        "pound per cubic inch (lb / in3)",
+        "pound per cubic yard (lb / yd3)",
+        "pound per gallon (U.S.) (lb / gal)",
+        "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal)",
+        "slug per cubic foot (slug / ft3)",
+        "ton, long, per cubic yard",
+        "ton, short, per cubic yard"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 17,
+          "unordered_convertible_pair_count": 136,
+          "ordered_convertible_pair_count": 272,
+          "units": [
+            "grain per gallon (U.S.) (gr / gal)",
+            "gram per cubic centimeter (g / cm3)",
+            "gram per liter (g / L)",
+            "kilogram per cubic meter (kg / m3)",
+            "kilogram per liter (kg / L)",
+            "milligram per liter (mg / L)",
+            "ounce (avoirdupois) per cubic inch (oz / in3)",
+            "ounce (avoirdupois) per gallon (U.S.) (oz / gal)",
+            "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal)",
+            "pound per cubic foot (lb / ft3)",
+            "pound per cubic inch (lb / in3)",
+            "pound per cubic yard (lb / yd3)",
+            "pound per gallon (U.S.) (lb / gal)",
+            "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal)",
+            "slug per cubic foot (slug / ft3)",
+            "ton, long, per cubic yard",
+            "ton, short, per cubic yard"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MOMENT OF FORCE or TORQUE",
+      "slug": "moment-of-force-or-torque",
+      "unit_count": 8,
+      "direct_conversion_count": 6,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 13,
+      "ordered_convertible_pair_count": 26,
+      "units": [
+        "dyne centimeter (dyn · cm)",
+        "kilogram-force meter (kgf · m)",
+        "millinewton meter (mN · m)",
+        "newton meter (N · m)",
+        "newton meter (N ·m)",
+        "ounce (avoirdupois)-force inch (ozf · in)",
+        "pound-force foot (lbf · ft)",
+        "pound-force inch (lbf · in)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "dyne centimeter (dyn · cm)",
+            "kilogram-force meter (kgf · m)",
+            "newton meter (N · m)",
+            "pound-force foot (lbf · ft)",
+            "pound-force inch (lbf · in)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "millinewton meter (mN · m)",
+            "newton meter (N ·m)",
+            "ounce (avoirdupois)-force inch (ozf · in)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MOMENT OF FORCE or TORQUE, DIVIDED BY LENGTH",
+      "slug": "moment-of-force-or-torque-divided-by-length",
+      "unit_count": 3,
+      "direct_conversion_count": 2,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 3,
+      "ordered_convertible_pair_count": 6,
+      "units": [
+        "newton meter per meter (N · m / m)",
+        "pound-force foot per inch (lbf · ft / in)",
+        "pound-force inch per inch (lbf · in / in)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "newton meter per meter (N · m / m)",
+            "pound-force foot per inch (lbf · ft / in)",
+            "pound-force inch per inch (lbf · in / in)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PERMEABILITY",
+      "slug": "permeability",
+      "unit_count": 8,
+      "direct_conversion_count": 5,
+      "connected_component_count": 3,
+      "unordered_convertible_pair_count": 7,
+      "ordered_convertible_pair_count": 14,
+      "units": [
+        "darcy",
+        "kilogram per pascal second meter [kg / (Pa · s · m)]",
+        "kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+        "meter squared (m2)",
+        "perm (0 °C)",
+        "perm (23 °C)",
+        "perm inch (0 °C)",
+        "perm inch (23 °C)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "kilogram per pascal second meter [kg / (Pa · s · m)]",
+            "perm inch (0 °C)",
+            "perm inch (23 °C)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+            "perm (0 °C)",
+            "perm (23 °C)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "darcy",
+            "meter squared (m2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "POWER",
+      "slug": "power",
+      "unit_count": 11,
+      "direct_conversion_count": 10,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 55,
+      "ordered_convertible_pair_count": 110,
+      "units": [
+        "erg per second (erg / s)",
+        "foot pound-force per hour (ft · lbf / h)",
+        "foot pound-force per minute (ft · lbf / min)",
+        "foot pound-force per second (ft · lbf / s)",
+        "horsepower (550 ft · lbf / s)",
+        "horsepower (U.K.)",
+        "horsepower (boiler)",
+        "horsepower (electric)",
+        "horsepower (metric)",
+        "horsepower (water)",
+        "watt (W)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 11,
+          "unordered_convertible_pair_count": 55,
+          "ordered_convertible_pair_count": 110,
+          "units": [
+            "erg per second (erg / s)",
+            "foot pound-force per hour (ft · lbf / h)",
+            "foot pound-force per minute (ft · lbf / min)",
+            "foot pound-force per second (ft · lbf / s)",
+            "horsepower (550 ft · lbf / s)",
+            "horsepower (U.K.)",
+            "horsepower (boiler)",
+            "horsepower (electric)",
+            "horsepower (metric)",
+            "horsepower (water)",
+            "watt (W)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)",
+      "slug": "pressure-or-stress",
+      "unit_count": 33,
+      "direct_conversion_count": 47,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 528,
+      "ordered_convertible_pair_count": 1056,
+      "units": [
+        "atmosphere, standard (atm)",
+        "atmosphere, technical (at)",
+        "bar (bar)",
+        "centimeter of mercury (0 °C)",
+        "centimeter of mercury, conventional (cmHg)",
+        "centimeter of water (4 °C)",
+        "centimeter of water, conventional (cmH2O)",
+        "dyne per square centimeter (dyn / cm2)",
+        "foot of mercury, conventional (ftHg)",
+        "foot of water (39.2 °F)",
+        "foot of water, conventional (ftH2O)",
+        "gram-force per square centimeter (gf / cm2)",
+        "inch of mercury (32 °F)",
+        "inch of mercury (60 °F)",
+        "inch of mercury, conventional (inHg)",
+        "inch of water (39.2 °F)",
+        "inch of water (60 °F)",
+        "inch of water, conventional (inH2O)",
+        "kilogram-force per square centimeter (kgf / cm2)",
+        "kilogram-force per square meter (kgf / m2)",
+        "kilogram-force per square millimeter (kgf / mm2)",
+        "kilopascal (kPa)",
+        "kip per square inch (ksi) (kip / in2)",
+        "megapascal (MPa)",
+        "millibar (mbar)",
+        "millimeter of mercury, conventional (mmHg)",
+        "millimeter of water, conventional (mmH2O)",
+        "pascal (Pa)",
+        "pound-force per square foot (lbf / ft2)",
+        "pound-force per square inch (psi) (lbf / in2)",
+        "poundal per square foot",
+        "psi (pound-force per square inch) (lbf / in2)",
+        "torr (Torr)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 33,
+          "unordered_convertible_pair_count": 528,
+          "ordered_convertible_pair_count": 1056,
+          "units": [
+            "atmosphere, standard (atm)",
+            "atmosphere, technical (at)",
+            "bar (bar)",
+            "centimeter of mercury (0 °C)",
+            "centimeter of mercury, conventional (cmHg)",
+            "centimeter of water (4 °C)",
+            "centimeter of water, conventional (cmH2O)",
+            "dyne per square centimeter (dyn / cm2)",
+            "foot of mercury, conventional (ftHg)",
+            "foot of water (39.2 °F)",
+            "foot of water, conventional (ftH2O)",
+            "gram-force per square centimeter (gf / cm2)",
+            "inch of mercury (32 °F)",
+            "inch of mercury (60 °F)",
+            "inch of mercury, conventional (inHg)",
+            "inch of water (39.2 °F)",
+            "inch of water (60 °F)",
+            "inch of water, conventional (inH2O)",
+            "kilogram-force per square centimeter (kgf / cm2)",
+            "kilogram-force per square meter (kgf / m2)",
+            "kilogram-force per square millimeter (kgf / mm2)",
+            "kilopascal (kPa)",
+            "kip per square inch (ksi) (kip / in2)",
+            "megapascal (MPa)",
+            "millibar (mbar)",
+            "millimeter of mercury, conventional (mmHg)",
+            "millimeter of water, conventional (mmH2O)",
+            "pascal (Pa)",
+            "pound-force per square foot (lbf / ft2)",
+            "pound-force per square inch (psi) (lbf / in2)",
+            "poundal per square foot",
+            "psi (pound-force per square inch) (lbf / in2)",
+            "torr (Torr)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RADIOLOGY",
+      "slug": "radiology",
+      "unit_count": 8,
+      "direct_conversion_count": 4,
+      "connected_component_count": 4,
+      "unordered_convertible_pair_count": 4,
+      "ordered_convertible_pair_count": 8,
+      "units": [
+        "becquerel (Bq)",
+        "coulomb per kilogram (C / kg)",
+        "curie (Ci)",
+        "gray (Gy)",
+        "rad (absorbed dose) (rad)",
+        "rem (rem)",
+        "roentgen (R)",
+        "sievert (Sv)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "becquerel (Bq)",
+            "curie (Ci)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "coulomb per kilogram (C / kg)",
+            "roentgen (R)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "gray (Gy)",
+            "rad (absorbed dose) (rad)"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "rem (rem)",
+            "sievert (Sv)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TEMPERATURE",
+      "slug": "temperature",
+      "unit_count": 5,
+      "direct_conversion_count": 6,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 10,
+      "ordered_convertible_pair_count": 20,
+      "units": [
+        "degree Celsius (°C) [temperature]",
+        "degree Fahrenheit (°F) [temperature]",
+        "degree Rankine (°R) [temperature]",
+        "degree centigrade [temperature]",
+        "kelvin (K) [temperature]"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "degree Celsius (°C) [temperature]",
+            "degree Fahrenheit (°F) [temperature]",
+            "degree Rankine (°R) [temperature]",
+            "degree centigrade [temperature]",
+            "kelvin (K) [temperature]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TEMPERATURE INTERVAL",
+      "slug": "temperature-interval",
+      "unit_count": 5,
+      "direct_conversion_count": 5,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 10,
+      "ordered_convertible_pair_count": 20,
+      "units": [
+        "degree Celsius (°C) [temperature interval]",
+        "degree Fahrenheit (°F) [temperature interval]",
+        "degree Rankine (°R) [temperature interval]",
+        "degree centigrade [temperature interval]",
+        "kelvin (K) [temperature interval]"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 5,
+          "unordered_convertible_pair_count": 10,
+          "ordered_convertible_pair_count": 20,
+          "units": [
+            "degree Celsius (°C) [temperature interval]",
+            "degree Fahrenheit (°F) [temperature interval]",
+            "degree Rankine (°R) [temperature interval]",
+            "degree centigrade [temperature interval]",
+            "kelvin (K) [temperature interval]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TIME",
+      "slug": "time",
+      "unit_count": 13,
+      "direct_conversion_count": 12,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 78,
+      "ordered_convertible_pair_count": 156,
+      "units": [
+        "day (d)",
+        "day (sidereal)",
+        "hour (h)",
+        "hour (sidereal)",
+        "minute (min)",
+        "minute (sidereal)",
+        "nanosecond (ns)",
+        "second (s)",
+        "second (sidereal)",
+        "shake",
+        "year (365 days)",
+        "year (sidereal)",
+        "year (tropical)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 13,
+          "unordered_convertible_pair_count": 78,
+          "ordered_convertible_pair_count": 156,
+          "units": [
+            "day (d)",
+            "day (sidereal)",
+            "hour (h)",
+            "hour (sidereal)",
+            "minute (min)",
+            "minute (sidereal)",
+            "nanosecond (ns)",
+            "second (s)",
+            "second (sidereal)",
+            "shake",
+            "year (365 days)",
+            "year (sidereal)",
+            "year (tropical)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VELOCITY (includes SPEED)",
+      "slug": "velocity",
+      "unit_count": 13,
+      "direct_conversion_count": 12,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 48,
+      "ordered_convertible_pair_count": 96,
+      "units": [
+        "foot per hour (ft / h)",
+        "foot per minute (ft / min)",
+        "foot per second (ft / s)",
+        "inch per second (in / s)",
+        "kilometer per hour (km / h)",
+        "knot (nautical mile per hour)",
+        "meter per second (m / s)",
+        "mile per hour (mi / h)",
+        "mile per minute (mi / min)",
+        "mile per second (mi / s)",
+        "radian per second (rad / s)",
+        "revolution per minute (rpm) (r / min)",
+        "rpm (revolution per minute) (r / min)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 10,
+          "unordered_convertible_pair_count": 45,
+          "ordered_convertible_pair_count": 90,
+          "units": [
+            "foot per hour (ft / h)",
+            "foot per minute (ft / min)",
+            "foot per second (ft / s)",
+            "inch per second (in / s)",
+            "kilometer per hour (km / h)",
+            "knot (nautical mile per hour)",
+            "meter per second (m / s)",
+            "mile per hour (mi / h)",
+            "mile per minute (mi / min)",
+            "mile per second (mi / s)"
+          ]
+        },
+        {
+          "unit_count": 3,
+          "unordered_convertible_pair_count": 3,
+          "ordered_convertible_pair_count": 6,
+          "units": [
+            "radian per second (rad / s)",
+            "revolution per minute (rpm) (r / min)",
+            "rpm (revolution per minute) (r / min)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VISCOSITY, DYNAMIC",
+      "slug": "viscosity-dynamic",
+      "unit_count": 11,
+      "direct_conversion_count": 9,
+      "connected_component_count": 2,
+      "unordered_convertible_pair_count": 37,
+      "ordered_convertible_pair_count": 74,
+      "units": [
+        "centipoise (cP)",
+        "pascal second (Pa · s)",
+        "poise (P)",
+        "pound per foot hour [lb / (ft · h)]",
+        "pound per foot second [lb / (ft · s)]",
+        "pound-force second per square foot (lbf · s / ft2)",
+        "pound-force second per square inch (lbf · s / in2)",
+        "poundal second per square foot",
+        "reciprocal pascal second (Pa · s)^-1",
+        "rhe",
+        "slug per foot second [slug / (ft · s)]"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 9,
+          "unordered_convertible_pair_count": 36,
+          "ordered_convertible_pair_count": 72,
+          "units": [
+            "centipoise (cP)",
+            "pascal second (Pa · s)",
+            "poise (P)",
+            "pound per foot hour [lb / (ft · h)]",
+            "pound per foot second [lb / (ft · s)]",
+            "pound-force second per square foot (lbf · s / ft2)",
+            "pound-force second per square inch (lbf · s / in2)",
+            "poundal second per square foot",
+            "slug per foot second [slug / (ft · s)]"
+          ]
+        },
+        {
+          "unit_count": 2,
+          "unordered_convertible_pair_count": 1,
+          "ordered_convertible_pair_count": 2,
+          "units": [
+            "reciprocal pascal second (Pa · s)^-1",
+            "rhe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VISCOSITY, KINEMATIC",
+      "slug": "viscosity-kinematic",
+      "unit_count": 4,
+      "direct_conversion_count": 3,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 6,
+      "ordered_convertible_pair_count": 12,
+      "units": [
+        "centistokes (cSt)",
+        "meter squared per second (m2 / s)",
+        "square foot per second (ft2 / s)",
+        "stokes (St)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 4,
+          "unordered_convertible_pair_count": 6,
+          "ordered_convertible_pair_count": 12,
+          "units": [
+            "centistokes (cSt)",
+            "meter squared per second (m2 / s)",
+            "square foot per second (ft2 / s)",
+            "stokes (St)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VOLUME (includes CAPACITY)",
+      "slug": "volume",
+      "unit_count": 28,
+      "direct_conversion_count": 44,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 378,
+      "ordered_convertible_pair_count": 756,
+      "units": [
+        "acre-foot (based on U.S. survey foot)",
+        "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+        "bushel (U.S.) (bu)",
+        "cord (128 ft3)",
+        "cubic foot (ft3)",
+        "cubic inch (in3)",
+        "cubic meter (m3)",
+        "cubic mile (mi3)",
+        "cubic yard (yd3)",
+        "cup (U.S.)",
+        "fluid ounce (U.S.) (fl oz)",
+        "gallon (U.S.) (gal)",
+        "gallon [Canadian and U.K. (Imperial)] (gal)",
+        "gill (U.S.) (gi)",
+        "gill [Canadian and U.K. (Imperial)] (gi)",
+        "liter (L)",
+        "milliliter (mL)",
+        "ounce (U.S. fluid) (fl oz)",
+        "ounce [Canadian and U.K. fluid (Imperial)] (fl oz)",
+        "peck (U.S.) (pk)",
+        "pint (U.S. dry) (dry pt)",
+        "pint (U.S. liquid) (liq pt)",
+        "quart (U.S. dry) (dry qt)",
+        "quart (U.S. liquid) (liq qt)",
+        "stere (st)",
+        "tablespoon",
+        "teaspoon",
+        "ton, register"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 28,
+          "unordered_convertible_pair_count": 378,
+          "ordered_convertible_pair_count": 756,
+          "units": [
+            "acre-foot (based on U.S. survey foot)",
+            "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+            "bushel (U.S.) (bu)",
+            "cord (128 ft3)",
+            "cubic foot (ft3)",
+            "cubic inch (in3)",
+            "cubic meter (m3)",
+            "cubic mile (mi3)",
+            "cubic yard (yd3)",
+            "cup (U.S.)",
+            "fluid ounce (U.S.) (fl oz)",
+            "gallon (U.S.) (gal)",
+            "gallon [Canadian and U.K. (Imperial)] (gal)",
+            "gill (U.S.) (gi)",
+            "gill [Canadian and U.K. (Imperial)] (gi)",
+            "liter (L)",
+            "milliliter (mL)",
+            "ounce (U.S. fluid) (fl oz)",
+            "ounce [Canadian and U.K. fluid (Imperial)] (fl oz)",
+            "peck (U.S.) (pk)",
+            "pint (U.S. dry) (dry pt)",
+            "pint (U.S. liquid) (liq pt)",
+            "quart (U.S. dry) (dry qt)",
+            "quart (U.S. liquid) (liq qt)",
+            "stere (st)",
+            "tablespoon",
+            "teaspoon",
+            "ton, register"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VOLUME DIVIDED BY TIME (includes FLOW)",
+      "slug": "volume-divided-by-time",
+      "unit_count": 8,
+      "direct_conversion_count": 9,
+      "connected_component_count": 1,
+      "unordered_convertible_pair_count": 28,
+      "ordered_convertible_pair_count": 56,
+      "units": [
+        "cubic foot per minute (ft3 / min)",
+        "cubic foot per second (ft3 / s)",
+        "cubic inch per minute (in3 / min)",
+        "cubic meter per second (m3 / s)",
+        "cubic yard per minute (yd3 / min)",
+        "gallon (U.S.) per day (gal / d)",
+        "gallon (U.S.) per minute (gpm) (gal / min)",
+        "liter per second (L / s)"
+      ],
+      "connected_components": [
+        {
+          "unit_count": 8,
+          "unordered_convertible_pair_count": 28,
+          "ordered_convertible_pair_count": 56,
+          "units": [
+            "cubic foot per minute (ft3 / min)",
+            "cubic foot per second (ft3 / s)",
+            "cubic inch per minute (in3 / min)",
+            "cubic meter per second (m3 / s)",
+            "cubic yard per minute (yd3 / min)",
+            "gallon (U.S.) per day (gal / d)",
+            "gallon (U.S.) per minute (gpm) (gal / min)",
+            "liter per second (L / s)"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+.unit-filter-panel {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: var(--md-code-bg-color);
+}
+
+.unit-filter-panel label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.unit-filter-select {
+  width: min(100%, 34rem);
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.25rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.unit-filter-count,
+.unit-category-count {
+  margin: 0.6rem 0 0;
+  color: var(--md-default-fg-color--light);
+}
+
+.unit-category[hidden] {
+  display: none !important;
+}
+
+.unit-category {
+  margin-top: 1.5rem;
+}
+
+.unit-category h2 {
+  scroll-margin-top: 4.5rem;
+}
+
+.unit-category table code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
