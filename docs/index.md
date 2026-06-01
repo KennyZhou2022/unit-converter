@@ -14,14 +14,19 @@ runtime conversion does not depend on a local PDF or CSV file.
 - Use explicit labels for temperature values and temperature intervals.
 - Handle unknown units and incompatible units with package-specific errors.
 
-## Current Data Set
+## Minimal Example
 
-| Metric | Count |
-|---|---:|
-| Source groups | 30 |
-| Direct conversion rules | 451 |
-| Unique supported units | 467 |
-| Ordered convertible unit pairs | 5926 |
+```python
+from unit_converter import convert
+
+speed = convert(
+    1,
+    "mile per hour (mi / h)",
+    "kilometer per hour (km / h)",
+)
+
+print(speed)  # 1.609344
+```
 
 ## Start Here
 

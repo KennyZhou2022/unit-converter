@@ -6,6 +6,9 @@ repo_name: KennyZhou2022/unit-converter
 
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.sections
     - navigation.top
@@ -14,7 +17,7 @@ theme:
     - toc.follow
   palette:
     - scheme: default
-      primary: blue grey
+      primary: indigo
       accent: teal
 
 nav:
