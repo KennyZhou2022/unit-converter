@@ -8,7 +8,6 @@ from html import escape
 from pathlib import Path
 from typing import Any, cast
 
-
 CATALOG_PATH = Path("src/unit_converter/data/unit_catalog.json")
 OUTPUT_PATH = Path("docs/supported-units.md")
 
@@ -19,22 +18,9 @@ def main() -> None:
 
 
 def render(catalog: dict[str, Any]) -> str:
-    totals = cast(dict[str, int], catalog["totals"])
     categories = cast(list[dict[str, Any]], catalog["categories"])
     lines = [
         "# Supported Units",
-        "",
-        "This page is generated from `src/unit_converter/data/unit_catalog.json`.",
-        "",
-        "## Summary",
-        "",
-        "| Metric | Count |",
-        "|---|---:|",
-        f"| Categories | {totals['category_count']} |",
-        f"| Direct conversion rules | {totals['direct_conversion_count']} |",
-        f"| Unique supported units | {totals['unit_count']} |",
-        "| Ordered convertible unit pairs | "
-        f"{totals['ordered_convertible_pair_count']} |",
         "",
         "## Browse By Category",
         "",
@@ -73,16 +59,15 @@ def render_category(category: dict[str, Any]) -> list[str]:
     units = cast(list[str], category["units"])
     slug = str(category["slug"])
     name = str(category["name"])
+    escaped_slug = escape(slug, quote=True)
+    escaped_name = escape(name, quote=True)
     lines = [
         (
-            '<section class="unit-category" data-category="{slug}" '
-            'data-category-name="{name}" data-unit-count="{unit_count}">'
-        ).format(
-            slug=escape(slug, quote=True),
-            name=escape(name, quote=True),
-            unit_count=len(units),
+            f'<section class="unit-category" data-category="{escaped_slug}" '
+            f'data-category-name="{escaped_name}" '
+            f'data-unit-count="{len(units)}">'
         ),
-        f'<h2 id="{escape(slug, quote=True)}">{escape(name)}</h2>',
+        f'<h2 id="{escaped_slug}">{escape(name)}</h2>',
         f'<p class="unit-category-count">{len(units)} supported units</p>',
         "<table>",
         "  <thead>",

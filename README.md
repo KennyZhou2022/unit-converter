@@ -84,15 +84,25 @@ Category matching ignores leading and trailing whitespace and is
 case-insensitive.
 
 Use `get_unit_catalog()` when an application needs the full machine-readable
-catalog:
+NIST-source catalog:
 
 ```python
-from unit_converter import get_unit_catalog
+from unit_converter import get_unit_catalog, get_ui_unit_catalog
 
-catalog = get_unit_catalog()
+nist_catalog = get_unit_catalog()
+ui_catalog = get_ui_unit_catalog()
 ```
 
-The generated catalog is also documented in `docs/supported-units.md`, with a
+`get_ui_unit_catalog()` returns the UI category tree. Unit-level UI mappings
+live in `get_unit_catalog()["units"]`, where each supported unit records both
+its NIST category and UI category/subcategory.
+
+`ui_categories[*].match_method` is `full_list_unit` when the supported unit
+matched a full-list unit label directly, and `nist_context` when the full list
+did not contain an exact candidate label and the unit was placed into the
+closest full-list UI group from its NIST context.
+
+The supported unit list is documented in `docs/supported-units.md`, with a
 category filter for the GitHub Pages site.
 
 ## Error Handling
@@ -120,6 +130,15 @@ except UnitNotFoundError:
 - The review CSV is generated at
   `data/interim/nist_sp811_appendix_b9_conversions.csv`.
 - Runtime data is packaged as JSON under `src/unit_converter/data/`.
+- `src/unit_converter/data/ui_unit_catalog.json` is the installed runtime UI
+  category tree loaded by `get_ui_unit_catalog()`.
+- `data/external/full_list_categories.json` is the development source copy of
+  the UI category tree.
+- `data/external/full_list_unit_catalog.json` is a development reference list
+  of candidate unit labels for future coverage work. It is not used by runtime
+  conversion.
+- `src/unit_converter/data/unit_catalog.json` stores direct unit metadata in
+  `units`; every unit record includes `nist_categories` and `ui_categories`.
 - The runtime converter can use direct rules, reversible rules, and connected
   intermediate units.
 - Source labels with different meanings are qualified during data generation so
@@ -148,6 +167,9 @@ Regenerate derived data from the source PDF:
 ```bash
 python scripts/extract_nist_sp811_appendix_b9.py
 python scripts/generate_supported_units_doc.py
+python scripts/generate_ui_unit_catalog.py
+python scripts/generate_full_list_unit_catalog.py --home-url <full-list-home-url>
+python scripts/map_ui_categories_to_units.py
 ```
 
 ## Roadmap

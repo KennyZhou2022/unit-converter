@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "unit-converter"
-version = "1.1.0"
+version = "1.2.0"
 description = "A standards-backed Python package for unit conversion."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -46,11 +46,13 @@ packages = ["src/unit_converter"]
 
 [tool.hatch.build.targets.sdist]
 include = [
+  "/data",
   "/docs",
   "/README.md",
   "/LICENSE",
   "/mkdocs.yml",
   "/pyproject.toml",
+  "/release",
   "/schemas",
   "/scripts",
   "/src",

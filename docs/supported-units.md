@@ -1,7 +1,5 @@
 # Supported Units
 
-This page is generated from `src/unit_converter/data/unit_catalog.json`.
-
 ## Browse By Category
 
 <div class="unit-filter-panel">

@@ -11,7 +11,11 @@
     "direct_conversion_count": 451,
     "unit_count": 467,
     "unordered_convertible_pair_count": 2963,
-    "ordered_convertible_pair_count": 5926
+    "ordered_convertible_pair_count": 5926,
+    "unit_record_count": 467,
+    "unit_ui_mapping_count": 467,
+    "full_list_ui_mapping_count": 284,
+    "nist_context_ui_mapping_count": 183
   },
   "all_units": [
     "British thermal unit (39 °F) (Btu)",
@@ -2768,6 +2772,7985 @@
             "gallon (U.S.) per day (gal / d)",
             "gallon (U.S.) per minute (gpm) (gal / min)",
             "liter per second (L / s)"
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "label": "British thermal unit (39 °F) (Btu)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unit (59 °F) (Btu)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unit (60 °F) (Btu)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unit (mean) (Btu)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT (BtuIT)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT foot per hour square foot degree Fahrenheit [Btu IT · ft / (h · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT inch per hour square foot degree Fahrenheit [Btu IT · in / (h · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT inch per second square foot degree Fahrenheit [Btu IT · in / (s · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per cubic foot (BtuIT / ft3)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per degree Fahrenheit (Btu IT / °F)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Capacity and Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per degree Rankine (Btu IT / °R)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Capacity and Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per hour (BtuIT / h)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per hour square foot degree Fahrenheit [Btu IT / (h · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Coefficient of Heat Transfer"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Transfer Coefficient",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per pound (BtuIT / lb)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per pound degree Fahrenheit [Btu IT / (lb · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per pound degree Rankine [Btu IT / (lb · °R)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per second (BtuIT / s)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per second square foot degree Fahrenheit [Btu IT / (s · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Coefficient of Heat Transfer"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Transfer Coefficient",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per square foot (Btu IT / ft2)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per square foot hour [Btu IT / (ft2 · h)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitIT per square foot second [Btu IT / (ft2 · s)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth (Btuth)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Btu (th) [Btu (th)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth foot per hour square foot degree Fahrenheit [Btu th · ft / (h · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth inch per hour square foot degree Fahrenheit [Btu th · in / (h · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth inch per second square foot degree Fahrenheit [Btu th · in / (s · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per cubic foot (Btuth / ft3)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per degree Fahrenheit (Btu th / °F)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Capacity and Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per degree Rankine (Btu th / °R)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Capacity and Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per hour (Btuth / h)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Btu (th)/hour [Btu (th)/h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per hour square foot degree Fahrenheit [Btu th / (h · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Coefficient of Heat Transfer"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Transfer Coefficient",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per minute (Btuth / min)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per pound (Btuth / lb)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per pound degree Fahrenheit [Btu th / (lb · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per pound degree Rankine [Btu th / (lb · °R)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per second (Btuth / s)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Btu (th)/second [Btu (th)/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Coefficient of Heat Transfer"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Transfer Coefficient",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per square foot (Btu th / ft2)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per square foot hour [Btu th / (ft2 · h)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per square foot minute [Btu th / (ft2 · min)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per square foot second [Btu th / (ft2 · s)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "British thermal unitth per square inch second [Btu th / (in2 · s)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "EMU of capacitance (abfarad)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electrostatic Capacitance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "EMU of capacitance"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "EMU of current (abampere)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Current",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "EMU of current"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "EMU of electric potential (abvolt)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Potential",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "EMU of electric potential"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "EMU of inductance (abhenry)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Inductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "EMU of inductance"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "EMU of resistance (abohm)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "EMU of resistance"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ESU of capacitance (statfarad)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electrostatic Capacitance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ESU of capacitance"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ESU of current (statampere)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Current",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ESU of current"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ESU of electric potential (statvolt)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Potential",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ESU of electric potential"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ESU of inductance (stathenry)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Inductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ESU of inductance"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ESU of resistance (statohm)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ESU of resistance"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abampere",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Current",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abampere [abA]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abcoulomb",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abcoulomb [abC]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abfarad",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electrostatic Capacitance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abfarad [abF]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abhenry",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Inductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abhenry [abH]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abmho",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Conductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abmho"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abohm",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abohm"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "abvolt",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Potential",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "abvolt [abV]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "acceleration of free fall, standard (gn)",
+      "nist_categories": [
+        {
+          "category": "ACCELERATION"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "giganewton [GN]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "acre (based on U.S. survey foot)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "acre [ac]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "acre-foot (based on U.S. survey foot)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "acre-foot [ac*ft]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ampere (A)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Current",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ampere [A]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ampere hour (A · h)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ampere-hour [A*h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ampere per meter (A / m)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Field Strength",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ampere/meter [A/m]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "are (a)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "are [a]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "astronomical unit (ua)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "astronomical unit [AU, UA]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "atmosphere, standard (atm)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Standard atmosphere [atm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "atmosphere, technical (at)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "atmosphere technical [at]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bar (bar)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "bar"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "barn (b)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "barn [b]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "becquerel (Bq)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Activity",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "becquerel [Bq]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "biot (Bi)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Current",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "biot [Bi]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "bushel (U.S.) (bu)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume - Dry",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "bushel (US) [bu (US)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "calorie (15 °C) (cal15)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorie (20 °C) (cal20)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorie (mean) (cal)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorie (mean), kilogram (nutrition)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieIT (calIT)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieIT per gram (calIT / g)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieIT per gram degree Celsius [cal IT / (g · °C)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieIT per gram kelvin [calIT / (g · K)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieIT, kilogram (nutrition)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth (calth)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "calorie (th) [cal (th)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "calorieth per centimeter second degree Celsius [cal th / (cm · s · °C)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per gram (calth / g)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per gram degree Celsius [cal th / (g · °C)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per gram kelvin [calth / (g · K)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per minute (calth / min)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per second (calth / s)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per square centimeter (calth / cm2)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per square centimeter minute [cal th / (cm2 · min)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth per square centimeter second [cal th / (cm2 · s)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "calorieth, kilogram (nutrition)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "candela per square inch (cd / in2)",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Luminance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "candela/square inch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "candela per square meter (cd / m2)",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Luminance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "candela/square meter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "carat, metric",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "centimeter (cm)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "centimeter [cm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "centimeter of mercury (0 °C)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "centimeter of mercury, conventional (cmHg)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "centimeter of water (4 °C)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "centimeter of water, conventional (cmH2O)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "centipoise (cP)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "centipoise [cP]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "centistokes (cSt)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, KINEMATIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Kinematic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "centistokes [cSt]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "chain (based on U.S. survey foot) (ch)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "chain (US survey) [ch]",
+            "chain [ch]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "circular mil",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "circular mil"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "clo",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Insulance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "cord (128 ft3)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cord [cd]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "coulomb (C)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "coulomb [C]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "coulomb per kilogram (C / kg)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "cubic foot (ft3)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic foot [ft^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic foot per minute (ft3 / min)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic foot/minute [ft^3/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic foot per second (ft3 / s)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic foot/second [ft^3/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic inch (in3)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic inch [in^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic inch per minute (in3 / min)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic inch/minute [in^3/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic meter (m3)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic meter [m^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic meter per joule (m3 / J)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Efficiency - Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic meter/joule [m^3/J]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic meter per second (m3 / s)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic meter/second [m^3/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic mile (mi3)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic mile [mi^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic yard (yd3)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic yard [yd^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cubic yard per minute (yd3 / min)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cubic yard/minute"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cup (U.S.)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "cup (US)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "curie (Ci)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Activity",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "curie [Ci]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "darcy",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "day (d)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "day [d]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "day (sidereal)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "day (sidereal)",
+            "day [d]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree (°)",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "degree [°]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree Celsius (°C) [temperature interval]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE INTERVAL"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature Interval",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "degree Celsius [°C]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree Celsius (°C) [temperature]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Celsius [°C]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit (°F) [temperature interval]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE INTERVAL"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature Interval",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "degree Fahrenheit [°F]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit (°F) [temperature]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Fahrenheit [°F]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit hour per British thermal unitIT (°F · h / Btu IT)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit hour per British thermal unitth (°F · h / Btu th)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit hour square foot per British thermal unit th (°F · h · ft2 / Btuth)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Insulance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit hour square foot per British thermal unitIT (°F · h · ft2 / BtuIT)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Insulance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit hour square foot per British thermal unitIT inch [°F · h · ft2 / (BtuIT · in)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit second per British thermal unitIT (°F · s / Btu IT)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Fahrenheit second per British thermal unitth (°F · s / Btu th)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "degree Rankine (°R) [temperature interval]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE INTERVAL"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature Interval",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "degree Rankine [°R]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree Rankine (°R) [temperature]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "Rankine [°R]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree centigrade [temperature interval]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE INTERVAL"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature Interval",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "degree centigrade [°C]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "degree centigrade [temperature]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature Interval",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "degree centigrade [°C]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "denier",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "dyne (dyn)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "dyne [dyn]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "dyne centimeter (dyn · cm)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "dyne centimeter [dyn*cm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "dyne per square centimeter (dyn / cm2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "dyne/square centimeter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "electronvolt (eV)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Potential",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "erg (erg)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "erg"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "erg per second (erg / s)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "erg/second [erg/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "erg per square centimeter second [erg / (cm2 · s)]",
+      "nist_categories": [
+        {
+          "category": "ENERGY DIVIDED BY AREA TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "farad (F)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electrostatic Capacitance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "farad [F]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "faraday (based on carbon 12)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "faraday (based on carbon 12)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fathom (based on U.S. survey foot)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "fathom [fath]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "femtometer (fm)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "femtometer [fm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fermi",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "fermi [F, f]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fluid ounce (U.S.) (fl oz)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "fluid ounce (US) [fl oz (US)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot (U.S. survey) (ft)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot (US survey) [ft]",
+            "foot [ft]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot (ft)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot (US survey) [ft]",
+            "foot [ft]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot of mercury, conventional (ftHg)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "foot of water (39.2 °F)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "foot of water, conventional (ftH2O)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "foot per hour (ft / h)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot/hour [ft/h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot per minute (ft / min)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot/minute [ft/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot per second (ft / s)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot/second [ft/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot per second squared (ft / s2)",
+      "nist_categories": [
+        {
+          "category": "ACCELERATION"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Acceleration",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot/square second [ft/s^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot pound-force (ft · lbf)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot-pound [ft*lbf]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot pound-force per hour (ft · lbf / h)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot pound-force/hour"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot pound-force per minute (ft · lbf / min)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot pound-force/minute"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot pound-force per second (ft · lbf / s)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "foot pound-force/second"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "foot poundal",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "foot to the fourth power (ft4)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "footcandle",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Illumination",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "footlambert",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Luminance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "franklin (Fr)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "franklin [Fr]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gal (Gal)",
+      "nist_categories": [
+        {
+          "category": "ACCELERATION"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Acceleration",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gal [Gal]",
+            "galileo [Gal]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gallon (U.S.) (gal)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gallon (US) [gal (US)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gallon (U.S.) per day (gal / d)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gallon (US)/day [gal (US)/d]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gallon (U.S.) per horsepower hour [gal / (hp · h)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Consumption",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "gallon (U.S.) per minute (gpm) (gal / min)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "gallon [Canadian and U.K. (Imperial)] (gal)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "gamma (γ)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Flux Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gamma"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gauss (Gs, G)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Flux Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gauss [Gs, G]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gilbert (Gi)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetomotive Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gilbert [Gi]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gill (U.S.) (gi)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gill (US) [gi]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gill [Canadian and U.K. (Imperial)] (gi)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gill (US) [gi]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gon (also called grade) (gon)",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "grain (gr)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "grain [gr]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "grain per gallon (U.S.) (gr / gal)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "grain/gallon (US)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gram (g)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gram [g]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gram per cubic centimeter (g / cm3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gram/cubic centimeter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gram per liter (g / L)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gram/liter [g/L]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gram per meter (g / m)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "gram-force per square centimeter (gf / cm2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gram-force/sq. centimeter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "gray (Gy)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Absorbed Dose",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "gray [Gy]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "hectare (ha)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "hectare [ha]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "henry (H)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Inductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "henry [H]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "horsepower (550 ft · lbf / s)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "horsepower (550 ft*lbf/s)",
+            "horsepower [hp, hp (UK)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "horsepower (U.K.)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "horsepower [hp, hp (UK)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "horsepower (boiler)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "horsepower (boiler)",
+            "horsepower [hp, hp (UK)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "horsepower (electric)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "horsepower (electric)",
+            "horsepower [hp, hp (UK)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "horsepower (metric)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "horsepower (metric)",
+            "horsepower [hp, hp (UK)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "horsepower (water)",
+      "nist_categories": [
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "horsepower (water)",
+            "horsepower [hp, hp (UK)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "hour (h)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "hour [h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "hour (sidereal)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "hour (sidereal)",
+            "hour [h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "hundredweight (long, 112 lb)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "hundredweight (short, 100 lb)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch (in)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "inch (US survey) [in]",
+            "inch [in]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "inch of mercury (32 °F)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch of mercury (60 °F)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch of mercury, conventional (inHg)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "inch mercury (32°F) [inHg]",
+            "inch mercury (60°F) [inHg]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "inch of water (39.2 °F)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch of water (60 °F)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch of water, conventional (inH2O)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch per second (in / s)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "inch per second squared (in / s2)",
+      "nist_categories": [
+        {
+          "category": "ACCELERATION"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Acceleration",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "inch/square second [in/s^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "inch to the fourth power (in4)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "joule (J)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "joule [J]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "joule per cubic meter (J / m3)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "joule per kelvin (J / K)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Capacity and Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "joule per kilogram (J / kg)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Available Energy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "joule per kilogram kelvin [J / (kg · K)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Specific Heat Capacity and Specific Entropy"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Specific Heat Capacity",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "joule/kilogram/K [J/(kg*K)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "joule per square meter (J / m2)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "joule/square meter [J/m^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kayser (K)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kelvin (K) [temperature interval]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE INTERVAL"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature Interval",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kelvin [K]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kelvin (K) [temperature]",
+      "nist_categories": [
+        {
+          "category": "TEMPERATURE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Temperature",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kelvin [K]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kelvin per watt (K / W)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kelvin/watt [K/W]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilocalorie (mean) (kcal)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilocalorieIT (kcalIT)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilocalorie (IT) [kcal (IT)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilocalorieth (kcalth)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilocalorie (th) [kcal (th)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilocalorieth per minute (kcalth / min)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilocalorieth per second (kcalth / s)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram (k g)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram [kg]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram (kg)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram [kg]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram meter squared (kg · m2)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram per cubic meter (kg / m3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram/cubic meter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram per joule (kg / J)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Efficiency - Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram/joule [kg/J]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram per liter (kg / L)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram/liter [kg/L]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram per meter (kg / m)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram per pascal second meter [kg / (Pa · s · m)]",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram per pascal second square meter [kg / (Pa · s · m2)]",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram per second (kg / s)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow - Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram/second [kg/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram per square meter (kg / m2)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Mass Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram-force (kgf)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram-force [kgf]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram-force meter (kgf · m)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram-force meter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram-force per square centimeter (kgf / cm2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilogram-force per square meter (kgf / m2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram-force/square meter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram-force per square millimeter (kgf / mm2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilogram-force/sq. millimeter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilogram-force second squared per meter (kgf · s2 / m)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "kilometer (km)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilometer [km]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilometer per hour (km / h)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilometer/hour [km/h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilometer per liter (km / L)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Consumption",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilometer/liter [km/L]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilonewton (kN)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilonewton [kN]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilopascal (kPa)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilopascal [kPa]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilopond (kilogram-force) (kp)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilopond [kp]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kilowatt hour (kW · h)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kilowatt-hour [kW*h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kip (1 kip = 1000 lbf)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "kip"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "kip per square inch (ksi) (kip / in2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "knot (nautical mile per hour)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "lambert",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Luminance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "lambert [L]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "langley (calth / cm2)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "langley"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "light year (l.y.)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "light year [ly]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "liter (L)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "liter [L, l]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "liter per 100 kilometer (L / 100 km)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Consumption",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "liter/100 km [L/100 km]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "liter per joule (L / J)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Efficiency - Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "liter/joule [L/J]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "liter per second (L / s)",
+      "nist_categories": [
+        {
+          "category": "VOLUME DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "liter/second [L/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lumen per square foot (lm / ft2)",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Illumination",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "lumen/square foot [lm/ft^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "lux (lx)",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Illumination",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "lux [lx]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "maxwell (Mx)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Flux",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "maxwell [Mx]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "megajoule (MJ)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megajoule [MJ]",
+            "millijoule [mJ]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "megapascal (MPa)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megapascal [MPa]",
+            "millipascal [mPa]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "meter (m)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "meter [m]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "meter kelvin per watt (m · K / W)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Resistivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "meter per cubic meter (m / m3)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Consumption",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "meter/cubic meter [m/m^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "meter per second (m / s)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "meter/second [m/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "meter per second squared (m / s2)",
+      "nist_categories": [
+        {
+          "category": "ACCELERATION"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Acceleration",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "meter squared (m2)",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "meter squared per second (m2 / s)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, KINEMATIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Kinematic",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "meter to the fourth power (m4)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "mho",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Conductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mho"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "microinch",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "microinch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "micrometer ( μm)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "micrometer [µm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "micron (μ)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "micron [µ]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mil",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mil"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mil (0.001 in)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mil [mil, thou]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mil limeter (mm)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megameter [Mm]",
+            "millimeter [mm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mile (based on U.S. survey foot) (mi)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mile (US survey) [mi]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mile (mi)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mile (US survey) [mi]",
+            "mile [mi, mi(Int)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mile per gallon (U.S.) (mpg) (mi / gal)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Consumption",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "mile per hour (mi / h)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mile/hour [mi/h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mile per minute (mi / min)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mile/minute [mi/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mile per second (mi / s)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Speed",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "mile/second [mi/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mile, nautical",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "millibar (mbar)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "millibar [mbar]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "milligram (mg)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megagram [Mg]",
+            "milligram [mg]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "milligram per liter (mg / L)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megagram/liter [Mg/L]",
+            "milligram/liter [mg/L]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "milliliter (mL)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megaliter [ML]",
+            "milliliter [mL]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "millimeter (mm)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "megameter [Mm]",
+            "millimeter [mm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "millimeter of mercury, conventional (mmHg)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "millimeter of water, conventional (mmH2O)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "millinewton meter (mN · m)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Moment of Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "millinewton meter [mN*m]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "minute (')",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "minute [']"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "minute (min)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "minute [min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "minute (sidereal)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "minute (sidereal)",
+            "minute [min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "nanometer (nm)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "nanometer [nm]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "nanosecond (ns)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "nanosecond [ns]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "newton (N)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "newton [N]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "newton meter (N · m)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "newton meter [N*m]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "newton meter (N ·m)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "newton meter [N*m]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "newton meter per meter (N · m / m)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE, DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "newton per kilogram (N / kg)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "newton per meter (N / m)",
+      "nist_categories": [
+        {
+          "category": "FORCE DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Surface Tension",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "newton/meter [N/m]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "oersted (Oe)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Field Strength",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "oersted [Oe]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ohm ( Ω)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ohm"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ohm (Ω)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ohm"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ohm centimeter (Ω · cm)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistivity",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ohm centimeter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ohm circular-mil per foot",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ohm meter ( Ω · m)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistivity",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ohm meter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ohm square millimeter per meter (Ω · mm2 / m)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (U.S. fluid) (fl oz)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) (oz)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ounce [oz]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) per cubic inch (oz / in3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ounce/cubic inch [oz/in^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) per gallon (U.S.) (oz / gal)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) per gallon [Canadian and U.K. (Imperial)] (oz / gal)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) per square foot (oz / ft2)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Mass Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) per square inch (oz / in2)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Mass Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois) per square yard (oz / yd2)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Mass Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois)-force (ozf)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ounce-force [ozf]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ounce (avoirdupois)-force inch (ozf · in)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ounce-force inch [ozf*in]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ounce (troy or apothecary) (oz)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ounce [oz]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ounce [Canadian and U.K. fluid (Imperial)] (fl oz)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "parsec (pc)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "parsec [pc]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pascal (Pa)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pascal [Pa]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pascal second (Pa · s)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pascal second [Pa*s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "peck (U.S.) (pk)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume - Dry",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "peck (US) [pk (US)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pennyweight (dwt)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pennyweight [pwt]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "per gallon pound per horsepower hour [lb / (hp · h)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Fuel Consumption"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Fuel Consumption",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "perm (0 °C)",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "perm (23 °C)",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "perm inch (0 °C)",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "perm inch (23 °C)",
+      "nist_categories": [
+        {
+          "category": "PERMEABILITY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Permeability",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "phot (ph)",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Illumination",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "phot [ph]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pica (computer) (1/6 in)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pica (printer’s)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pica"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pint (U.S. dry) (dry pt)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pint (U.S. liquid) (liq pt)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "point (computer) (1/72 in)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "point (printer’s)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "point"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "poise (P)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "poise [P]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound (avoirdupois) (lb)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound (troy or apothecary) (lb)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound (troy or apothecary)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound foot squared (lb · ft2)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Moment of Inertia",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound square foot [lb*ft^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound inch squared (lb · in2)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Moment of Inertia",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound square inch [lb*in^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per cubic foot (lb / ft3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/cubic foot [lb/ft^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per cubic inch (lb / in3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/cubic inch [lb/in^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per cubic yard (lb / yd3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/cubic yard [lb/yd^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per foot (lb / ft)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound per foot hour [lb / (ft · h)]",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/foot/hour [lb/(ft*h)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per foot second [lb / (ft · s)]",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound per gallon (U.S.) (lb / gal)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/gallon (US)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per gallon [Canadian and U.K. (Imperial)] (lb / gal)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound per hour (lb / h)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow - Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/hour [lb/h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per inch (lb / in)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound per minute (lb / min)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow - Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/minute [lb/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per second (lb / s)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow - Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound/second [lb/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound per square foot (lb / ft2)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Mass Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound per square inch (not pound force) (lb / in2)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Mass Flux Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound per yard (lb / yd)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound-force (lbf)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force [lbf]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound-force foot (lbf · ft)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force foot [lbf*ft]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound-force foot per inch (lbf · ft / in)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE, DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound-force inch (lbf · in)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force inch [lbf*in]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound-force inch per inch (lbf · in / in)",
+      "nist_categories": [
+        {
+          "category": "MOMENT OF FORCE or TORQUE, DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Torque",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound-force per foot (lbf / ft)",
+      "nist_categories": [
+        {
+          "category": "FORCE DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Surface Tension",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound-force per inch (lbf / in)",
+      "nist_categories": [
+        {
+          "category": "FORCE DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Surface Tension",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force/inch [lbf/in]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound-force per pound (lbf / lb) (thrust to mass ratio)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound-force per square foot (lbf / ft2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force/square foot"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound-force per square inch (psi) (lbf / in2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "pound-force second per square foot (lbf · s / ft2)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force second/sq. foot"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "pound-force second per square inch (lbf · s / in2)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "pound-force second/sq. inch"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "poundal",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "poundal [pdl]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "poundal per square foot",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "poundal/square foot"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "poundal second per square foot",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "poundal second/square foot"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "psi (pound-force per square inch) (lbf / in2)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "quad (1015 BtuIT)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "quart (U.S. dry) (dry qt)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "quart (U.S. liquid) (liq qt)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "rad (absorbed dose) (rad)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Absorbed Dose",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "radian (rad)",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "radian [rad]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "radian per second (rad / s)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Velocity - Angular",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "radian/second [rad/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "reciprocal meter (m ^-1)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "reciprocal pascal second (Pa · s)^-1",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "rem (rem)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Absorbed Dose",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "revolution (r)",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "revolution [r]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "revolution per minute (rpm) (r / min)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Velocity - Angular",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "revolution/minute [r/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rhe",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "rod (based on U.S. survey foot) (rd)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "rod (US survey) [rd]",
+            "rod [rd]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "roentgen (R)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Exposure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "roentgen [R]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "rpm (revolution per minute) (r / min)",
+      "nist_categories": [
+        {
+          "category": "VELOCITY (includes SPEED)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Velocity - Angular",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "revolution/minute [r/min]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "second (\")",
+      "nist_categories": [
+        {
+          "category": "ANGLE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Angle",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "second [\"]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "second (s)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "second [s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "second (sidereal)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "second (sidereal)",
+            "second [s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "shake",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "shake"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "siemens (S)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Conductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "siemens [S]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "sievert (Sv)",
+      "nist_categories": [
+        {
+          "category": "RADIOLOGY"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Radiology Converters",
+          "subcategory": "Radiation-Absorbed Dose",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "slug (slug)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "slug"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "slug per cubic foot (slug / ft3)",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "slug/cubic foot [slug/ft^3]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "slug per foot second [slug / (ft · s)]",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, DYNAMIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Dynamic",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "square centimeter (cm2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square centimeter [cm^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square foot (ft2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square foot [ft^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square foot per hour (ft2 / h)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Diffusivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "square foot per second (ft2 / s)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, KINEMATIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Kinematic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square foot/second [ft^2/s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square inch (in2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square inch [in^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square kilometer (km2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square kilometer [km^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square meter (m2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square meter [m^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square meter kelvin per watt (m2 · K / W)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Insulance"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Resistance",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "square meter per second (m2 / s)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Diffusivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "square mile (based on U.S. survey foot) (mi2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square mile [mi^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square mile (mi2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square mile [mi^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square millimeter (mm2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square millimeter [mm^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square yard (yd2)",
+      "nist_categories": [
+        {
+          "category": "AREA AND SECOND MOMENT OF AREA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Area",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "square yard [yd^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "statampere",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Current",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "statampere [stA]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "statcoulomb",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Charge",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "statcoulomb [stC]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "statfarad",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electrostatic Capacitance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "statfarad [stF]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "stathenry",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Inductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "stathenry [stH]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "statmho",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Conductance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "statmho"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "statohm",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Resistance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "statohm"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "statvolt",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Potential",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "statvolt [stV]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "stere (st)",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "stere [st]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "stilb (sb)",
+      "nist_categories": [
+        {
+          "category": "LIGHT"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Light Converters",
+          "subcategory": "Luminance",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "stilb [sb]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "stokes (St)",
+      "nist_categories": [
+        {
+          "category": "VISCOSITY, KINEMATIC"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Viscosity - Kinematic",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "stokes [St]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tablespoon",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "teaspoon",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "tesla (T)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Flux Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "tesla [T]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tex",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "therm (EC)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "therm",
+            "therm (EC)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "therm (U.S.)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "therm",
+            "therm (US)"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ton of TNT (energy equivalent)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton of refrigeration (12 000 BtuIT / h)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton, assay (AT)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "atmosphere technical [at]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ton, long (2240 lb)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton, long, per cubic yard",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton, metric (t)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ton (metric) [t]",
+            "tonne [t]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ton, register",
+      "nist_categories": [
+        {
+          "category": "VOLUME (includes CAPACITY)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Volume",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ton register [ton reg]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ton, short (2000 lb)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton, short, per cubic yard",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Density",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton, short, per hour",
+      "nist_categories": [
+        {
+          "category": "MASS DIVIDED BY TIME (includes FLOW)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Fluids Converters",
+          "subcategory": "Flow - Mass",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "ton-force (2000 lbf)",
+      "nist_categories": [
+        {
+          "category": "FORCE"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Force",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "tonne (called “metric ton” in U.S.) (t)",
+      "nist_categories": [
+        {
+          "category": "MASS and MOMENT OF INERTIA"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Weight and Mass",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "ton (metric) [t]",
+            "tonne [t]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "torr (Torr)",
+      "nist_categories": [
+        {
+          "category": "PRESSURE or STRESS (FORCE DIVIDED BY AREA)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Pressure",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "torr [Torr]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "unit pole",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Flux",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "unit pole"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "volt (V)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Electricity Converters",
+          "subcategory": "Electric Potential",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "volt [V]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt (W)",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Heat Flow Rate"
+        },
+        {
+          "category": "POWER"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Power",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt [W]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt hour (W · h)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt-hour [W*h]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt per meter kelvin [W / (m · K)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Thermal Conductivity"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Thermal Conductivity",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt/meter/K [W/(m*K)]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt per square centimeter (W / cm2)",
+      "nist_categories": [
+        {
+          "category": "ENERGY DIVIDED BY AREA TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt/square centimeter"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt per square inch (W / in2)",
+      "nist_categories": [
+        {
+          "category": "ENERGY DIVIDED BY AREA TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt/square inch [W/in^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt per square meter (W / m2)",
+      "nist_categories": [
+        {
+          "category": "ENERGY DIVIDED BY AREA TIME"
+        },
+        {
+          "category": "HEAT",
+          "subcategory": "Density of Heat Flow Rate"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Flux Density",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt/square meter [W/m^2]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "watt per square meter Kelvin [W / (m2 · K)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Coefficient of Heat Transfer"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Transfer Coefficient",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "watt per square meter kelvin [W / (m2 · K)]",
+      "nist_categories": [
+        {
+          "category": "HEAT",
+          "subcategory": "Coefficient of Heat Transfer"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Heat Converters",
+          "subcategory": "Heat Transfer Coefficient",
+          "match_method": "nist_context"
+        }
+      ]
+    },
+    {
+      "label": "watt second (W · s)",
+      "nist_categories": [
+        {
+          "category": "ENERGY (includes WORK)"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Energy",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "watt-second [W*s]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "weber (Wb)",
+      "nist_categories": [
+        {
+          "category": "ELECTRICITY and MAGNETISM"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Magnetism Converters",
+          "subcategory": "Magnetic Flux",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "weber [Wb]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "yard (yd)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "yard [yd]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "year (365 days)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "year [y]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "year (sidereal)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "year (sidereal)",
+            "year [y]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "year (tropical)",
+      "nist_categories": [
+        {
+          "category": "TIME"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Mechanics Converters",
+          "subcategory": "Time",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "year (tropical)",
+            "year [y]"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ångström (Å)",
+      "nist_categories": [
+        {
+          "category": "LENGTH"
+        }
+      ],
+      "ui_categories": [
+        {
+          "category": "Dimension Converters",
+          "subcategory": "Length",
+          "match_method": "full_list_unit",
+          "matched_full_list_units": [
+            "angstrom [A]"
           ]
         }
       ]

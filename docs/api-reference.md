@@ -44,11 +44,24 @@ The top-level `convert()` function also caches the package converter.
 ## Catalog Helpers
 
 ```python
-from unit_converter import get_unit_catalog, list_categories, list_units
+from unit_converter import (
+    get_ui_unit_catalog,
+    get_unit_catalog,
+    list_categories,
+    list_units,
+)
 ```
 
 `get_unit_catalog()` returns the full bundled catalog dictionary from
-`unit_catalog.json`.
+`unit_catalog.json`. Its `units` array contains one record per supported unit,
+including direct `nist_categories` and `ui_categories` metadata.
+`ui_categories[*].match_method` is either `full_list_unit` for a direct
+full-list label match or `nist_context` for a fallback placement into the
+closest full-list UI group.
+
+`get_ui_unit_catalog()` returns the bundled UI-oriented catalog dictionary from
+`ui_unit_catalog.json`. It provides the full-list UI category tree only; unit
+membership is stored directly on unit records in `unit_catalog.json`.
 
 `list_categories()` returns the supported category names from the bundled
 catalog.

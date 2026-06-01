@@ -1,3 +1,4 @@
+import json
 import sys
 from decimal import Decimal
 from pathlib import Path
@@ -11,6 +12,7 @@ from unit_converter import (
     IncompatibleUnitError,
     UnitNotFoundError,
     convert,
+    get_ui_unit_catalog,
     get_unit_catalog,
     list_categories,
     list_units,
@@ -79,6 +81,8 @@ def test_exposes_supported_unit_catalog() -> None:
 
     assert catalog["totals"]["direct_conversion_count"] == 451
     assert catalog["totals"]["unit_count"] == 467
+    assert catalog["totals"]["unit_record_count"] == 467
+    assert len(catalog["units"]) == 467
     assert "calorieIT (calIT)" in list_units()
     assert "degree Fahrenheit (°F) [temperature]" in list_units()
     assert "degree Fahrenheit (°F) [temperature interval]" in list_units()
@@ -98,6 +102,78 @@ def test_lists_supported_units_by_category() -> None:
 def test_raises_for_unknown_unit_category() -> None:
     with pytest.raises(ValueError, match="Unknown category"):
         list_units("NOT A CATEGORY")
+
+
+def test_exposes_ui_unit_catalog() -> None:
+    catalog = get_ui_unit_catalog()
+
+    assert catalog["catalog_name"] == "Full List UI Categories"
+    assert catalog["version"] == 1
+    assert "all_units" not in catalog
+    assert ("unit" + "converters") not in json.dumps(catalog).lower()
+    assert ("Common" + " Converters") not in json.dumps(catalog)
+
+    dimensions = next(
+        category
+        for category in catalog["categories"]
+        if category["name"] == "Dimension Converters"
+    )
+    assert "Length" in dimensions["subcategories"]
+    assert all(
+        isinstance(subcategory, str)
+        for subcategory in dimensions["subcategories"]
+    )
+
+
+def test_supported_unit_catalog_has_direct_ui_unit_metadata() -> None:
+    catalog = get_unit_catalog()
+    units_by_label = {unit["label"]: unit for unit in catalog["units"]}
+
+    meter = units_by_label["meter (m)"]
+    assert meter["nist_categories"] == [{"category": "LENGTH"}]
+    assert meter["ui_categories"] == [
+        {
+            "category": "Dimension Converters",
+            "subcategory": "Length",
+            "match_method": "full_list_unit",
+            "matched_full_list_units": ["meter [m]"],
+        }
+    ]
+
+    temperature = units_by_label["degree Fahrenheit (°F) [temperature]"]
+    assert temperature["ui_categories"][0]["subcategory"] == "Temperature"
+    assert temperature["ui_categories"][0]["category"] == "Heat Converters"
+
+    interval = units_by_label["degree Fahrenheit (°F) [temperature interval]"]
+    assert interval["ui_categories"][0]["subcategory"] == "Temperature Interval"
+
+
+def test_external_full_list_unit_catalog_is_neutral_reference_data() -> None:
+    catalog_path = (
+        Path(__file__).resolve().parents[1]
+        / "data"
+        / "external"
+        / "full_list_unit_catalog.json"
+    )
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+
+    assert catalog["catalog_name"] == "Full List Unit Catalog"
+    assert catalog["totals"]["unit_reference_count"] > 1000
+    assert ("unit" + "converters") not in json.dumps(catalog).lower()
+    assert ("Common" + " Converters") not in json.dumps(catalog)
+
+    dimensions = next(
+        category
+        for category in catalog["categories"]
+        if category["name"] == "Dimension Converters"
+    )
+    length = next(
+        subcategory
+        for subcategory in dimensions["subcategories"]
+        if subcategory["name"] == "Length"
+    )
+    assert "meter [m]" in length["units"]
+    assert "kilometer [km]" in length["units"]
 
 
 def test_converts_corrected_mass_per_area_and_length_rows() -> None:

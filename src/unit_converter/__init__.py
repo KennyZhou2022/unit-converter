@@ -2,7 +2,12 @@
 
 from importlib.metadata import PackageNotFoundError, version
 
-from unit_converter.catalog import get_unit_catalog, list_categories, list_units
+from unit_converter.catalog import (
+    get_ui_unit_catalog,
+    get_unit_catalog,
+    list_categories,
+    list_units,
+)
 from unit_converter.converter import Conversion, UnitConverter, convert
 from unit_converter.exceptions import (
     AmbiguousConversionError,
@@ -27,6 +32,7 @@ __all__ = [
     "UnitNotFoundError",
     "__version__",
     "convert",
+    "get_ui_unit_catalog",
     "get_unit_catalog",
     "list_categories",
     "list_units",

@@ -7,6 +7,7 @@ Use one Markdown file per version:
 ```text
 release/v1.0.0.md
 release/v1.1.0.md
+release/v1.2.0.md
 ```
 
 Keep the version in `VERSION` and `pyproject.toml` aligned before tagging a

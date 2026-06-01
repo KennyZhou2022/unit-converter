@@ -12,9 +12,14 @@ from typing import Any, cast
 def get_unit_catalog() -> dict[str, Any]:
     """Return the bundled supported-unit catalog."""
 
-    data_path = files("unit_converter.data").joinpath("unit_catalog.json")
-    with data_path.open(encoding="utf-8") as handle:
-        return cast(dict[str, Any], json.load(handle))
+    return _load_json_data("unit_catalog.json")
+
+
+@cache
+def get_ui_unit_catalog() -> dict[str, Any]:
+    """Return the bundled UI-oriented supported-unit catalog."""
+
+    return _load_json_data("ui_unit_catalog.json")
 
 
 def list_categories() -> tuple[str, ...]:
@@ -42,3 +47,9 @@ def list_units(category: str | None = None) -> tuple[str, ...]:
         f"Unknown category: {category!r}. Use list_categories() to see supported "
         "categories."
     )
+
+
+def _load_json_data(filename: str) -> dict[str, Any]:
+    data_path = files("unit_converter.data").joinpath(filename)
+    with data_path.open(encoding="utf-8") as handle:
+        return cast(dict[str, Any], json.load(handle))

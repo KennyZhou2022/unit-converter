@@ -3,7 +3,7 @@
   "$id": "https://example.com/unit-converter/unit_catalog.schema.json",
   "title": "unit-converter unit catalog",
   "type": "object",
-  "required": ["version", "source", "totals", "all_units", "categories"],
+  "required": ["version", "source", "totals", "all_units", "units", "categories"],
   "additionalProperties": false,
   "properties": {
     "version": {
@@ -40,7 +40,11 @@
         "direct_conversion_count",
         "unit_count",
         "unordered_convertible_pair_count",
-        "ordered_convertible_pair_count"
+        "ordered_convertible_pair_count",
+        "unit_record_count",
+        "unit_ui_mapping_count",
+        "full_list_ui_mapping_count",
+        "nist_context_ui_mapping_count"
       ],
       "additionalProperties": false,
       "properties": {
@@ -63,6 +67,22 @@
         "ordered_convertible_pair_count": {
           "type": "integer",
           "minimum": 0
+        },
+        "unit_record_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unit_ui_mapping_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "full_list_ui_mapping_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "nist_context_ui_mapping_count": {
+          "type": "integer",
+          "minimum": 0
         }
       }
     },
@@ -74,6 +94,12 @@
       },
       "uniqueItems": true
     },
+    "units": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unitRecord"
+      }
+    },
     "categories": {
       "type": "array",
       "items": {
@@ -82,6 +108,67 @@
     }
   },
   "$defs": {
+    "unitRecord": {
+      "type": "object",
+      "required": ["label", "nist_categories", "ui_categories"],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nist_categories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["category"],
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "type": "string",
+                "minLength": 1
+              },
+              "subcategory": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "ui_categories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["category", "subcategory", "match_method"],
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "type": "string",
+                "minLength": 1
+              },
+              "subcategory": {
+                "type": "string",
+                "minLength": 1
+              },
+              "match_method": {
+                "type": "string",
+                "enum": ["full_list_unit", "nist_context"]
+              },
+              "matched_full_list_units": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            }
+          }
+        }
+      }
+    },
     "catalogGroup": {
       "type": "object",
       "required": [

@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "catalog_name": "Full List UI Categories",
+  "categories": [
+    {
+      "name": "Dimension Converters",
+      "subcategories": [
+        "Length",
+        "Area",
+        "Volume",
+        "Volume - Dry",
+        "Angle",
+        "Volume - Lumber"
+      ]
+    },
+    {
+      "name": "Mechanics Converters",
+      "subcategories": [
+        "Weight and Mass",
+        "Time",
+        "Speed",
+        "Velocity - Angular",
+        "Acceleration",
+        "Acceleration - Angular",
+        "Force",
+        "Pressure",
+        "Energy",
+        "Power",
+        "Density",
+        "Specific Volume",
+        "Moment of Inertia",
+        "Moment of Force",
+        "Torque"
+      ]
+    },
+    {
+      "name": "Heat Converters",
+      "subcategories": [
+        "Temperature",
+        "Fuel Consumption",
+        "Fuel Efficiency - Mass",
+        "Fuel Efficiency - Volume",
+        "Temperature Interval",
+        "Thermal Expansion",
+        "Thermal Resistance",
+        "Thermal Conductivity",
+        "Specific Heat Capacity",
+        "Heat Density",
+        "Heat Flux Density",
+        "Heat Transfer Coefficient"
+      ]
+    },
+    {
+      "name": "Fluids Converters",
+      "subcategories": [
+        "Flow",
+        "Flow - Mass",
+        "Flow - Molar",
+        "Mass Flux Density",
+        "Concentration - Molar",
+        "Concentration - Solution",
+        "Viscosity - Dynamic",
+        "Viscosity - Kinematic",
+        "Surface Tension",
+        "Permeability"
+      ]
+    },
+    {
+      "name": "Light Converters",
+      "subcategories": [
+        "Luminance",
+        "Luminous Intensity",
+        "Illumination",
+        "Digital Image Resolution",
+        "Frequency Wavelength"
+      ]
+    },
+    {
+      "name": "Electricity Converters",
+      "subcategories": [
+        "Charge",
+        "Linear Charge Density",
+        "Surface Charge Density",
+        "Volume Charge Density",
+        "Current",
+        "Linear Current Density",
+        "Surface Current Density",
+        "Electric Field Strength",
+        "Electric Potential",
+        "Electric Resistance",
+        "Electric Resistivity",
+        "Electric Conductance",
+        "Electric Conductivity",
+        "Electrostatic Capacitance",
+        "Inductance"
+      ]
+    },
+    {
+      "name": "Magnetism Converters",
+      "subcategories": [
+        "Magnetomotive Force",
+        "Magnetic Field Strength",
+        "Magnetic Flux",
+        "Magnetic Flux Density"
+      ]
+    },
+    {
+      "name": "Radiology Converters",
+      "subcategories": [
+        "Radiation",
+        "Radiation-Activity",
+        "Radiation-Exposure",
+        "Radiation-Absorbed Dose"
+      ]
+    },
+    {
+      "name": "Miscellaneous Converters",
+      "subcategories": [
+        "Currency",
+        "Case",
+        "Numbers",
+        "Data Storage",
+        "Prefixes",
+        "Data Transfer",
+        "Sound",
+        "Typography"
+      ]
+    }
+  ]
+}
