@@ -11,6 +11,8 @@ runtime conversion does not depend on a local PDF or CSV file.
 
 - Convert values with `convert(value, from_unit, to_unit)`.
 - Browse supported unit labels by category.
+- Load a UI category tree for building unit picker interfaces.
+- Read direct unit metadata with both source categories and UI categories.
 - Use explicit labels for temperature values and temperature intervals.
 - Handle unknown units and incompatible units with package-specific errors.
 
@@ -33,5 +35,7 @@ print(speed)  # 1.609344
 - New users should begin with [Quickstart](quickstart.md).
 - To browse the full supported unit catalog, see
   [Supported Units](supported-units.md).
-- To see function signatures and errors, use
-  [API Reference](api-reference.md) and [Errors](errors.md).
+- To build a unit picker or inspect catalog metadata, see
+  [Quickstart](quickstart.md#build-a-unit-picker).
+- To see function signatures and errors, use [API Reference](api-reference.md)
+  and [Errors](errors.md).

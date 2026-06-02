@@ -1,5 +1,10 @@
 # Supported Units
 
+This page lists exact unit labels accepted by `convert()`. The filter
+uses source categories from the bundled standard. Applications that
+need display categories can use `get_ui_unit_catalog()` together with
+`get_unit_catalog()["units"]`.
+
 ## Browse By Category
 
 <div class="unit-filter-panel">

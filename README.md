@@ -4,6 +4,8 @@
 conversion. The current data source is NIST Special Publication 811 (2008),
 Appendix B.9.
 
+Documentation: https://kennyzhou2022.github.io/unit-converter/
+
 ## Usage
 
 Install the package:
@@ -149,6 +151,8 @@ except UnitNotFoundError:
 
 The GitHub Pages site is intentionally user-facing. It covers installation,
 basic conversion, supported units, API signatures, and error handling.
+
+Open it here: https://kennyzhou2022.github.io/unit-converter/
 
 The site is built with MkDocs from `docs/` and deployed by
 `.github/workflows/pages.yml`.

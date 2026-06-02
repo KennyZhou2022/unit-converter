@@ -55,6 +55,24 @@ from unit_converter import (
 `get_unit_catalog()` returns the full bundled catalog dictionary from
 `unit_catalog.json`. Its `units` array contains one record per supported unit,
 including direct `nist_categories` and `ui_categories` metadata.
+
+Example unit record:
+
+```python
+{
+    "label": "meter (m)",
+    "nist_categories": [{"category": "LENGTH"}],
+    "ui_categories": [
+        {
+            "category": "Dimension Converters",
+            "subcategory": "Length",
+            "match_method": "full_list_unit",
+            "matched_full_list_units": ["meter [m]"],
+        }
+    ],
+}
+```
+
 `ui_categories[*].match_method` is either `full_list_unit` for a direct
 full-list label match or `nist_context` for a fallback placement into the
 closest full-list UI group.
@@ -63,7 +81,7 @@ closest full-list UI group.
 `ui_unit_catalog.json`. It provides the full-list UI category tree only; unit
 membership is stored directly on unit records in `unit_catalog.json`.
 
-`list_categories()` returns the supported category names from the bundled
+`list_categories()` returns the supported source category names from the bundled
 catalog.
 
 `list_units()` returns all globally supported unit labels.
@@ -71,6 +89,9 @@ catalog.
 `list_units(category)` returns only unit labels in the requested category.
 Category matching ignores leading and trailing whitespace and is
 case-insensitive. Unknown categories raise `ValueError`.
+
+Use `list_units()` when you only need exact unit labels for conversion. Use
+`get_unit_catalog()["units"]` when a UI needs labels plus category metadata.
 
 ## Advanced: Custom Conversions
 
