@@ -290,7 +290,6 @@ def build_catalog(home_url: str, delay_seconds: float) -> dict[str, Any]:
 
 def normalize_existing_catalog(catalog: dict[str, Any]) -> dict[str, Any]:
     categories: dict[str, list[dict[str, Any]]] = {}
-    all_units: list[dict[str, str]] = []
 
     for source_category in catalog["categories"]:
         for source_subcategory in source_category["subcategories"]:
@@ -304,14 +303,18 @@ def normalize_existing_catalog(catalog: dict[str, Any]) -> dict[str, Any]:
                 "units": source_subcategory["units"],
             }
             categories.setdefault(display_category, []).append(subcategory)
-            all_units.extend(
-                {
-                    "category": display_category,
-                    "subcategory": source_subcategory["name"],
-                    "unit": unit,
-                }
-                for unit in source_subcategory["units"]
-            )
+
+    all_units = [
+        {
+            "category": display_category_for_subcategory(
+                record["subcategory"],
+                record["category"],
+            ),
+            "subcategory": record["subcategory"],
+            "unit": record["unit"],
+        }
+        for record in catalog["all_units"]
+    ]
 
     unique_units = sorted({record["unit"] for record in all_units})
     catalog["totals"] = {
