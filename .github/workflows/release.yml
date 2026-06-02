@@ -1,0 +1,111 @@
+name: Build and publish release assets
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to publish, for example v1.3.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+env:
+  RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ".[dev,docs]" build twine
+
+      - name: Verify version and release notes
+        run: |
+          python - <<'PY'
+          import os
+          import tomllib
+          from pathlib import Path
+
+          pyproject = tomllib.loads(Path("pyproject.toml").read_text())
+          version = pyproject["project"]["version"]
+          version_file = Path("VERSION").read_text().strip()
+          release_tag = os.environ["RELEASE_TAG"]
+          expected_tag = f"v{version}"
+          release_note = Path("release") / f"{expected_tag}.md"
+
+          if version_file != version:
+              raise SystemExit(
+                  f"VERSION ({version_file}) does not match pyproject ({version})."
+              )
+          if release_tag != expected_tag:
+              raise SystemExit(
+                  f"Release tag {release_tag!r} does not match {expected_tag!r}."
+              )
+          if not release_note.is_file():
+              raise SystemExit(f"Missing release note: {release_note}")
+          PY
+
+      - name: Verify generated data and documentation
+        run: |
+          python scripts/generate_ui_unit_catalog.py
+          python scripts/generate_full_list_unit_catalog.py \
+            --input data/external/full_list_unit_catalog.json \
+            --output data/external/full_list_unit_catalog.json
+          python scripts/map_ui_categories_to_units.py
+          python scripts/generate_supported_units_doc.py
+          git diff --exit-code -- \
+            data/external/full_list_categories.json \
+            data/external/full_list_unit_catalog.json \
+            docs/supported-units.md \
+            src/unit_converter/data/ui_unit_catalog.json \
+            src/unit_converter/data/unit_catalog.json
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Build documentation
+        run: python -m mkdocs build --strict
+
+      - name: Build package
+        run: python -m build
+
+      - name: Check package metadata
+        run: python -m twine check dist/*
+
+      - name: Publish assets to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RELEASE_NOTE="release/${RELEASE_TAG}.md"
+          if gh release view "${RELEASE_TAG}" >/dev/null 2>&1; then
+            gh release edit "${RELEASE_TAG}" \
+              --title "${RELEASE_TAG}" \
+              --notes-file "${RELEASE_NOTE}"
+            gh release upload "${RELEASE_TAG}" dist/* --clobber
+          else
+            gh release create "${RELEASE_TAG}" dist/* \
+              --verify-tag \
+              --title "${RELEASE_TAG}" \
+              --notes-file "${RELEASE_NOTE}"
+          fi
