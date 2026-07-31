@@ -3,16 +3,16 @@ requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "unit-converter"
-version = "1.3.0"
-description = "A standards-backed Python package for unit conversion."
+name = "nist-unit-converter"
+version = "2.0.0"
+description = "A Python package for NIST SP 811 unit conversion."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
   { name = "KennyZhou2022" }
 ]
-keywords = ["units", "conversion", "measurement"]
+keywords = ["nist", "units", "conversion", "measurement"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
@@ -30,6 +30,7 @@ dependencies = []
 dev = [
   "build>=1.2",
   "mypy>=1.10",
+  "pip-tools>=7.4",
   "pypdf>=5",
   "pytest>=8",
   "ruff>=0.5",
@@ -41,6 +42,7 @@ docs = [
 ]
 
 [project.urls]
+Documentation = "https://kennyzhou2022.github.io/unit-converter/"
 Repository = "https://github.com/KennyZhou2022/unit-converter"
 
 [tool.hatch.build.targets.wheel]
@@ -49,15 +51,19 @@ packages = ["src/unit_converter"]
 [tool.hatch.build.targets.sdist]
 include = [
   "/data",
+  "/decisions",
   "/docs",
   "/README.md",
+  "/VERSION",
   "/LICENSE",
   "/mkdocs.yml",
   "/pyproject.toml",
   "/release",
+  "/requirements",
   "/schemas",
   "/scripts",
   "/src",
+  "/standards",
   "/tests",
 ]
 

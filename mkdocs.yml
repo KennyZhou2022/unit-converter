@@ -1,4 +1,4 @@
-site_name: unit-converter
+site_name: nist-unit-converter
 site_description: Standards-backed Python unit conversion.
 site_url: https://kennyzhou2022.github.io/unit-converter/
 repo_url: https://github.com/KennyZhou2022/unit-converter

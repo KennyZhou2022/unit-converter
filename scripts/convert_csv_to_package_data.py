@@ -9,7 +9,6 @@ import json
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
-
 FROM_HEADERS = {"convert_from", "convert from", "from", "source", "unit_from"}
 TO_HEADERS = {"convert_to", "convert to", "to", "target", "unit_to"}
 RULE_HEADERS = {"rule", "factor", "formula", "multiplier", "multiplier_or_formula"}
@@ -25,7 +24,7 @@ def main() -> None:
 
     rows = read_conversion_rows(args.input_csv)
     payload = {
-        "version": 1,
+        "version": 2,
         "source": {
             "name": args.source_name,
             "document": args.source_document,

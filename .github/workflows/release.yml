@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Release tag to publish, for example v1.3.0"
+        description: "Release tag to publish, for example v2.0.0"
         required: true
         type: string
 
@@ -38,7 +38,7 @@ jobs:
       - name: Install build dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install ".[dev,docs]" build twine
+          python -m pip install ".[dev,docs]"
 
       - name: Verify version and release notes
         run: |
@@ -72,23 +72,78 @@ jobs:
           python scripts/generate_full_list_unit_catalog.py \
             --input data/external/full_list_unit_catalog.json \
             --output data/external/full_list_unit_catalog.json
+          python scripts/generate_unit_registry.py --check
           python scripts/map_ui_categories_to_units.py
           python scripts/generate_supported_units_doc.py
           git diff --exit-code -- \
             data/external/full_list_categories.json \
             data/external/full_list_unit_catalog.json \
+            data/registry/unit_registry.json \
             docs/supported-units.md \
             src/unit_converter/data/ui_unit_catalog.json \
             src/unit_converter/data/unit_catalog.json
 
-      - name: Run tests
-        run: python -m pytest
+      - name: Run quality checks
+        run: |
+          python -m ruff check .
+          python -m mypy src
+          python -m pytest
 
       - name: Build documentation
         run: python -m mkdocs build --strict
 
       - name: Build package
         run: python -m build
+
+      - name: Verify wheel contents and installed API
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          wheels = list(Path("dist").glob("*.whl"))
+          if len(wheels) != 1:
+              raise SystemExit(f"Expected one wheel, found: {wheels}")
+
+          with ZipFile(wheels[0]) as archive:
+              names = set(archive.namelist())
+
+          required = {
+              "unit_converter/data/conversions.json",
+              "unit_converter/data/ui_unit_catalog.json",
+              "unit_converter/data/unit_catalog.json",
+              "unit_converter/py.typed",
+          }
+          missing = sorted(required - names)
+          if missing:
+              raise SystemExit(f"Wheel is missing runtime files: {missing}")
+          if "unit_converter/data/physical_quantity_conversions.json" in names:
+              raise SystemExit("Wheel contains development-only quantity data.")
+          if "unit_converter/data/unit_registry.json" in names:
+              raise SystemExit("Wheel contains the development-only unit registry.")
+          PY
+
+          python -m venv .wheel-smoke
+          .wheel-smoke/bin/python -m pip install --no-deps dist/*.whl
+          .wheel-smoke/bin/python - <<'PY'
+          import os
+          from decimal import Decimal
+
+          from unit_converter import __version__, can_convert, compatible_units, convert
+
+          expected_version = os.environ["RELEASE_TAG"].removeprefix("v")
+          if __version__ != expected_version:
+              raise SystemExit(
+                  f"Unexpected installed-wheel version: {__version__!r}"
+              )
+          result = convert(1, "mile (mi)", "meter (m)")
+          if result != Decimal("1609.344"):
+              raise SystemExit(f"Unexpected installed-wheel result: {result}")
+          if not can_convert("meter (m)", "mile (mi)"):
+              raise SystemExit("Installed wheel cannot resolve a supported pair.")
+          if "mile (mi)" not in compatible_units("meter (m)"):
+              raise SystemExit("Installed wheel compatibility query failed.")
+          PY
 
       - name: Check package metadata
         run: python -m twine check dist/*

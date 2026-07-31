@@ -8,12 +8,13 @@ import csv
 import json
 import re
 from collections import defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
 from pypdf import PdfReader
 
+from unit_converter import Conversion, UnitConverter
 
 APPENDIX = "B.9"
 SOURCE_NAME = "NIST Special Publication 811 (2008), Appendix B.9"
@@ -22,10 +23,9 @@ SOURCE_PAGES = "57-69"
 DEFAULT_PDF = Path(SOURCE_DOCUMENT)
 DEFAULT_CSV = Path("data/interim/nist_sp811_appendix_b9_conversions.csv")
 DEFAULT_PACKAGE_JSON = Path("src/unit_converter/data/conversions.json")
-DEFAULT_CATEGORY_JSON = Path(
-    "src/unit_converter/data/physical_quantity_conversions.json"
-)
+DEFAULT_CATEGORY_JSON = Path("data/interim/nist_sp811_appendix_b9_by_quantity.json")
 DEFAULT_UNIT_CATALOG_JSON = Path("src/unit_converter/data/unit_catalog.json")
+DEFAULT_ERRATA_JSON = Path("data/overrides/nist_sp811_appendix_b9_errata.json")
 B9_PAGE_INDEXES = range(68, 81)
 
 CATEGORY_HEADINGS = {
@@ -71,9 +71,7 @@ CATEGORY_HEADINGS = {
     "WORK (see ENERGY)",
 }
 
-MISSING_MIDDLE_LEADER_TARGETS = (
-    "kilogram per square meter",
-)
+MISSING_MIDDLE_LEADER_TARGETS = ("kilogram per square meter",)
 
 SUBCATEGORY_HEADINGS = {
     "Available Energy",
@@ -120,6 +118,7 @@ TEXT_REPLACEMENTS = {
     "m illigram": "milligram",
     "m illiliter": "milliliter",
     "m illimeter": "millimeter",
+    "mil limeter": "millimeter",
     "m illinewton": "millinewton",
     "pa scal": "pascal",
     "pe r": "per",
@@ -154,9 +153,11 @@ def main() -> None:
         type=Path,
         default=DEFAULT_UNIT_CATALOG_JSON,
     )
+    parser.add_argument("--errata-json", type=Path, default=DEFAULT_ERRATA_JSON)
     args = parser.parse_args()
 
     conversions = extract_b9_conversions(args.pdf)
+    conversions = apply_errata(conversions, args.errata_json)
     validate_conversions(conversions)
     write_csv(args.csv, conversions)
     write_package_json(args.package_json, conversions)
@@ -168,6 +169,45 @@ def main() -> None:
     print(f"Wrote package JSON: {args.package_json}")
     print(f"Wrote category JSON: {args.category_json}")
     print(f"Wrote unit catalog JSON: {args.unit_catalog_json}")
+
+
+def apply_errata(
+    conversions: list[ExtractedConversion],
+    errata_path: Path,
+) -> list[ExtractedConversion]:
+    """Apply reviewed corrections while detecting stale or ambiguous overrides."""
+
+    payload = json.loads(errata_path.read_text(encoding="utf-8"))
+    corrected = list(conversions)
+    for correction in payload["corrections"]:
+        matching_indexes = [
+            index
+            for index, conversion in enumerate(corrected)
+            if conversion.from_unit == correction["from"]
+            and conversion.to_unit == correction["to"]
+        ]
+        if len(matching_indexes) != 1:
+            raise ValueError(
+                "Erratum must match exactly one conversion: "
+                f"{correction['from']!r} -> {correction['to']!r}; "
+                f"found {len(matching_indexes)}."
+            )
+
+        index = matching_indexes[0]
+        conversion = corrected[index]
+        if conversion.rule != correction["published_rule"]:
+            raise ValueError(
+                "Erratum no longer matches the extracted rule for "
+                f"{conversion.from_unit!r} -> {conversion.to_unit!r}: "
+                f"expected {correction['published_rule']!r}, "
+                f"found {conversion.rule!r}."
+            )
+        corrected[index] = replace(
+            conversion,
+            rule=str(correction["corrected_rule"]),
+        )
+
+    return corrected
 
 
 def extract_b9_conversions(pdf_path: Path) -> list[ExtractedConversion]:
@@ -298,6 +338,11 @@ def clean_unit(value: str) -> str:
     value = value.replace("darcy14", "darcy")
     value = value.replace("lambert17", "lambert")
     value = value.replace("( ° )", "(°)")
+    value = value.replace("(k g)", "(kg)")
+    value = re.sub(r"\(\s+", "(", value)
+    value = re.sub(r"\s*·\s*", " · ", value)
+    value = re.sub(r"\]\s*\(", "] (", value)
+    value = re.sub(r"\bKelvin\b", "kelvin", value)
     value = re.sub(r"\s+\)", ")", value)
     value = re.sub(r"\(H$", "(H)", value)
     value = re.sub(r"\(gal / min\)?$", "(gal / min)", value)
@@ -391,11 +436,20 @@ def validate_conversions(conversions: list[ExtractedConversion]) -> None:
     factor_pattern = re.compile(r"\b\d(?:[\d .]*\d)?\s*E[+-]\d{2}\b")
     bad_rows: list[str] = []
     unit_contexts: dict[str, set[tuple[str, str | None]]] = defaultdict(set)
+    labels_by_normalized_key: dict[str, set[str]] = defaultdict(set)
     for index, conversion in enumerate(conversions, start=1):
         unit_text = f"{conversion.from_unit} | {conversion.to_unit}"
         context = (conversion.category, conversion.subcategory)
         unit_contexts[conversion.from_unit].add(context)
         unit_contexts[conversion.to_unit].add(context)
+        for unit in (conversion.from_unit, conversion.to_unit):
+            normalized_key = re.sub(r"\s+", "", unit).casefold()
+            labels_by_normalized_key[normalized_key].add(unit)
+            if any(
+                malformed in unit
+                for malformed in ("( ", " ·m", "mil limeter", "](", "Kelvin")
+            ):
+                bad_rows.append(f"{index}: malformed unit label {unit!r}")
         if any(heading in unit_text for heading in CATEGORY_HEADINGS):
             bad_rows.append(f"{index}: category heading leaked into unit fields")
         if conversion.category in TEMPERATURE_UNIT_SUFFIXES:
@@ -425,6 +479,13 @@ def validate_conversions(conversions: list[ExtractedConversion]) -> None:
                 f"{formatted_contexts}"
             )
 
+    for labels in labels_by_normalized_key.values():
+        if len(labels) > 1:
+            bad_rows.append(
+                "unit labels differ only by spacing or case: "
+                + ", ".join(repr(label) for label in sorted(labels))
+            )
+
     if bad_rows:
         details = "\n".join(bad_rows)
         raise ValueError(f"Extracted conversion data failed validation:\n{details}")
@@ -439,7 +500,7 @@ def format_source_context(category: str, subcategory: str | None) -> str:
 def write_csv(path: Path, conversions: list[ExtractedConversion]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(["convert_from", "to", "rule"])
         for conversion in conversions:
             writer.writerow([conversion.from_unit, conversion.to_unit, conversion.rule])
@@ -447,14 +508,12 @@ def write_csv(path: Path, conversions: list[ExtractedConversion]) -> None:
 
 def write_package_json(path: Path, conversions: list[ExtractedConversion]) -> None:
     payload = {
-        "version": 1,
+        "version": 2,
         "source": {
             "name": SOURCE_NAME,
             "document": SOURCE_DOCUMENT,
         },
-        "conversions": [
-            package_conversion(conversion) for conversion in conversions
-        ],
+        "conversions": [package_conversion(conversion) for conversion in conversions],
     }
     write_json(path, payload)
 
@@ -463,10 +522,7 @@ def package_conversion(conversion: ExtractedConversion) -> dict[str, str]:
     row = {
         "from": conversion.from_unit,
         "to": conversion.to_unit,
-        "category": conversion.category,
     }
-    if conversion.subcategory is not None:
-        row["subcategory"] = conversion.subcategory
     if conversion.rule_type == "factor":
         row["factor"] = conversion.rule
     else:
@@ -500,8 +556,7 @@ def write_category_json(path: Path, conversions: list[ExtractedConversion]) -> N
                 "name": category,
                 "slug": slugify(category),
                 "conversions": [
-                    category_conversion(conversion)
-                    for conversion in grouped[category]
+                    category_conversion(conversion) for conversion in grouped[category]
                 ],
             }
             for category in grouped
@@ -516,14 +571,11 @@ def write_unit_catalog_json(path: Path, conversions: list[ExtractedConversion]) 
         grouped[conversion.category].append(conversion)
 
     category_catalogs = [
-        catalog_group(category, grouped[category])
-        for category in grouped
+        catalog_group(category, grouped[category]) for category in grouped
     ]
-    components = [
-        component
-        for category in category_catalogs
-        for component in category["connected_components"]
-    ]
+    components = connected_components(conversions)
+    converter = runtime_converter(conversions)
+    unordered_pair_count, ordered_pair_count = count_convertible_pairs(converter)
     all_units = sorted(
         {
             unit
@@ -544,14 +596,10 @@ def write_unit_catalog_json(path: Path, conversions: list[ExtractedConversion]) 
             "category_count": len(category_catalogs),
             "direct_conversion_count": len(conversions),
             "unit_count": len(all_units),
-            "unordered_convertible_pair_count": sum(
-                int(component["unordered_convertible_pair_count"])
-                for component in components
-            ),
-            "ordered_convertible_pair_count": sum(
-                int(component["ordered_convertible_pair_count"])
-                for component in components
-            ),
+            "connected_component_count": len(components),
+            "convertibility_model": "runtime_graph",
+            "unordered_convertible_pair_count": unordered_pair_count,
+            "ordered_convertible_pair_count": ordered_pair_count,
         },
         "all_units": all_units,
         "categories": category_catalogs,
@@ -573,27 +621,19 @@ def catalog_group(
         }
     )
     components = connected_components(conversions)
+    converter = runtime_converter(conversions)
+    unordered_pair_count, ordered_pair_count = count_convertible_pairs(converter)
     catalog: dict[str, object] = {
         "name": name,
         "slug": slugify(name),
         "unit_count": len(units),
         "direct_conversion_count": len(conversions),
         "connected_component_count": len(components),
-        "unordered_convertible_pair_count": sum(
-            component_pair_count(component) for component in components
-        ),
-        "ordered_convertible_pair_count": sum(
-            component_pair_count(component) * 2 for component in components
-        ),
+        "unordered_convertible_pair_count": unordered_pair_count,
+        "ordered_convertible_pair_count": ordered_pair_count,
         "units": units,
         "connected_components": [
-            {
-                "unit_count": len(component),
-                "unordered_convertible_pair_count": component_pair_count(component),
-                "ordered_convertible_pair_count": component_pair_count(component) * 2,
-                "units": component,
-            }
-            for component in components
+            component_catalog(converter, component) for component in components
         ],
     }
     if subcategory is None:
@@ -613,6 +653,54 @@ def catalog_group(
     else:
         catalog["subcategory"] = subcategory
     return catalog
+
+
+def component_catalog(
+    converter: UnitConverter,
+    component: list[str],
+) -> dict[str, object]:
+    unordered_pair_count, ordered_pair_count = count_convertible_pairs(
+        converter,
+        component,
+    )
+    return {
+        "unit_count": len(component),
+        "unordered_convertible_pair_count": unordered_pair_count,
+        "ordered_convertible_pair_count": ordered_pair_count,
+        "units": component,
+    }
+
+
+def runtime_converter(
+    conversions: list[ExtractedConversion],
+) -> UnitConverter:
+    return UnitConverter(
+        Conversion(
+            conversion.from_unit,
+            conversion.to_unit,
+            factor=conversion.rule if conversion.rule_type == "factor" else None,
+            formula=conversion.rule if conversion.rule_type == "formula" else None,
+        )
+        for conversion in conversions
+    )
+
+
+def count_convertible_pairs(
+    converter: UnitConverter,
+    units: list[str] | None = None,
+) -> tuple[int, int]:
+    """Count directional runtime paths for generated catalog statistics."""
+
+    candidates = converter.available_units() if units is None else tuple(units)
+    unordered_count = 0
+    ordered_count = 0
+    for index, left in enumerate(candidates):
+        for right in candidates[index + 1 :]:
+            forward = converter.can_convert(left, right)
+            reverse = converter.can_convert(right, left)
+            unordered_count += int(forward or reverse)
+            ordered_count += int(forward) + int(reverse)
+    return unordered_count, ordered_count
 
 
 def connected_components(conversions: list[ExtractedConversion]) -> list[list[str]]:
@@ -638,11 +726,6 @@ def connected_components(conversions: list[ExtractedConversion]) -> list[list[st
         components.append(sorted(component))
 
     return sorted(components, key=lambda component: (-len(component), component[0]))
-
-
-def component_pair_count(component: list[str]) -> int:
-    unit_count = len(component)
-    return unit_count * (unit_count - 1) // 2
 
 
 def category_conversion(conversion: ExtractedConversion) -> dict[str, str | int]:

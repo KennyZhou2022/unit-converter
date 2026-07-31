@@ -1,7 +1,7 @@
-# unit-converter
+# nist-unit-converter
 
-`unit-converter` is a standards-backed Python package for converting values
-between supported units.
+`nist-unit-converter` is a standards-backed Python package for converting
+values between supported units.
 
 The package currently uses conversion factors extracted from NIST Special
 Publication 811 (2008), Appendix B.9. The data is bundled with the package, so
@@ -11,9 +11,13 @@ runtime conversion does not depend on a local PDF or CSV file.
 
 - Convert values with `convert(value, from_unit, to_unit)`.
 - Browse supported unit labels by category.
-- Load a UI category tree for building unit picker interfaces.
+- Check a pair with `can_convert()` and list valid targets with
+  `compatible_units()`.
+- Use stable unit IDs for saved settings and integrations.
+- Query UI categories, subcategories, unit labels, and unit IDs directly.
 - Read direct unit metadata with both source categories and UI categories.
 - Use explicit labels for temperature values and temperature intervals.
+- Control arithmetic rounding with the standard library `decimal` context.
 - Handle unknown units and incompatible units with package-specific errors.
 
 ## Minimal Example

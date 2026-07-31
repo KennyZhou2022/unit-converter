@@ -3,14 +3,15 @@
 from __future__ import annotations
 
 import ast
-import json
 from collections import deque
+from collections.abc import Iterable
 from dataclasses import dataclass
-from decimal import Decimal
+from decimal import Decimal, DecimalException
+from fractions import Fraction
 from functools import cache
-from importlib.resources import files
-from typing import Any, Iterable, TypeAlias, cast
+from typing import Any, NoReturn, TypeAlias
 
+from unit_converter._data import load_json_data
 from unit_converter.exceptions import (
     AmbiguousConversionError,
     ConversionError,
@@ -20,7 +21,11 @@ from unit_converter.exceptions import (
 )
 
 Number: TypeAlias = int | float | str | Decimal
-Context: TypeAlias = tuple[str | None, str | None]
+# NIST B.9 rounds non-exact factors to the published significant digits, so
+# independently rounded routes can differ at sub-ppm scale.
+_FACTOR_EQUIVALENCE_RELATIVE_TOLERANCE = Fraction(1, 1_000_000)
+_CONVERSION_DATA_VERSION = 2
+_UNIT_CATALOG_VERSION = 3
 
 
 @dataclass(frozen=True)
@@ -31,12 +36,18 @@ class Conversion:
     to_unit: str
     factor: str | Decimal | None = None
     formula: str | None = None
-    category: str | None = None
-    subcategory: str | None = None
 
     def __post_init__(self) -> None:
         if (self.factor is None) == (self.formula is None):
-            raise ValueError("Exactly one of factor or formula must be provided.")
+            raise ConversionError("Exactly one of factor or formula must be provided.")
+        if not self.from_unit or not self.to_unit:
+            raise ConversionError("Conversion unit names must not be empty.")
+        if self.factor is not None:
+            factor = _to_decimal(self.factor, role="factor")
+            if factor == 0:
+                raise ConversionError("Conversion factor must not be zero.")
+        if self.formula is not None:
+            _parse_formula(self.formula)
 
     @classmethod
     def from_mapping(cls, value: dict[str, Any]) -> Conversion:
@@ -45,14 +56,18 @@ class Conversion:
             to_unit=str(value["to"]),
             factor=value.get("factor"),
             formula=value.get("formula"),
-            category=value.get("category"),
-            subcategory=value.get("subcategory"),
         )
 
     def apply(self, value: Number) -> Decimal:
         decimal_value = _to_decimal(value)
         if self.factor is not None:
-            return decimal_value * _to_decimal(self.factor)
+            try:
+                result = decimal_value * _to_decimal(self.factor, role="factor")
+            except DecimalException as error:
+                raise ConversionError(
+                    f"Factor conversion failed for value {value!r}."
+                ) from error
+            return _require_finite(result, "Factor conversion")
         if self.formula is not None:
             return _evaluate_formula(self.formula, decimal_value)
         raise ConversionError("Conversion has neither factor nor formula.")
@@ -60,7 +75,13 @@ class Conversion:
     def apply_inverse(self, value: Number) -> Decimal:
         decimal_value = _to_decimal(value)
         if self.factor is not None:
-            return decimal_value / _to_decimal(self.factor)
+            try:
+                result = decimal_value / _to_decimal(self.factor, role="factor")
+            except DecimalException as error:
+                raise ConversionError(
+                    f"Inverse factor conversion failed for value {value!r}."
+                ) from error
+            return _require_finite(result, "Inverse factor conversion")
         if self.formula is not None:
             return _evaluate_inverse_formula(self.formula, decimal_value)
         raise ConversionError("Conversion has neither factor nor formula.")
@@ -71,10 +92,6 @@ class Conversion:
         if self.formula is None:
             return False
         return _can_invert_formula(self.formula)
-
-    @property
-    def context(self) -> Context:
-        return self.category, self.subcategory
 
 
 @dataclass(frozen=True)
@@ -89,51 +106,125 @@ class _Edge:
         return self.conversion.apply(value)
 
 
+Path: TypeAlias = tuple[_Edge, ...]
+
+
 @dataclass(frozen=True)
-class _PathResult:
-    value: Decimal
-    path: tuple[_Edge, ...]
+class _UnitIdentity:
+    unit_id: str
+    quantity_id: str
+    display_name: str
+    aliases: tuple[str, ...]
+
+    @classmethod
+    def from_mapping(cls, value: dict[str, Any]) -> _UnitIdentity:
+        return cls(
+            unit_id=str(value["unit_id"]),
+            quantity_id=str(value["quantity_id"]),
+            display_name=str(value["display_name"]),
+            aliases=tuple(str(alias) for alias in value["aliases"]),
+        )
 
 
 class UnitConverter:
     """In-memory unit conversion registry."""
 
     def __init__(self, conversions: Iterable[Conversion]) -> None:
-        self._all_conversions = tuple(conversions)
-        self._conversions: dict[tuple[str, str], list[Conversion]] = {}
-        self._adjacency: dict[str, list[_Edge]] = {}
-        self._unit_contexts: dict[str, set[Context]] = {}
-        direct_pairs = {
+        conversion_rules = tuple(conversions)
+        self._direct_pairs = frozenset(
             (conversion.from_unit, conversion.to_unit)
-            for conversion in self._all_conversions
-        }
+            for conversion in conversion_rules
+        )
+        self._adjacency: dict[str, list[_Edge]] = {}
+        units: set[str] = set()
+        self._unit_lookup: dict[str, str] = {}
+        self._display_names: dict[str, str] = {}
+        self._quantity_ids: dict[str, str] | None = None
 
-        for conversion in self._all_conversions:
-            key = (conversion.from_unit, conversion.to_unit)
-            self._conversions.setdefault(key, []).append(conversion)
-            self._add_unit_context(conversion.from_unit, conversion.context)
-            self._add_unit_context(conversion.to_unit, conversion.context)
+        for conversion in conversion_rules:
+            units.update((conversion.from_unit, conversion.to_unit))
             self._adjacency.setdefault(conversion.from_unit, []).append(
                 _Edge(conversion.to_unit, conversion)
             )
             if (
                 conversion.can_apply_inverse()
-                and (conversion.to_unit, conversion.from_unit) not in direct_pairs
+                and (conversion.to_unit, conversion.from_unit)
+                not in self._direct_pairs
             ):
                 self._adjacency.setdefault(conversion.to_unit, []).append(
                     _Edge(conversion.from_unit, conversion, reverse=True)
                 )
 
+        self._units = frozenset(units)
+        for unit in self._units:
+            self._unit_lookup[unit] = unit
+            self._display_names[unit] = unit
+
     @classmethod
     def from_package_data(cls) -> UnitConverter:
-        data = _load_package_data()
-        return cls(Conversion.from_mapping(row) for row in data["conversions"])
+        data = load_json_data("conversions.json")
+        catalog = load_json_data("unit_catalog.json")
+        _require_data_version("conversion data", data, _CONVERSION_DATA_VERSION)
+        _require_data_version("unit catalog", catalog, _UNIT_CATALOG_VERSION)
+        identities = tuple(_UnitIdentity.from_mapping(row) for row in catalog["units"])
+        unit_id_by_display_name = {
+            identity.display_name: identity.unit_id for identity in identities
+        }
+        conversions = []
+        for row in data["conversions"]:
+            mapped_row = dict(row)
+            try:
+                mapped_row["from"] = unit_id_by_display_name[str(row["from"])]
+                mapped_row["to"] = unit_id_by_display_name[str(row["to"])]
+            except KeyError as error:
+                raise ConversionError(
+                    "Conversion data references an unregistered unit: "
+                    f"{error.args[0]!r}."
+                ) from error
+            conversions.append(Conversion.from_mapping(mapped_row))
+        converter = cls(conversions)
+        converter._configure_unit_identities(identities)
+        return converter
 
     def available(self) -> tuple[tuple[str, str], ...]:
-        return tuple(sorted(self._conversions))
+        return tuple(
+            sorted(
+                (
+                    self._display_unit(from_unit),
+                    self._display_unit(to_unit),
+                )
+                for from_unit, to_unit in self._direct_pairs
+            )
+        )
 
     def available_units(self) -> tuple[str, ...]:
-        return tuple(sorted(self._unit_contexts))
+        return tuple(sorted(self._display_unit(unit) for unit in self._units))
+
+    def available_unit_ids(self) -> tuple[str, ...]:
+        """Return stable unit IDs, or unit names for a custom converter."""
+
+        return tuple(sorted(self._units))
+
+    def can_convert(self, from_unit: str, to_unit: str) -> bool:
+        """Return whether a conversion path is available for two unit keys."""
+
+        if from_unit not in self._unit_lookup or to_unit not in self._unit_lookup:
+            return False
+        resolved_from = self._unit_lookup[from_unit]
+        resolved_to = self._unit_lookup[to_unit]
+        return self._can_convert_resolved(resolved_from, resolved_to)
+
+    def compatible_units(self, unit: str) -> tuple[str, ...]:
+        """Return display names reachable from ``unit``."""
+
+        resolved_unit = self._resolve_unit(unit)
+        return tuple(
+            sorted(
+                self._display_unit(candidate)
+                for candidate in self._units
+                if self._can_convert_resolved(resolved_unit, candidate)
+            )
+        )
 
     def convert(
         self,
@@ -141,46 +232,116 @@ class UnitConverter:
         from_unit: str,
         to_unit: str,
     ) -> Decimal:
-        self._validate_units(from_unit, to_unit)
-        if from_unit == to_unit:
+        resolved_from, resolved_to = self._resolve_units(from_unit, to_unit)
+        if resolved_from == resolved_to:
             return _to_decimal(value)
 
-        paths = self._find_paths(value, from_unit, to_unit)
+        paths = self._find_paths(resolved_from, resolved_to)
         if len(paths) == 1:
-            return paths[0].value
+            return _apply_path(value, paths[0])
         if len(paths) > 1:
+            factor = _select_equivalent_factor(paths)
+            if factor is not None:
+                return _apply_factor(value, factor)
             self._raise_ambiguous_path(from_unit, to_unit, paths)
 
         self._raise_no_path(from_unit, to_unit)
 
-    def _add_unit_context(self, unit: str, context: Context) -> None:
-        self._unit_contexts.setdefault(unit, set()).add(context)
+    def _configure_unit_identities(
+        self,
+        identities: Iterable[_UnitIdentity],
+    ) -> None:
+        unit_lookup: dict[str, str] = {}
+        display_names: dict[str, str] = {}
+        quantity_ids: dict[str, str] = {}
 
-    def _validate_units(self, from_unit: str, to_unit: str) -> None:
-        missing = [
-            unit
-            for unit in (from_unit, to_unit)
-            if unit not in self._unit_contexts
-        ]
+        for identity in identities:
+            if identity.unit_id in display_names:
+                raise ConversionError(
+                    f"Duplicate stable unit ID: {identity.unit_id!r}."
+                )
+            display_names[identity.unit_id] = identity.display_name
+            quantity_ids[identity.unit_id] = identity.quantity_id
+            for lookup_key in (
+                identity.unit_id,
+                identity.display_name,
+                *identity.aliases,
+            ):
+                previous = unit_lookup.get(lookup_key)
+                if previous is not None and previous != identity.unit_id:
+                    raise ConversionError(
+                        f"Unit lookup key {lookup_key!r} is ambiguous."
+                    )
+                unit_lookup[lookup_key] = identity.unit_id
+
+        graph_units = set(self._units)
+        identity_units = set(display_names)
+        if graph_units != identity_units:
+            missing = sorted(graph_units - identity_units)
+            extra = sorted(identity_units - graph_units)
+            raise ConversionError(
+                "Stable unit registry does not match the conversion graph: "
+                f"missing={missing}, extra={extra}."
+            )
+        for from_unit, to_unit in self._direct_pairs:
+            if quantity_ids[from_unit] != quantity_ids[to_unit]:
+                raise ConversionError(
+                    "A direct conversion crosses stable physical quantities: "
+                    f"{from_unit!r} -> {to_unit!r}."
+                )
+
+        self._unit_lookup = unit_lookup
+        self._display_names = display_names
+        self._quantity_ids = quantity_ids
+
+    def _can_convert_resolved(self, from_unit: str, to_unit: str) -> bool:
+        if from_unit == to_unit:
+            return True
+        if (
+            self._quantity_ids is not None
+            and self._quantity_ids[from_unit] != self._quantity_ids[to_unit]
+        ):
+            return False
+        paths = self._find_paths(from_unit, to_unit)
+        if len(paths) == 1:
+            return True
+        return len(paths) > 1 and _select_equivalent_factor(paths) is not None
+
+    def _resolve_unit(self, unit: str) -> str:
+        try:
+            return self._unit_lookup[unit]
+        except KeyError as error:
+            raise UnitNotFoundError(f"Unknown unit: {unit!r}.") from error
+
+    def _resolve_units(self, from_unit: str, to_unit: str) -> tuple[str, str]:
+        missing = list(
+            dict.fromkeys(
+                unit
+                for unit in (from_unit, to_unit)
+                if unit not in self._unit_lookup
+            )
+        )
         if missing:
             formatted = ", ".join(repr(unit) for unit in missing)
             raise UnitNotFoundError(f"Unknown unit(s): {formatted}.")
+        return self._unit_lookup[from_unit], self._unit_lookup[to_unit]
+
+    def _display_unit(self, unit: str) -> str:
+        return self._display_names[unit]
 
     def _find_paths(
         self,
-        value: Number,
         from_unit: str,
         to_unit: str,
-    ) -> list[_PathResult]:
-        start_value = _to_decimal(value)
-        queue: deque[tuple[str, Decimal, tuple[_Edge, ...], frozenset[str]]] = deque(
-            [(from_unit, start_value, (), frozenset({from_unit}))]
+    ) -> list[Path]:
+        queue: deque[tuple[str, Path, frozenset[str]]] = deque(
+            [(from_unit, (), frozenset({from_unit}))]
         )
         found_depth: int | None = None
-        results: list[_PathResult] = []
+        results: list[Path] = []
 
         while queue:
-            current_unit, current_value, path, seen_units = queue.popleft()
+            current_unit, path, seen_units = queue.popleft()
             if found_depth is not None and len(path) >= found_depth:
                 continue
 
@@ -189,17 +350,15 @@ class UnitConverter:
                     continue
 
                 next_path = (*path, edge)
-                next_value = edge.apply(current_value)
                 if edge.to_unit == to_unit:
                     found_depth = len(next_path)
-                    results.append(_PathResult(next_value, next_path))
+                    results.append(next_path)
                     continue
 
                 if found_depth is None:
                     queue.append(
                         (
                             edge.to_unit,
-                            next_value,
                             next_path,
                             seen_units | {edge.to_unit},
                         )
@@ -211,34 +370,21 @@ class UnitConverter:
         self,
         from_unit: str,
         to_unit: str,
-        paths: list[_PathResult],
-    ) -> None:
-        contexts = ", ".join(
-            sorted(
-                {
-                    format_context(*edge.conversion.context)
-                    for path in paths
-                    for edge in path.path
-                }
-            )
-        )
+        paths: list[Path],
+    ) -> NoReturn:
         raise AmbiguousConversionError(
             f"Multiple conversion paths found from {from_unit!r} to {to_unit!r}. "
-            "The conversion data contains multiple matching paths. "
-            f"Available contexts: {contexts}."
+            f"{len(paths)} shortest paths contain conflicting rules."
         )
 
-    def _raise_no_path(self, from_unit: str, to_unit: str) -> None:
+    def _raise_no_path(
+        self,
+        from_unit: str,
+        to_unit: str,
+    ) -> NoReturn:
         raise IncompatibleUnitError(
             f"No conversion path found from {from_unit!r} to {to_unit!r}"
-            ". Units may belong to different physical quantities. "
-            f"{from_unit!r} appears in: {self._format_unit_contexts(from_unit)}. "
-            f"{to_unit!r} appears in: {self._format_unit_contexts(to_unit)}."
-        )
-
-    def _format_unit_contexts(self, unit: str) -> str:
-        return ", ".join(
-            sorted(format_context(*context) for context in self._unit_contexts[unit])
+            ". Units may belong to different physical quantities."
         )
 
 
@@ -252,52 +398,181 @@ def convert(
     return _package_converter().convert(value, from_unit, to_unit)
 
 
+def can_convert(from_unit: str, to_unit: str) -> bool:
+    """Return whether bundled data supports conversion between two unit keys."""
+
+    return _package_converter().can_convert(from_unit, to_unit)
+
+
+def compatible_units(unit: str) -> tuple[str, ...]:
+    """Return bundled display names reachable from ``unit``."""
+
+    return _package_converter().compatible_units(unit)
+
+
 @cache
 def _package_converter() -> UnitConverter:
     return UnitConverter.from_package_data()
 
 
-def format_context(category: str | None, subcategory: str | None) -> str:
-    if category is None:
-        return "<uncategorized>"
-    if subcategory is None:
-        return category
-    return f"{category} / {subcategory}"
+def _to_decimal(value: object, *, role: str = "value") -> Decimal:
+    if isinstance(value, bool) or not isinstance(
+        value,
+        int | float | str | Decimal,
+    ):
+        raise ConversionError(
+            f"Conversion {role} must be an int, float, str, or Decimal; "
+            f"received {type(value).__name__}."
+        )
+    try:
+        decimal_value = value if isinstance(value, Decimal) else Decimal(str(value))
+    except (DecimalException, ValueError, TypeError) as error:
+        raise ConversionError(
+            f"Invalid numeric conversion {role}: {value!r}."
+        ) from error
+    return _require_finite(decimal_value, f"Conversion {role}")
 
 
-def _load_package_data() -> dict[str, Any]:
-    data_path = files("unit_converter.data").joinpath("conversions.json")
-    with data_path.open(encoding="utf-8") as handle:
-        return cast(dict[str, Any], json.load(handle))
+def _require_data_version(
+    name: str,
+    data: dict[str, Any],
+    expected_version: int,
+) -> None:
+    actual_version = data.get("version")
+    if actual_version != expected_version:
+        raise ConversionError(
+            f"Unsupported {name} version {actual_version!r}; "
+            f"expected {expected_version}."
+        )
 
 
-def _to_decimal(value: Number) -> Decimal:
-    if isinstance(value, Decimal):
-        return value
-    return Decimal(str(value))
+def _require_finite(value: Decimal, operation: str) -> Decimal:
+    if not value.is_finite():
+        raise ConversionError(f"{operation} must produce a finite Decimal.")
+    return value
+
+
+def _apply_path(value: Number, path: Path) -> Decimal:
+    result = _to_decimal(value)
+    for edge in path:
+        result = edge.apply(result)
+    return result
+
+
+def _apply_factor(value: Number, factor: Fraction) -> Decimal:
+    numerator = Decimal(factor.numerator)
+    denominator = Decimal(factor.denominator)
+    try:
+        result = _to_decimal(value) * numerator / denominator
+    except DecimalException as error:
+        raise ConversionError(
+            f"Equivalent factor conversion failed for value {value!r}."
+        ) from error
+    return _require_finite(result, "Equivalent factor conversion")
+
+
+def _select_equivalent_factor(paths: list[Path]) -> Fraction | None:
+    candidates: list[tuple[Path, Fraction]] = []
+    for path in paths:
+        factor = _path_factor(path)
+        if factor is None:
+            return None
+        candidates.append((path, factor))
+
+    if not _factors_are_equivalent([factor for _, factor in candidates]):
+        return None
+
+    _, selected_factor = min(candidates, key=_factor_preference_key)
+    return selected_factor
+
+
+def _path_factor(path: Path) -> Fraction | None:
+    result = Fraction(1)
+    for edge in path:
+        if edge.conversion.factor is None:
+            return None
+        factor = Fraction(str(edge.conversion.factor))
+        if edge.reverse:
+            result /= factor
+        else:
+            result *= factor
+    return result
+
+
+def _factors_are_equivalent(factors: list[Fraction]) -> bool:
+    for index, left in enumerate(factors):
+        for right in factors[index + 1 :]:
+            scale = max(abs(left), abs(right))
+            if abs(left - right) > scale * _FACTOR_EQUIVALENCE_RELATIVE_TOLERANCE:
+                return False
+    return True
+
+
+def _factor_preference_key(
+    candidate: tuple[Path, Fraction],
+) -> tuple[bool, int, int, tuple[tuple[str, str, bool], ...]]:
+    path, factor = candidate
+    decimal_places = _terminating_decimal_places(factor.denominator)
+    return (
+        decimal_places is None,
+        decimal_places or 0,
+        len(str(abs(factor.numerator))) + len(str(factor.denominator)),
+        tuple(
+            (
+                edge.conversion.from_unit,
+                edge.conversion.to_unit,
+                edge.reverse,
+            )
+            for edge in path
+        ),
+    )
+
+
+def _terminating_decimal_places(denominator: int) -> int | None:
+    powers_of_two = 0
+    powers_of_five = 0
+    while denominator % 2 == 0:
+        denominator //= 2
+        powers_of_two += 1
+    while denominator % 5 == 0:
+        denominator //= 5
+        powers_of_five += 1
+    if denominator != 1:
+        return None
+    return max(powers_of_two, powers_of_five)
 
 
 def _evaluate_formula(formula: str, x: Decimal) -> Decimal:
+    expression = _parse_formula(formula)
     try:
-        expression = ast.parse(formula, mode="eval")
-    except SyntaxError as error:
-        raise ConversionError(f"Invalid conversion formula: {formula!r}.") from error
-    return _eval_node(expression.body, x)
+        result = _eval_node(expression.body, x)
+    except DecimalException as error:
+        raise ConversionError(
+            f"Conversion formula {formula!r} failed for value {x!r}."
+        ) from error
+    return _require_finite(result, f"Conversion formula {formula!r}")
 
 
 def _evaluate_inverse_formula(formula: str, y: Decimal) -> Decimal:
-    affine = _formula_to_affine(formula)
-    if affine is not None:
-        slope, intercept = affine
-        if slope == 0:
-            raise ConversionNotFoundError(
-                f"Cannot invert constant formula: {formula!r}."
-            )
-        return (y - intercept) / slope
+    try:
+        affine = _formula_to_affine(formula)
+        if affine is not None:
+            slope, intercept = affine
+            if slope == 0:
+                raise ConversionNotFoundError(
+                    f"Cannot invert constant formula: {formula!r}."
+                )
+            result = (y - intercept) / slope
+            return _require_finite(result, f"Conversion inverse formula {formula!r}")
 
-    reciprocal_constant = _formula_to_reciprocal_constant(formula)
-    if reciprocal_constant is not None:
-        return reciprocal_constant / y
+        reciprocal_constant = _formula_to_reciprocal_constant(formula)
+        if reciprocal_constant is not None and reciprocal_constant != 0:
+            result = reciprocal_constant / y
+            return _require_finite(result, f"Conversion inverse formula {formula!r}")
+    except DecimalException as error:
+        raise ConversionError(
+            f"Conversion inverse formula {formula!r} failed for value {y!r}."
+        ) from error
 
     raise ConversionNotFoundError(f"Cannot invert formula: {formula!r}.")
 
@@ -307,14 +582,51 @@ def _can_invert_formula(formula: str) -> bool:
     if affine is not None:
         slope, _ = affine
         return slope != 0
-    return _formula_to_reciprocal_constant(formula) is not None
+    reciprocal_constant = _formula_to_reciprocal_constant(formula)
+    return reciprocal_constant is not None and reciprocal_constant != 0
+
+
+@cache
+def _parse_formula(formula: str) -> ast.Expression:
+    if not formula.strip():
+        raise ConversionError("Conversion formula must not be empty.")
+    try:
+        expression = ast.parse(formula, mode="eval")
+    except SyntaxError as error:
+        raise ConversionError(f"Invalid conversion formula: {formula!r}.") from error
+    _validate_formula_node(expression.body, formula)
+    return expression
+
+
+def _validate_formula_node(node: ast.AST, formula: str) -> None:
+    if isinstance(node, ast.Constant):
+        constant = _constant_decimal(node)
+        if constant is not None and constant.is_finite():
+            return
+    elif isinstance(node, ast.Name) and node.id == "x":
+        return
+    elif isinstance(node, ast.BinOp) and isinstance(
+        node.op,
+        ast.Add | ast.Div | ast.Mult | ast.Pow | ast.Sub,
+    ):
+        _validate_formula_node(node.left, formula)
+        _validate_formula_node(node.right, formula)
+        return
+    elif isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.UAdd | ast.USub):
+        _validate_formula_node(node.operand, formula)
+        return
+    raise ConversionError(
+        f"Unsupported conversion formula syntax in {formula!r}: {ast.dump(node)}."
+    )
 
 
 def _eval_node(node: ast.AST, x: Decimal) -> Decimal:
     if isinstance(node, ast.Constant):
-        value = node.value
-        if isinstance(value, int | float) and not isinstance(value, bool):
-            return Decimal(str(value))
+        constant_value = node.value
+        if isinstance(constant_value, int | float) and not isinstance(
+            constant_value, bool
+        ):
+            return Decimal(str(constant_value))
 
     if isinstance(node, ast.Name) and node.id == "x":
         return x
@@ -335,11 +647,11 @@ def _eval_node(node: ast.AST, x: Decimal) -> Decimal:
         raise ConversionError(f"Unsupported formula operator: {type(node.op)}.")
 
     if isinstance(node, ast.UnaryOp):
-        value = _eval_node(node.operand, x)
+        operand_value = _eval_node(node.operand, x)
         if isinstance(node.op, ast.UAdd):
-            return value
+            return operand_value
         if isinstance(node.op, ast.USub):
-            return -value
+            return -operand_value
         raise ConversionError(f"Unsupported formula operator: {type(node.op)}.")
 
     raise ConversionError(f"Unsupported formula syntax: {ast.dump(node)}.")
@@ -347,10 +659,15 @@ def _eval_node(node: ast.AST, x: Decimal) -> Decimal:
 
 def _formula_to_affine(formula: str) -> tuple[Decimal, Decimal] | None:
     try:
-        expression = ast.parse(formula, mode="eval")
-    except SyntaxError:
+        expression = _parse_formula(formula)
+    except ConversionError:
         return None
-    return _linearize_node(expression.body)
+    try:
+        return _linearize_node(expression.body)
+    except DecimalException as error:
+        raise ConversionError(
+            f"Could not analyze conversion formula {formula!r}."
+        ) from error
 
 
 def _linearize_node(node: ast.AST) -> tuple[Decimal, Decimal] | None:
@@ -402,8 +719,8 @@ def _linearize_node(node: ast.AST) -> tuple[Decimal, Decimal] | None:
 
 def _formula_to_reciprocal_constant(formula: str) -> Decimal | None:
     try:
-        expression = ast.parse(formula, mode="eval")
-    except SyntaxError:
+        expression = _parse_formula(formula)
+    except ConversionError:
         return None
     node = expression.body
     if not isinstance(node, ast.BinOp) or not isinstance(node.op, ast.Div):
@@ -418,15 +735,17 @@ def _formula_to_reciprocal_constant(formula: str) -> Decimal | None:
 
 def _constant_decimal(node: ast.AST) -> Decimal | None:
     if isinstance(node, ast.Constant):
-        value = node.value
-        if isinstance(value, int | float) and not isinstance(value, bool):
-            return Decimal(str(value))
+        constant_value = node.value
+        if isinstance(constant_value, int | float) and not isinstance(
+            constant_value, bool
+        ):
+            return Decimal(str(constant_value))
     if isinstance(node, ast.UnaryOp):
-        value = _constant_decimal(node.operand)
-        if value is None:
+        operand_value = _constant_decimal(node.operand)
+        if operand_value is None:
             return None
         if isinstance(node.op, ast.UAdd):
-            return value
+            return operand_value
         if isinstance(node.op, ast.USub):
-            return -value
+            return -operand_value
     return None

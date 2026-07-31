@@ -22,10 +22,11 @@ def render(catalog: dict[str, Any]) -> str:
     lines = [
         "# Supported Units",
         "",
-        "This page lists exact unit labels accepted by `convert()`. The filter",
+        "This page lists unit display names accepted by `convert()`. The filter",
         "uses source categories from the bundled standard. Applications that",
-        "need display categories can use `get_ui_unit_catalog()` together with",
-        "`get_unit_catalog()[\"units\"]`.",
+        "need stable IDs can use `list_unit_ids()`. For display-oriented",
+        "grouping, use `list_ui_categories()`, `list_ui_subcategories()`, and",
+        "`list_ui_units()`.",
         "",
         "## Browse By Category",
         "",
@@ -36,8 +37,7 @@ def render(catalog: dict[str, Any]) -> str:
     ]
     for category in categories:
         lines.append(
-            "    <option value=\"{slug}\">{name} ({unit_count} units)</option>"
-            .format(
+            '    <option value="{slug}">{name} ({unit_count} units)</option>'.format(
                 slug=escape(str(category["slug"]), quote=True),
                 name=escape(str(category["name"])),
                 unit_count=category["unit_count"],

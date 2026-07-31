@@ -12,6 +12,10 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parents[1]
 UNIT_CATALOG_PATH = REPO_ROOT / "src" / "unit_converter" / "data" / "unit_catalog.json"
 FULL_LIST_PATH = REPO_ROOT / "data" / "external" / "full_list_unit_catalog.json"
+UI_OVERRIDES_PATH = REPO_ROOT / "data" / "overrides" / "ui_category_overrides.json"
+UNIT_REGISTRY_PATH = (
+    REPO_ROOT / "data" / "registry" / "unit_registry.json"
+)
 
 UiPair = tuple[str, str]
 NistLocation = tuple[str, str | None]
@@ -23,9 +27,7 @@ NIST_UI_HINTS: dict[NistLocation, list[UiPair]] = {
     ("AREA AND SECOND MOMENT OF AREA", None): [("Dimension Converters", "Area")],
     ("ELECTRICITY and MAGNETISM", None): [],
     ("ENERGY (includes WORK)", None): [("Mechanics Converters", "Energy")],
-    ("ENERGY DIVIDED BY AREA TIME", None): [
-        ("Heat Converters", "Heat Flux Density")
-    ],
+    ("ENERGY DIVIDED BY AREA TIME", None): [("Heat Converters", "Heat Flux Density")],
     ("FORCE", None): [("Mechanics Converters", "Force")],
     ("FORCE DIVIDED BY LENGTH", None): [("Fluids Converters", "Surface Tension")],
     ("HEAT", None): [("Heat Converters", "Heat Transfer Coefficient")],
@@ -34,9 +36,7 @@ NIST_UI_HINTS: dict[NistLocation, list[UiPair]] = {
         ("Heat Converters", "Heat Transfer Coefficient")
     ],
     ("HEAT", "Density of Heat"): [("Heat Converters", "Heat Density")],
-    ("HEAT", "Density of Heat Flow Rate"): [
-        ("Heat Converters", "Heat Flux Density")
-    ],
+    ("HEAT", "Density of Heat Flow Rate"): [("Heat Converters", "Heat Flux Density")],
     ("HEAT", "Fuel Consumption"): [("Heat Converters", "Fuel Consumption")],
     ("HEAT", "Heat Capacity and Entropy"): [
         ("Heat Converters", "Specific Heat Capacity")
@@ -45,30 +45,16 @@ NIST_UI_HINTS: dict[NistLocation, list[UiPair]] = {
     ("HEAT", "Specific Heat Capacity and Specific Entropy"): [
         ("Heat Converters", "Specific Heat Capacity")
     ],
-    ("HEAT", "Thermal Conductivity"): [
-        ("Heat Converters", "Thermal Conductivity")
-    ],
-    ("HEAT", "Thermal Diffusivity"): [
-        ("Heat Converters", "Thermal Conductivity")
-    ],
-    ("HEAT", "Thermal Insulance"): [
-        ("Heat Converters", "Thermal Resistance")
-    ],
-    ("HEAT", "Thermal Resistance"): [
-        ("Heat Converters", "Thermal Resistance")
-    ],
-    ("HEAT", "Thermal Resistivity"): [
-        ("Heat Converters", "Thermal Resistance")
-    ],
+    ("HEAT", "Thermal Conductivity"): [("Heat Converters", "Thermal Conductivity")],
+    ("HEAT", "Thermal Diffusivity"): [],
+    ("HEAT", "Thermal Insulance"): [("Heat Converters", "Thermal Resistance")],
+    ("HEAT", "Thermal Resistance"): [("Heat Converters", "Thermal Resistance")],
+    ("HEAT", "Thermal Resistivity"): [("Heat Converters", "Thermal Resistance")],
     ("LENGTH", None): [("Dimension Converters", "Length")],
     ("LIGHT", None): [],
-    ("MASS and MOMENT OF INERTIA", None): [
-        ("Mechanics Converters", "Weight and Mass")
-    ],
+    ("MASS and MOMENT OF INERTIA", None): [("Mechanics Converters", "Weight and Mass")],
     ("MASS DIVIDED BY AREA", None): [("Fluids Converters", "Mass Flux Density")],
-    ("MASS DIVIDED BY LENGTH", None): [
-        ("Mechanics Converters", "Weight and Mass")
-    ],
+    ("MASS DIVIDED BY LENGTH", None): [("Mechanics Converters", "Weight and Mass")],
     ("MASS DIVIDED BY TIME (includes FLOW)", None): [
         ("Fluids Converters", "Flow - Mass")
     ],
@@ -91,28 +77,38 @@ NIST_UI_HINTS: dict[NistLocation, list[UiPair]] = {
     ("TIME", None): [("Mechanics Converters", "Time")],
     ("VELOCITY (includes SPEED)", None): [("Mechanics Converters", "Speed")],
     ("VISCOSITY, DYNAMIC", None): [("Fluids Converters", "Viscosity - Dynamic")],
-    ("VISCOSITY, KINEMATIC", None): [
-        ("Fluids Converters", "Viscosity - Kinematic")
-    ],
+    ("VISCOSITY, KINEMATIC", None): [("Fluids Converters", "Viscosity - Kinematic")],
     ("VOLUME (includes CAPACITY)", None): [("Dimension Converters", "Volume")],
-    ("VOLUME DIVIDED BY TIME (includes FLOW)", None): [
-        ("Fluids Converters", "Flow")
-    ],
+    ("VOLUME DIVIDED BY TIME (includes FLOW)", None): [("Fluids Converters", "Flow")],
 }
 
 
 def main() -> None:
     unit_catalog = load_json(UNIT_CATALOG_PATH)
     full_list_catalog = load_json(FULL_LIST_PATH)
-    unit_records = build_unit_records(unit_catalog, full_list_catalog)
+    ui_overrides = load_json(UI_OVERRIDES_PATH)
+    unit_registry = load_json(UNIT_REGISTRY_PATH)
+    unit_records = build_unit_records(
+        unit_catalog,
+        full_list_catalog,
+        ui_overrides,
+        unit_registry,
+    )
 
     method_counts = Counter(
         ui_mapping["match_method"]
         for unit in unit_records
         for ui_mapping in unit["ui_categories"]
     )
+    unit_catalog["version"] = 3
     unit_catalog["units"] = unit_records
-    unit_catalog["totals"]["unit_record_count"] = len(unit_records)
+    unit_catalog.pop("all_units", None)
+    unit_catalog.pop("all_unit_ids", None)
+    unit_catalog["unit_registry_version"] = unit_registry["version"]
+    unit_catalog["totals"].pop("unit_record_count", None)
+    unit_catalog["totals"]["quantity_count"] = len(
+        {unit["quantity_id"] for unit in unit_records}
+    )
     unit_catalog["totals"]["unit_ui_mapping_count"] = sum(
         len(unit["ui_categories"]) for unit in unit_records
     )
@@ -122,6 +118,12 @@ def main() -> None:
     unit_catalog["totals"]["nist_context_ui_mapping_count"] = method_counts[
         "nist_context"
     ]
+    unit_catalog["totals"]["explicit_override_ui_mapping_count"] = method_counts[
+        "explicit_override"
+    ]
+    unit_catalog["totals"]["unmapped_ui_unit_count"] = sum(
+        unit["ui_mapping_status"] == "unmapped" for unit in unit_records
+    )
 
     write_json(UNIT_CATALOG_PATH, unit_catalog)
     print(f"Wrote {UNIT_CATALOG_PATH.relative_to(REPO_ROOT)}")
@@ -141,6 +143,8 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
 def build_unit_records(
     unit_catalog: dict[str, Any],
     full_list_catalog: dict[str, Any],
+    ui_overrides: dict[str, Any],
+    unit_registry: dict[str, Any],
 ) -> list[dict[str, Any]]:
     full_list_records = build_full_list_records(full_list_catalog)
     full_list_index = build_full_list_index(full_list_records)
@@ -150,28 +154,106 @@ def build_unit_records(
         for category in full_list_catalog["categories"]
         for subcategory in category["subcategories"]
     }
+    if "all_units" in unit_catalog:
+        supported_units = tuple(str(unit) for unit in unit_catalog["all_units"])
+    else:
+        supported_units = tuple(
+            str(record["display_name"]) for record in unit_catalog["units"]
+        )
+    overrides_by_unit = build_ui_overrides(
+        ui_overrides,
+        set(supported_units),
+        valid_ui_pairs,
+    )
+    registry_by_name = {unit["display_name"]: unit for unit in unit_registry["units"]}
+    supported_unit_set = set(supported_units)
+    if set(registry_by_name) != supported_unit_set:
+        missing = sorted(supported_unit_set - set(registry_by_name))
+        extra = sorted(set(registry_by_name) - supported_unit_set)
+        raise ValueError(
+            "Stable unit registry does not match supported units; "
+            f"missing={missing}, extra={extra}."
+        )
 
     unit_records: list[dict[str, Any]] = []
-    for label in unit_catalog["all_units"]:
+    for label in supported_units:
         locations = nist_locations[label]
-        ui_categories = resolve_ui_categories(
-            label,
-            locations,
-            full_list_index,
-            valid_ui_pairs,
-        )
-        unit_records.append(
-            {
-                "label": label,
-                "nist_categories": [
-                    nist_category_record(category, subcategory)
-                    for category, subcategory in locations
-                ],
-                "ui_categories": ui_categories,
-            }
-        )
+        identity = registry_by_name[label]
+        override = overrides_by_unit.get(label)
+        if override is not None:
+            ui_categories = explicit_override_ui_records(override)
+        else:
+            ui_categories = resolve_ui_categories(
+                label,
+                locations,
+                full_list_index,
+                valid_ui_pairs,
+            )
+        record = {
+            "unit_id": identity["unit_id"],
+            "quantity_id": identity["quantity_id"],
+            "display_name": label,
+            "aliases": identity["aliases"],
+            "nist_categories": [
+                nist_category_record(category, subcategory)
+                for category, subcategory in locations
+            ],
+            "ui_mapping_status": "mapped" if ui_categories else "unmapped",
+            "ui_categories": ui_categories,
+        }
+        if not ui_categories:
+            if override is None:
+                raise ValueError(f"Unmapped unit lacks an explicit override: {label}")
+            record["ui_mapping_note"] = override["reason"]
+        unit_records.append(record)
 
     return unit_records
+
+
+def build_ui_overrides(
+    payload: dict[str, Any],
+    supported_units: set[str],
+    valid_ui_pairs: set[UiPair],
+) -> dict[str, dict[str, Any]]:
+    mappings = payload["mappings"]
+    overrides_by_unit = {mapping["unit"]: mapping for mapping in mappings}
+    if len(overrides_by_unit) != len(mappings):
+        raise ValueError("UI category overrides contain duplicate unit entries.")
+
+    unknown_units = sorted(set(overrides_by_unit) - supported_units)
+    if unknown_units:
+        raise ValueError(
+            f"UI category overrides contain unknown units: {unknown_units}"
+        )
+
+    for unit, override in overrides_by_unit.items():
+        is_unmapped = override.get("unmapped") is True
+        has_pair = "category" in override and "subcategory" in override
+        if is_unmapped == has_pair:
+            raise ValueError(
+                f"UI override for {unit!r} must define either an explicit pair "
+                "or unmapped=true."
+            )
+        if has_pair:
+            pair = (override["category"], override["subcategory"])
+            if pair not in valid_ui_pairs:
+                raise ValueError(
+                    f"UI override for {unit!r} uses an unknown category pair: {pair}."
+                )
+
+    return overrides_by_unit
+
+
+def explicit_override_ui_records(override: dict[str, Any]) -> list[dict[str, Any]]:
+    if override.get("unmapped") is True:
+        return []
+    return [
+        {
+            "category": override["category"],
+            "subcategory": override["subcategory"],
+            "match_method": "explicit_override",
+        }
+    ]
 
 
 def nist_category_record(category: str, subcategory: str | None) -> dict[str, str]:
@@ -200,10 +282,7 @@ def build_precise_nist_locations(
             else:
                 locations[unit].append((category_name, None))
 
-    return {
-        unit: sorted(unit_locations)
-        for unit, unit_locations in locations.items()
-    }
+    return {unit: sorted(unit_locations) for unit, unit_locations in locations.items()}
 
 
 def build_full_list_records(full_list_catalog: dict[str, Any]) -> list[dict[str, str]]:
