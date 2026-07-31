@@ -1,9 +1,10 @@
 # Supported Units
 
-This page lists exact unit labels accepted by `convert()`. The filter
+This page lists unit display names accepted by `convert()`. The filter
 uses source categories from the bundled standard. Applications that
-need display categories can use `get_ui_unit_catalog()` together with
-`get_unit_catalog()["units"]`.
+need stable IDs can use `list_unit_ids()`. For display-oriented
+grouping, use `list_ui_categories()`, `list_ui_subcategories()`, and
+`list_ui_units()`.
 
 ## Browse By Category
 
@@ -14,20 +15,20 @@ need display categories can use `get_ui_unit_catalog()` together with
     <option value="acceleration">ACCELERATION (5 units)</option>
     <option value="angle">ANGLE (7 units)</option>
     <option value="area-and-second-moment-of-area">AREA AND SECOND MOMENT OF AREA (17 units)</option>
-    <option value="electricity-and-magnetism">ELECTRICITY and MAGNETISM (50 units)</option>
+    <option value="electricity-and-magnetism">ELECTRICITY and MAGNETISM (49 units)</option>
     <option value="energy">ENERGY (includes WORK) (30 units)</option>
     <option value="energy-divided-by-area-time">ENERGY DIVIDED BY AREA TIME (4 units)</option>
     <option value="force">FORCE (12 units)</option>
     <option value="force-divided-by-length">FORCE DIVIDED BY LENGTH (3 units)</option>
-    <option value="heat">HEAT (84 units)</option>
-    <option value="length">LENGTH (32 units)</option>
+    <option value="heat">HEAT (83 units)</option>
+    <option value="length">LENGTH (31 units)</option>
     <option value="light">LIGHT (9 units)</option>
-    <option value="mass-and-moment-of-inertia">MASS and MOMENT OF INERTIA (23 units)</option>
+    <option value="mass-and-moment-of-inertia">MASS and MOMENT OF INERTIA (22 units)</option>
     <option value="mass-divided-by-area">MASS DIVIDED BY AREA (6 units)</option>
     <option value="mass-divided-by-length">MASS DIVIDED BY LENGTH (7 units)</option>
     <option value="mass-divided-by-time">MASS DIVIDED BY TIME (includes FLOW) (5 units)</option>
     <option value="mass-divided-by-volume">MASS DIVIDED BY VOLUME (includes MASS DENSITY and MASS CONCENTRATION) (17 units)</option>
-    <option value="moment-of-force-or-torque">MOMENT OF FORCE or TORQUE (8 units)</option>
+    <option value="moment-of-force-or-torque">MOMENT OF FORCE or TORQUE (7 units)</option>
     <option value="moment-of-force-or-torque-divided-by-length">MOMENT OF FORCE or TORQUE, DIVIDED BY LENGTH (3 units)</option>
     <option value="permeability">PERMEABILITY (8 units)</option>
     <option value="power">POWER (11 units)</option>
@@ -111,9 +112,9 @@ need display categories can use `get_ui_unit_catalog()` together with
 </table>
 </section>
 
-<section class="unit-category" data-category="electricity-and-magnetism" data-category-name="ELECTRICITY and MAGNETISM" data-unit-count="50">
+<section class="unit-category" data-category="electricity-and-magnetism" data-category-name="ELECTRICITY and MAGNETISM" data-unit-count="49">
 <h2 id="electricity-and-magnetism">ELECTRICITY and MAGNETISM</h2>
-<p class="unit-category-count">50 supported units</p>
+<p class="unit-category-count">49 supported units</p>
 <table>
   <thead>
     <tr><th>Unit</th></tr>
@@ -151,11 +152,10 @@ need display categories can use `get_ui_unit_catalog()` together with
     <tr><td><code>maxwell (Mx)</code></td></tr>
     <tr><td><code>mho</code></td></tr>
     <tr><td><code>oersted (Oe)</code></td></tr>
-    <tr><td><code>ohm ( Ω)</code></td></tr>
     <tr><td><code>ohm (Ω)</code></td></tr>
     <tr><td><code>ohm centimeter (Ω · cm)</code></td></tr>
     <tr><td><code>ohm circular-mil per foot</code></td></tr>
-    <tr><td><code>ohm meter ( Ω · m)</code></td></tr>
+    <tr><td><code>ohm meter (Ω · m)</code></td></tr>
     <tr><td><code>ohm square millimeter per meter (Ω · mm2 / m)</code></td></tr>
     <tr><td><code>siemens (S)</code></td></tr>
     <tr><td><code>statampere</code></td></tr>
@@ -270,9 +270,9 @@ need display categories can use `get_ui_unit_catalog()` together with
 </table>
 </section>
 
-<section class="unit-category" data-category="heat" data-category-name="HEAT" data-unit-count="84">
+<section class="unit-category" data-category="heat" data-category-name="HEAT" data-unit-count="83">
 <h2 id="heat">HEAT</h2>
-<p class="unit-category-count">84 supported units</p>
+<p class="unit-category-count">83 supported units</p>
 <table>
   <thead>
     <tr><th>Unit</th></tr>
@@ -360,15 +360,14 @@ need display categories can use `get_ui_unit_catalog()` together with
     <tr><td><code>watt (W)</code></td></tr>
     <tr><td><code>watt per meter kelvin [W / (m · K)]</code></td></tr>
     <tr><td><code>watt per square meter (W / m2)</code></td></tr>
-    <tr><td><code>watt per square meter Kelvin [W / (m2 · K)]</code></td></tr>
     <tr><td><code>watt per square meter kelvin [W / (m2 · K)]</code></td></tr>
   </tbody>
 </table>
 </section>
 
-<section class="unit-category" data-category="length" data-category-name="LENGTH" data-unit-count="32">
+<section class="unit-category" data-category="length" data-category-name="LENGTH" data-unit-count="31">
 <h2 id="length">LENGTH</h2>
-<p class="unit-category-count">32 supported units</p>
+<p class="unit-category-count">31 supported units</p>
 <table>
   <thead>
     <tr><th>Unit</th></tr>
@@ -388,10 +387,9 @@ need display categories can use `get_ui_unit_catalog()` together with
     <tr><td><code>light year (l.y.)</code></td></tr>
     <tr><td><code>meter (m)</code></td></tr>
     <tr><td><code>microinch</code></td></tr>
-    <tr><td><code>micrometer ( μm)</code></td></tr>
+    <tr><td><code>micrometer (μm)</code></td></tr>
     <tr><td><code>micron (μ)</code></td></tr>
     <tr><td><code>mil (0.001 in)</code></td></tr>
-    <tr><td><code>mil limeter (mm)</code></td></tr>
     <tr><td><code>mile (based on U.S. survey foot) (mi)</code></td></tr>
     <tr><td><code>mile (mi)</code></td></tr>
     <tr><td><code>mile, nautical</code></td></tr>
@@ -431,9 +429,9 @@ need display categories can use `get_ui_unit_catalog()` together with
 </table>
 </section>
 
-<section class="unit-category" data-category="mass-and-moment-of-inertia" data-category-name="MASS and MOMENT OF INERTIA" data-unit-count="23">
+<section class="unit-category" data-category="mass-and-moment-of-inertia" data-category-name="MASS and MOMENT OF INERTIA" data-unit-count="22">
 <h2 id="mass-and-moment-of-inertia">MASS and MOMENT OF INERTIA</h2>
-<p class="unit-category-count">23 supported units</p>
+<p class="unit-category-count">22 supported units</p>
 <table>
   <thead>
     <tr><th>Unit</th></tr>
@@ -444,7 +442,6 @@ need display categories can use `get_ui_unit_catalog()` together with
     <tr><td><code>gram (g)</code></td></tr>
     <tr><td><code>hundredweight (long, 112 lb)</code></td></tr>
     <tr><td><code>hundredweight (short, 100 lb)</code></td></tr>
-    <tr><td><code>kilogram (k g)</code></td></tr>
     <tr><td><code>kilogram (kg)</code></td></tr>
     <tr><td><code>kilogram meter squared (kg · m2)</code></td></tr>
     <tr><td><code>kilogram-force second squared per meter (kgf · s2 / m)</code></td></tr>
@@ -549,9 +546,9 @@ need display categories can use `get_ui_unit_catalog()` together with
 </table>
 </section>
 
-<section class="unit-category" data-category="moment-of-force-or-torque" data-category-name="MOMENT OF FORCE or TORQUE" data-unit-count="8">
+<section class="unit-category" data-category="moment-of-force-or-torque" data-category-name="MOMENT OF FORCE or TORQUE" data-unit-count="7">
 <h2 id="moment-of-force-or-torque">MOMENT OF FORCE or TORQUE</h2>
-<p class="unit-category-count">8 supported units</p>
+<p class="unit-category-count">7 supported units</p>
 <table>
   <thead>
     <tr><th>Unit</th></tr>
@@ -561,7 +558,6 @@ need display categories can use `get_ui_unit_catalog()` together with
     <tr><td><code>kilogram-force meter (kgf · m)</code></td></tr>
     <tr><td><code>millinewton meter (mN · m)</code></td></tr>
     <tr><td><code>newton meter (N · m)</code></td></tr>
-    <tr><td><code>newton meter (N ·m)</code></td></tr>
     <tr><td><code>ounce (avoirdupois)-force inch (ozf · in)</code></td></tr>
     <tr><td><code>pound-force foot (lbf · ft)</code></td></tr>
     <tr><td><code>pound-force inch (lbf · in)</code></td></tr>
@@ -824,7 +820,7 @@ need display categories can use `get_ui_unit_catalog()` together with
   </thead>
   <tbody>
     <tr><td><code>acre-foot (based on U.S. survey foot)</code></td></tr>
-    <tr><td><code>barrel [for petroleum, 42 gallons (U.S.)](bbl)</code></td></tr>
+    <tr><td><code>barrel [for petroleum, 42 gallons (U.S.)] (bbl)</code></td></tr>
     <tr><td><code>bushel (U.S.) (bu)</code></td></tr>
     <tr><td><code>cord (128 ft3)</code></td></tr>
     <tr><td><code>cubic foot (ft3)</code></td></tr>

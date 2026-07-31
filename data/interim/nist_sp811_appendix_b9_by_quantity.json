@@ -450,10 +450,10 @@
         },
         {
           "from": "ESU of resistance (statohm)",
-          "to": "ohm ( Ω)",
+          "to": "ohm (Ω)",
           "rule": "8.987552E+11",
           "rule_type": "factor",
-          "display_label": "ESU of resistance (statohm) -> ohm ( Ω)",
+          "display_label": "ESU of resistance (statohm) -> ohm (Ω)",
           "source_appendix": "B.9",
           "source_page": 70
         },
@@ -531,19 +531,19 @@
         },
         {
           "from": "ohm centimeter (Ω · cm)",
-          "to": "ohm meter ( Ω · m)",
+          "to": "ohm meter (Ω · m)",
           "rule": "1.0E-02",
           "rule_type": "factor",
-          "display_label": "ohm centimeter (Ω · cm) -> ohm meter ( Ω · m)",
+          "display_label": "ohm centimeter (Ω · cm) -> ohm meter (Ω · m)",
           "source_appendix": "B.9",
           "source_page": 70
         },
         {
           "from": "ohm circular-mil per foot",
-          "to": "ohm meter ( Ω · m)",
+          "to": "ohm meter (Ω · m)",
           "rule": "1.662426E-09",
           "rule_type": "factor",
-          "display_label": "ohm circular-mil per foot -> ohm meter ( Ω · m)",
+          "display_label": "ohm circular-mil per foot -> ohm meter (Ω · m)",
           "source_appendix": "B.9",
           "source_page": 70
         },
@@ -603,10 +603,10 @@
         },
         {
           "from": "statohm",
-          "to": "ohm ( Ω)",
+          "to": "ohm (Ω)",
           "rule": "8.987552E+11",
           "rule_type": "factor",
-          "display_label": "statohm -> ohm ( Ω)",
+          "display_label": "statohm -> ohm (Ω)",
           "source_appendix": "B.9",
           "source_page": 70
         },
@@ -1155,10 +1155,10 @@
         },
         {
           "from": "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)]",
-          "to": "watt per square meter Kelvin [W / (m2 · K)]",
+          "to": "watt per square meter kelvin [W / (m2 · K)]",
           "rule": "2.042808E+04",
           "rule_type": "factor",
-          "display_label": "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)] -> watt per square meter Kelvin [W / (m2 · K)]",
+          "display_label": "British thermal unitth per second square foot degree Fahrenheit [Btu th / (s · ft2 · °F)] -> watt per square meter kelvin [W / (m2 · K)]",
           "source_appendix": "B.9",
           "source_page": 72,
           "subcategory": "Coefficient of Heat Transfer"
@@ -1726,7 +1726,7 @@
         {
           "from": "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
           "to": "meter kelvin per watt (m · K / W)",
-          "rule": "6.938112E+04",
+          "rule": "6.938112E+00",
           "rule_type": "factor",
           "display_label": "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)] -> meter kelvin per watt (m · K / W)",
           "source_appendix": "B.9",
@@ -1867,10 +1867,10 @@
         },
         {
           "from": "microinch",
-          "to": "micrometer ( μm)",
+          "to": "micrometer (μm)",
           "rule": "2.54E-02",
           "rule_type": "factor",
-          "display_label": "microinch -> micrometer ( μm)",
+          "display_label": "microinch -> micrometer (μm)",
           "source_appendix": "B.9",
           "source_page": 74
         },
@@ -1885,10 +1885,10 @@
         },
         {
           "from": "micron (μ)",
-          "to": "micrometer ( μm)",
+          "to": "micrometer (μm)",
           "rule": "1.0E+00",
           "rule_type": "factor",
-          "display_label": "micron (μ) -> micrometer ( μm)",
+          "display_label": "micron (μ) -> micrometer (μm)",
           "source_appendix": "B.9",
           "source_page": 74
         },
@@ -2011,10 +2011,10 @@
         },
         {
           "from": "point (computer) (1/72 in)",
-          "to": "mil limeter (mm)",
+          "to": "millimeter (mm)",
           "rule": "3.527778E-01",
           "rule_type": "factor",
-          "display_label": "point (computer) (1/72 in) -> mil limeter (mm)",
+          "display_label": "point (computer) (1/72 in) -> millimeter (mm)",
           "source_appendix": "B.9",
           "source_page": 75
         },
@@ -2212,10 +2212,10 @@
         },
         {
           "from": "ounce (troy or apothecary) (oz)",
-          "to": "kilogram (k g)",
+          "to": "kilogram (kg)",
           "rule": "3.110348E-02",
           "rule_type": "factor",
-          "display_label": "ounce (troy or apothecary) (oz) -> kilogram (k g)",
+          "display_label": "ounce (troy or apothecary) (oz) -> kilogram (kg)",
           "source_appendix": "B.9",
           "source_page": 75
         },
@@ -2692,10 +2692,10 @@
         },
         {
           "from": "ounce (avoirdupois)-force inch (ozf · in)",
-          "to": "newton meter (N ·m)",
+          "to": "newton meter (N · m)",
           "rule": "7.061552E-03",
           "rule_type": "factor",
-          "display_label": "ounce (avoirdupois)-force inch (ozf · in) -> newton meter (N ·m)",
+          "display_label": "ounce (avoirdupois)-force inch (ozf · in) -> newton meter (N · m)",
           "source_appendix": "B.9",
           "source_page": 77
         },
@@ -3843,20 +3843,20 @@
           "source_page": 80
         },
         {
-          "from": "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+          "from": "barrel [for petroleum, 42 gallons (U.S.)] (bbl)",
           "to": "cubic meter (m3)",
           "rule": "1.589873E-01",
           "rule_type": "factor",
-          "display_label": "barrel [for petroleum, 42 gallons (U.S.)](bbl) -> cubic meter (m3)",
+          "display_label": "barrel [for petroleum, 42 gallons (U.S.)] (bbl) -> cubic meter (m3)",
           "source_appendix": "B.9",
           "source_page": 80
         },
         {
-          "from": "barrel [for petroleum, 42 gallons (U.S.)](bbl)",
+          "from": "barrel [for petroleum, 42 gallons (U.S.)] (bbl)",
           "to": "liter (L)",
           "rule": "1.589873E+02",
           "rule_type": "factor",
-          "display_label": "barrel [for petroleum, 42 gallons (U.S.)](bbl) -> liter (L)",
+          "display_label": "barrel [for petroleum, 42 gallons (U.S.)] (bbl) -> liter (L)",
           "source_appendix": "B.9",
           "source_page": 80
         },

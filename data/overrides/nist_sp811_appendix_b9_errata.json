@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "source": {
+    "name": "NIST Special Publication 811 (2008), Appendix B.9",
+    "document": "standards/raw/nistspecialpublication811e2008.pdf"
+  },
+  "corrections": [
+    {
+      "from": "degree Fahrenheit hour square foot per British thermal unitth inch [°F · h · ft2 / (Btuth · in)]",
+      "to": "meter kelvin per watt (m · K / W)",
+      "published_rule": "6.938112E+04",
+      "corrected_rule": "6.938112E+00",
+      "status": "manually_confirmed",
+      "reason": "The published exponent is dimensionally inconsistent with the adjacent IT conversion and the thermochemical Btu definition."
+    }
+  ]
+}

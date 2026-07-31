@@ -1,14 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/unit-converter/conversions.schema.json",
-  "title": "unit-converter package data",
+  "$id": "https://raw.githubusercontent.com/KennyZhou2022/unit-converter/main/schemas/conversions.schema.json",
+  "title": "nist-unit-converter package data",
   "type": "object",
   "required": ["version", "source", "conversions"],
   "additionalProperties": false,
   "properties": {
     "version": {
       "type": "integer",
-      "const": 1
+      "const": 2
     },
     "source": {
       "type": "object",
@@ -43,14 +43,6 @@
             "pattern": "^[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][+-]?\\d+)?$"
           },
           "formula": {
-            "type": "string",
-            "minLength": 1
-          },
-          "category": {
-            "type": "string",
-            "minLength": 1
-          },
-          "subcategory": {
             "type": "string",
             "minLength": 1
           }

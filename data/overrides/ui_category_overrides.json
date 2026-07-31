@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "mappings": [
+    {
+      "unit": "electronvolt (eV)",
+      "category": "Mechanics Converters",
+      "subcategory": "Energy",
+      "reason": "The substring 'volt' denotes an energy unit here, not electric potential."
+    },
+    {
+      "unit": "coulomb per kilogram (C / kg)",
+      "category": "Radiology Converters",
+      "subcategory": "Radiation-Exposure",
+      "reason": "Coulomb per kilogram is the SI unit of radiation exposure."
+    },
+    {
+      "unit": "square foot per hour (ft2 / h)",
+      "unmapped": true,
+      "reason": "The UI taxonomy has no thermal diffusivity subcategory; kinematic viscosity is dimensionally equivalent but semantically different."
+    },
+    {
+      "unit": "square meter per second (m2 / s)",
+      "unmapped": true,
+      "reason": "The UI taxonomy has no thermal diffusivity subcategory; kinematic viscosity is dimensionally equivalent but semantically different."
+    },
+    {
+      "unit": "foot to the fourth power (ft4)",
+      "unmapped": true,
+      "reason": "The UI taxonomy has no second moment of area subcategory; area and mass moment of inertia are different quantities."
+    },
+    {
+      "unit": "inch to the fourth power (in4)",
+      "unmapped": true,
+      "reason": "The UI taxonomy has no second moment of area subcategory; area and mass moment of inertia are different quantities."
+    },
+    {
+      "unit": "meter to the fourth power (m4)",
+      "unmapped": true,
+      "reason": "The UI taxonomy has no second moment of area subcategory; area and mass moment of inertia are different quantities."
+    }
+  ]
+}

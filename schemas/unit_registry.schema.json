@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/KennyZhou2022/unit-converter/main/schemas/unit_registry.schema.json",
+  "title": "nist-unit-converter stable unit registry",
+  "type": "object",
+  "required": ["version", "totals", "units"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "totals": {
+      "type": "object",
+      "required": ["unit_count", "quantity_count", "alias_count"],
+      "additionalProperties": false,
+      "properties": {
+        "unit_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "quantity_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "alias_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["unit_id", "quantity_id", "display_name", "aliases"],
+        "additionalProperties": false,
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "pattern": "^unit\\.u[0-9]{4,}$"
+          },
+          "quantity_id": {
+            "type": "string",
+            "pattern": "^quantity\\.q[0-9]{4,}$"
+          },
+          "display_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}

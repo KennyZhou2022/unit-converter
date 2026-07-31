@@ -3,30 +3,55 @@
 ## `convert`
 
 ```python
-convert(
-    value,
-    from_unit,
-    to_unit,
-)
+convert(value, from_unit, to_unit)
 ```
 
-Converts `value` from `from_unit` to `to_unit` using bundled package data.
-
-Arguments:
+Converts `value` with the bundled conversion data.
 
 - `value`: `int`, `float`, `str`, or `Decimal`.
-- `from_unit`: exact unit label from the catalog.
-- `to_unit`: exact unit label from the catalog.
+- `from_unit`: stable unit ID, exact display name, or registered alias.
+- `to_unit`: stable unit ID, exact display name, or registered alias.
+- Returns: `Decimal`.
 
-Returns:
+Unknown units, incompatible units, and invalid arithmetic raise package-specific
+errors described on the [Errors](errors.md) page.
 
-- `Decimal`
+## Package Version
+
+```python
+from unit_converter import __version__
+```
+
+`__version__` contains the installed distribution version, such as `"2.0.0"`.
+
+## Compatibility Helpers
+
+```python
+can_convert(from_unit, to_unit)
+compatible_units(unit)
+```
+
+`can_convert()` returns whether the bundled graph has a usable conversion path.
+It returns `False` when either unit is unknown, the units are incompatible, or
+available paths conflict. It does not evaluate a numeric value, so a particular
+value can still fail a formula domain check such as division by zero.
+
+`compatible_units()` returns a sorted tuple of display names that can be
+reached from the requested source unit. The tuple includes the source unit's
+display name. Stable IDs, display names, and registered aliases are accepted;
+an unknown source raises `UnitNotFoundError`.
+
+```python
+from unit_converter import can_convert, compatible_units
+
+assert can_convert("meter (m)", "mile (mi)")
+length_targets = compatible_units("meter (m)")
+```
 
 ## `UnitConverter`
 
-Most users should call the top-level `convert()` function. Use
-`UnitConverter.from_package_data()` when making many conversions in one process
-and you want to reuse the loaded converter.
+Most users should call the top-level helpers. Create one package converter when
+an application wants to reuse the same object explicitly:
 
 ```python
 from unit_converter import UnitConverter
@@ -39,29 +64,70 @@ result = converter.convert(
 )
 ```
 
-The top-level `convert()` function also caches the package converter.
+`UnitConverter` provides `convert()`, `can_convert()`, and
+`compatible_units()`. `available_units()` returns display names,
+`available_unit_ids()` returns stable IDs for the bundled converter and the
+supplied unit names for a custom converter, and `available()` returns the
+direct rule pairs registered on that converter. The top-level helpers cache
+their own package converter.
 
-## Catalog Helpers
+## Source Catalog Helpers
+
+```python
+from unit_converter import list_categories, list_unit_ids, list_units
+
+categories = list_categories()
+all_units = list_units()
+length_units = list_units("LENGTH")
+length_unit_ids = list_unit_ids("LENGTH")
+```
+
+`list_categories()` returns NIST source category names. `list_units()` and
+`list_unit_ids()` return all supported display names or stable IDs when no
+category is supplied, and the requested source category when one is supplied.
+
+Category matching ignores leading and trailing whitespace and is
+case-insensitive. Unknown source categories raise `ValueError`.
+
+## UI Catalog Helpers
 
 ```python
 from unit_converter import (
-    get_ui_unit_catalog,
-    get_unit_catalog,
-    list_categories,
-    list_units,
+    list_ui_categories,
+    list_ui_subcategories,
+    list_ui_unit_ids,
+    list_ui_units,
 )
+
+categories = list_ui_categories()
+subcategories = list_ui_subcategories("Dimension Converters")
+units = list_ui_units("Dimension Converters", "Length")
+unit_ids = list_ui_unit_ids("Dimension Converters", "Length")
 ```
 
-`get_unit_catalog()` returns the full bundled catalog dictionary from
-`unit_catalog.json`. Its `units` array contains one record per supported unit,
-including direct `nist_categories` and `ui_categories` metadata.
+`list_ui_units(category)` returns the mapped units across every subcategory in
+that UI category. Supplying `subcategory` narrows the result. Category and
+subcategory matching ignores leading and trailing whitespace and is
+case-insensitive.
 
-Example unit record:
+The UI taxonomy can contain a valid subcategory for which the current NIST data
+has no units; in that case the unit helpers return an empty tuple. Unknown UI
+categories or subcategories raise `ValueError`.
+
+## Catalog Metadata
+
+`get_unit_catalog()` returns an isolated copy of the complete supported-unit
+catalog. Its `units` array contains stable identity, aliases, NIST source
+categories, and direct UI mappings:
 
 ```python
 {
-    "label": "meter (m)",
+    "unit_id": "unit.u0271",
+    "quantity_id": "quantity.q0022",
+    "display_name": "meter (m)",
+    "aliases": [],
     "nist_categories": [{"category": "LENGTH"}],
+    "ui_mapping_status": "mapped",
     "ui_categories": [
         {
             "category": "Dimension Converters",
@@ -73,30 +139,42 @@ Example unit record:
 }
 ```
 
-`ui_categories[*].match_method` is either `full_list_unit` for a direct
-full-list label match or `nist_context` for a fallback placement into the
-closest full-list UI group.
+`get_ui_unit_catalog()` returns an isolated copy of the UI taxonomy. Unit
+membership is available through the UI helper functions and on unit records in
+`get_unit_catalog()`. Mutating either returned dictionary does not affect later
+calls.
 
-`get_ui_unit_catalog()` returns the bundled UI-oriented catalog dictionary from
-`ui_unit_catalog.json`. It provides the full-list UI category tree only; unit
-membership is stored directly on unit records in `unit_catalog.json`.
+Use display names in user interfaces and stable IDs in stored settings or
+database records.
 
-`list_categories()` returns the supported source category names from the bundled
-catalog.
+## Decimal Context
 
-`list_units()` returns all globally supported unit labels.
+Conversion arithmetic follows the active `decimal` context. There is no
+precision argument, and the package does not infer significant figures from
+the input.
 
-`list_units(category)` returns only unit labels in the requested category.
-Category matching ignores leading and trailing whitespace and is
-case-insensitive. Unknown categories raise `ValueError`.
+```python
+from decimal import localcontext
 
-Use `list_units()` when you only need exact unit labels for conversion. Use
-`get_unit_catalog()["units"]` when a UI needs labels plus category metadata.
+from unit_converter import convert
+
+with localcontext() as context:
+    context.prec = 12
+    result = convert(
+        1,
+        "British thermal unitIT (BtuIT)",
+        "calorieIT (calIT)",
+    )
+```
+
+The active context can change rounding and the number of returned digits. The
+package does not modify the caller's context.
 
 ## Advanced: Custom Conversions
 
-`Conversion` represents one direct rule. This is an advanced escape hatch for
-building a temporary converter with your own rules.
+`Conversion` represents one direct custom rule. Use it to build a temporary
+`UnitConverter` when the bundled standard does not cover an application-specific
+unit.
 
 ```python
 from unit_converter import Conversion, UnitConverter
@@ -108,11 +186,14 @@ converter = UnitConverter(
     ]
 )
 
-print(converter.convert(2, "m", "cm"))
-print(converter.convert(0, "degC", "degF"))
+print(converter.convert(2, "m", "cm"))       # 200
+print(converter.convert(0, "degC", "degF"))  # 32
 ```
 
-Exactly one of `factor` or `formula` must be provided.
-For `factor`, the input value is multiplied by the factor. For `formula`, use
-`x` as the input value. Reversible factors and supported reversible formulas
-can also be used in the opposite direction.
+Exactly one of `factor` or `formula` must be provided. Formulas can use `x`,
+numeric constants, parentheses, unary signs, and `+`, `-`, `*`, `/`, or `**`.
+Factors are reversible. Affine formulas and constant-over-`x` formulas are
+reversible when mathematically valid.
+
+The constructor accepts `from_unit`, `to_unit`, and exactly one of `factor` or
+`formula`. Category and subcategory metadata are not accepted.

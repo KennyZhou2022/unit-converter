@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/unit-converter/physical_quantity_conversions.schema.json",
-  "title": "unit-converter physical quantity conversion data",
+  "$id": "https://raw.githubusercontent.com/KennyZhou2022/unit-converter/main/schemas/physical_quantity_conversions.schema.json",
+  "title": "nist-unit-converter physical quantity conversion data",
+  "description": "Development-only Appendix B.9 review data grouped by source physical quantity.",
   "type": "object",
   "required": ["version", "source", "appendix_relationship", "categories"],
   "additionalProperties": false,

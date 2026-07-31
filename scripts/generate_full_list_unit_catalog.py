@@ -242,10 +242,10 @@ def build_catalog(home_url: str, delay_seconds: float) -> dict[str, Any]:
     all_units: list[dict[str, str]] = []
 
     for index, link in enumerate(links):
-        page_url = urljoin(home_url, link.href)
-        units = parse_unit_options(page_url)
         if index and delay_seconds > 0:
             time.sleep(delay_seconds)
+        page_url = urljoin(home_url, link.href)
+        units = parse_unit_options(page_url)
 
         display_category = display_category_for_subcategory(
             link.subcategory,
@@ -266,7 +266,7 @@ def build_catalog(home_url: str, delay_seconds: float) -> dict[str, Any]:
             for unit in units
         )
 
-    unique_units = sorted({record["unit"] for record in all_units})
+    unique_units = {record["unit"] for record in all_units}
     return {
         "version": 1,
         "catalog_name": "Full List Unit Catalog",
@@ -316,7 +316,7 @@ def normalize_existing_catalog(catalog: dict[str, Any]) -> dict[str, Any]:
         for record in catalog["all_units"]
     ]
 
-    unique_units = sorted({record["unit"] for record in all_units})
+    unique_units = {record["unit"] for record in all_units}
     catalog["totals"] = {
         "category_count": len(categories),
         "subcategory_count": sum(

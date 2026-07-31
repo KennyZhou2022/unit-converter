@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "units": [
+    {
+      "display_name": "ohm (Ω)",
+      "aliases": [
+        "ohm ( Ω)"
+      ]
+    },
+    {
+      "display_name": "ohm meter (Ω · m)",
+      "aliases": [
+        "ohm meter ( Ω · m)"
+      ]
+    },
+    {
+      "display_name": "watt per square meter kelvin [W / (m2 · K)]",
+      "aliases": [
+        "watt per square meter Kelvin [W / (m2 · K)]"
+      ]
+    },
+    {
+      "display_name": "micrometer (μm)",
+      "aliases": [
+        "micrometer ( μm)"
+      ]
+    },
+    {
+      "display_name": "millimeter (mm)",
+      "aliases": [
+        "mil limeter (mm)"
+      ]
+    },
+    {
+      "display_name": "kilogram (kg)",
+      "aliases": [
+        "kilogram (k g)"
+      ]
+    },
+    {
+      "display_name": "newton meter (N · m)",
+      "aliases": [
+        "newton meter (N ·m)"
+      ]
+    },
+    {
+      "display_name": "barrel [for petroleum, 42 gallons (U.S.)] (bbl)",
+      "aliases": [
+        "barrel [for petroleum, 42 gallons (U.S.)](bbl)"
+      ]
+    }
+  ]
+}
